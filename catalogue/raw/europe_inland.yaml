@@ -1,0 +1,2046 @@
+# European inland waterway vessel classes + reference vessels. Generated 2026-10-06.
+# Primary sources: ECMT Res. 92/2 Table 1 (scan read); Rijkswaterstaat Richtlijnen Vaarwegen 2017 Tables 1-8.
+# Never-invent rule: null = not found.
+classes:
+- id: CEMT-I-W
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: &id001
+  - dry_bulk
+  - general
+  loa_m: 38.5
+  beam_m: 5.05
+  draught_m:
+  - 1.8
+  - 2.2
+  air_draft_m: 4.0
+  dwt_t:
+  - 250
+  - 400
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: West of Elbe, regional. Designation 'Barge' (= Freycinet péniche/spits). Air draft column = min height under bridges (incl. 0.30 m margin).
+  reference_vessels:
+  - &id004
+    name: Spits Peniche 39.28 (broker listing, name withheld)
+    imo_or_eni: null
+    built: 1962
+    yard: Van Langerbrugge, Gent (BE)
+    loa_m: 39.28
+    beam_m: 5.1
+    draught_m: null
+    depth_m: 2.49
+    dwt_t: 360.3
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 250
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.doevemakelaar.nl/en/ship/1586/spits-peniche-39-28-rhine-certified-2
+    notes: Listing gives 'loading capacity 360,313' = laadvermogen in t with Dutch decimal comma (WebFetch rendered it as m3). Cummins NT855-M 250 kW; bow thruster 13.5 kW. Built for French waterways.
+- id: CEMT-II-W
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m:
+  - 50
+  - 55
+  beam_m: 6.6
+  draught_m: 2.5
+  air_draft_m:
+  - 4.0
+  - 5.0
+  dwt_t:
+  - 400
+  - 650
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: West of Elbe. 'Kampine-Barge' (Kempenaar).
+  reference_vessels:
+  - &id005
+    name: Kempenaar 59.96 (broker listing, name withheld)
+    imo_or_eni: null
+    built: 1963
+    yard: Rheinwerft, Walsum (DE)
+    loa_m: 59.96
+    beam_m: 6.6
+    draught_m: null
+    depth_m: 2.23
+    dwt_t: 429.2
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 287
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.doevemakelaar.nl/en/ship/1423/kempenaar-59-96
+    notes: Depth listed '1.20/2.23'. Laadvermogen 429,230 (Dutch comma -> t). Cat C12 287 kW (re-engined). Bow thruster Cat 197 hp. Lengthened Kempenaar (59.96 m > 55 m class max).
+- id: CEMT-III-W
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m:
+  - 67
+  - 80
+  beam_m: 8.2
+  draught_m: 2.5
+  air_draft_m:
+  - 4.0
+  - 5.0
+  dwt_t:
+  - 650
+  - 1000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: West of Elbe. 'Gustav Koenigs' (Dortmund-Ems type).
+  reference_vessels: []
+- id: CEMT-I-E
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m: 41
+  beam_m: 4.7
+  draught_m: 1.4
+  air_draft_m: 3.0
+  dwt_t: 180
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: East of Elbe. 'Gross Finow'.
+  reference_vessels: []
+- id: CEMT-II-E
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m: 57
+  beam_m:
+  - 7.5
+  - 9.0
+  draught_m: 1.6
+  air_draft_m: 3.0
+  dwt_t:
+  - 500
+  - 630
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: East of Elbe. 'BM-500'.
+  reference_vessels: []
+- id: CEMT-III-E
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m:
+  - 67
+  - 70
+  beam_m:
+  - 8.2
+  - 9.0
+  draught_m:
+  - 1.6
+  - 2.0
+  air_draft_m: 4.0
+  dwt_t:
+  - 470
+  - 700
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: East of Elbe; footnote 6 = vessels of the Oder region and Oder-Elbe waterways.
+  reference_vessels: []
+- id: CEMT-III-E-convoy
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m:
+  - 118
+  - 132
+  beam_m:
+  - 8.2
+  - 9.0
+  draught_m:
+  - 1.6
+  - 2.0
+  air_draft_m: 4.0
+  dwt_t:
+  - 1000
+  - 1200
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: medium
+  notes: East of Elbe pushed convoy; n_in_line inferred from length, not stated.
+  reference_vessels: []
+- id: CEMT-IV
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: &id002
+  - dry_bulk
+  - general
+  - container
+  loa_m:
+  - 80
+  - 85
+  beam_m: 9.5
+  draught_m: 2.5
+  air_draft_m:
+  - 5.25
+  - 7.0
+  dwt_t:
+  - 1000
+  - 1500
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org); Ankobra engine/vessel_design/vessel_standards.py
+    (PIANC WG141 Table 2.1 p15)'
+  confidence: high
+  notes: '''Johann Welker'' (Rhine-Herne/Europaschiff). Bridge 5.25 (2-tier containers) or 7.00 (3-tier).'
+  reference_vessels: []
+- id: CEMT-IV-convoy
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m: 85
+  beam_m: 9.5
+  draught_m:
+  - 2.5
+  - 2.8
+  air_draft_m:
+  - 5.25
+  - 7.0
+  dwt_t:
+  - 1250
+  - 1450
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: 1 Europa I barge + pusher. Footnote 5 on beam 9.5 (Oder vessels).
+  reference_vessels: []
+- id: CEMT-Va
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: &id006
+  - dry_bulk
+  - general
+  - container
+  - liquid
+  loa_m:
+  - 95
+  - 110
+  beam_m: 11.4
+  draught_m:
+  - 2.5
+  - 2.8
+  air_draft_m:
+  - 5.25
+  - 9.1
+  dwt_t:
+  - 1500
+  - 3000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org); Ankobra engine/vessel_design/vessel_standards.py
+    (PIANC WG141 Table 2.1 p15)'
+  confidence: high
+  notes: '''Large Rhine vessels''. CONFLICT: ECMT scan gives motor-vessel draught 2.50-2.80 m; the Ankobra transcription (from WG141) carries 2.5-4.5, which is the CONVOY column. Bridge 5.25 / 7.00 / 9.10
+    (2/3/4 container tiers).'
+  reference_vessels:
+  - &id007
+    name: LNG Greenstream
+    imo_or_eni: null
+    built: 2013
+    yard: Peters Shipyards, Kampen (NL)
+    loa_m: 110.0
+    beam_m: 11.4
+    draught_m: 3.46
+    depth_m: null
+    dwt_t: 2877
+    teu: null
+    cargo_capacity_m3: 3124
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1140
+    propulsion: lng
+    service_speed_kn: null
+    crew: null
+    source: https://www.ship-technology.com/projects/lng-greenstream-tanker/
+    notes: 'LBP 109.5 m; GT 3,130. 4 x 285 kW Scania-Sandfirden spark-ignited gas gensets (1,140 kW total), diesel-electric-style LNG-electric drive, 2 x 500 kW Z-drives + Veth-Jet bow thruster. Double-hull
+      product/chemical tanker chartered to Shell, owner Interstream Barging. ADN type not stated in source. Sister: Greenrhine.'
+  - &id008
+    name: PortLiner EC110 type (class of 5 ordered)
+    imo_or_eni: null
+    built: null
+    yard: null
+    loa_m: 110.0
+    beam_m: 11.4
+    draught_m: null
+    depth_m: null
+    dwt_t: null
+    teu: 270
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: electric
+    service_speed_kn: null
+    crew: null
+    source: https://chargedevs.com/newswire/electric-container-barges-to-sail-from-european-ports-this-summer/
+    notes: Source says '270 standard containers'; battery-swap containers (source quotes 72 MWh total -- unverified, looks high). Medium confidence; secondary trade press.
+- id: CEMT-Va-convoy
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 95
+  - 110
+  beam_m: 11.4
+  draught_m:
+  - 2.5
+  - 4.5
+  air_draft_m:
+  - 5.25
+  - 9.1
+  dwt_t:
+  - 1600
+  - 3000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: 1 Europa II barge + pusher.
+  reference_vessels:
+  - &id009
+    name: DS1863 / DS1864 (Project RDB06, 'Europe 2B' barge)
+    imo_or_eni: null
+    built: 2005
+    yard: Kiliya Shipbuilding-Shiprepair Yard (UA)
+    loa_m: 76.02
+    beam_m: 11.44
+    draught_m: 3.0
+    depth_m: 3.2
+    dwt_t: 2000
+    teu: null
+    cargo_capacity_m3: 2228
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://mebspb.com/drye/RDB06e.html
+    notes: DS1863 delivered 29.04.2005, DS1864 20.03.2006. Light draught 0.56 m (useful for lightship estimate). BV class I3/3E. Non-propelled Danube-Main-Rhine barge.
+- id: CEMT-Vb
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 172
+  - 185
+  beam_m: 11.4
+  draught_m:
+  - 2.5
+  - 4.5
+  air_draft_m:
+  - 7.0
+  - 9.1
+  dwt_t:
+  - 3200
+  - 6000
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org); Ankobra engine/vessel_design/vessel_standards.py
+    (PIANC WG141 Table 2.1 p15)'
+  confidence: high
+  notes: 2 barges in line. ECMT recommends Vb as minimum for international waterways, min draught 2.80 m, bridge 7.00 m.
+  reference_vessels:
+  - &id003
+    name: Thyssenkrupp Steel diesel-electric Rhine pusher (Barkmeijer pair; names not captured)
+    imo_or_eni: null
+    built: null
+    yard: Barkmeijer Shipyards (NL)
+    loa_m: null
+    beam_m: null
+    draught_m: null
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1560
+    propulsion: diesel-electric
+    service_speed_kn: null
+    crew: null
+    source: https://www.bairdmaritime.com/gear/equipment/engines-propulsion-systems/gear-voith-to-equip-new-rhine-pusher-boats-for-thyssenkrupp-with-vsp-drives/
+    notes: 2 x Voith Schneider 18R5 EC/150-1 at 780 kW input each. Replaces Veerhaven-fleet pushers; Veerhaven pushers handle up to 6 Europa II barges Rotterdam-Duisburg (ore/coal). Dimensions not captured.
+- id: CEMT-VIa
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 95
+  - 110
+  beam_m: 22.8
+  draught_m:
+  - 2.5
+  - 4.5
+  air_draft_m:
+  - 7.0
+  - 9.1
+  dwt_t:
+  - 3200
+  - 6000
+  teu: null
+  n_abreast: 2
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org); Ankobra engine/vessel_design/vessel_standards.py
+    (PIANC WG141 Table 2.1 p15)'
+  confidence: high
+  notes: ''
+  reference_vessels:
+  - *id003
+- id: CEMT-VIb-motor
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - container
+  - general
+  loa_m: 140
+  beam_m: 15.0
+  draught_m: 3.9
+  air_draft_m:
+  - 7.0
+  - 9.1
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: medium
+  notes: 'Footnote 8: approximate dims of motor vessels proposed for ro-ro/container transport. No tonnage given. Superseded in practice by the 135 x 17.0 Rijnmax (RWS M12).'
+  reference_vessels: []
+- id: CEMT-VIb
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 185
+  - 195
+  beam_m: 22.8
+  draught_m:
+  - 2.5
+  - 4.5
+  air_draft_m:
+  - 7.0
+  - 9.1
+  dwt_t:
+  - 6400
+  - 12000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: ''
+  reference_vessels:
+  - *id003
+- id: CEMT-VIc-long
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m:
+  - 270
+  - 280
+  beam_m: 22.8
+  draught_m:
+  - 2.5
+  - 4.5
+  air_draft_m: 9.1
+  dwt_t:
+  - 9600
+  - 18000
+  teu: null
+  n_abreast: 2
+  n_in_line: 3
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: ''
+  reference_vessels:
+  - *id003
+- id: CEMT-VIc-wide
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m:
+  - 195
+  - 200
+  beam_m:
+  - 33.0
+  - 34.2
+  draught_m:
+  - 2.5
+  - 4.5
+  air_draft_m: 9.1
+  dwt_t:
+  - 9600
+  - 18000
+  teu: null
+  n_abreast: 3
+  n_in_line: 2
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: ''
+  reference_vessels:
+  - *id003
+- id: CEMT-VII
+  family: CEMT-1992
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m: 285
+  beam_m:
+  - 33.0
+  - 34.2
+  draught_m:
+  - 2.5
+  - 4.5
+  air_draft_m: 9.1
+  dwt_t:
+  - 14500
+  - 27000
+  teu: null
+  n_abreast: 3
+  n_in_line: 3
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: 'Footnote 9: Danube pushed units often exceed nine barges. Not present in NL (RVW 2017 §2.1.3).'
+  reference_vessels: []
+- id: RWS-M0
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t:
+  - 1
+  - 250
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Overig (other); CEMT None. B<=5.00 or L<=38.00 Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.
+  reference_vessels: []
+- id: RWS-M1
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m: 38.5
+  beam_m: 5.05
+  draught_m: 2.5
+  air_draft_m: null
+  dwt_t:
+  - 251
+  - 400
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf; Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 2 (p20)
+  confidence: high
+  notes: 'Spits; CEMT I. B 5.01-5.10, L>=38.01. Table 2 (CEMT I maatgevend): air draught empty 4.25 m, 365 t, 175 kW main, 100 kW bow thruster. Draught = loaded design draught of maatgevend ship. Dims carry
+    +/-1 m length, +/-0.10 m beam tolerance.'
+  reference_vessels:
+  - *id004
+- id: RWS-M2
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m:
+  - 50
+  - 55
+  beam_m: 6.6
+  draught_m: 2.6
+  air_draft_m: null
+  dwt_t:
+  - 401
+  - 650
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf; Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 2 (p20)
+  confidence: high
+  notes: 'Kempenaar; CEMT II. B 5.11-6.70. Table 2: 535-615 t, 240-300 kW, bow 130 kW. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.'
+  reference_vessels:
+  - *id005
+- id: RWS-M3
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m:
+  - 55
+  - 70
+  beam_m: 7.2
+  draught_m: 2.6
+  air_draft_m: null
+  dwt_t:
+  - 651
+  - 800
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Hagenaar; CEMT III. B 6.71-7.30. Renovation-only class (Opm. 3). Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.
+  reference_vessels: []
+- id: RWS-M4
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m:
+  - 67
+  - 73
+  beam_m: 8.2
+  draught_m: 2.7
+  air_draft_m: null
+  dwt_t:
+  - 801
+  - 1050
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Dortmund Eems (L<=74 m); CEMT III. B 7.31-8.30. Renovation-only. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.
+  reference_vessels: []
+- id: RWS-M5
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m:
+  - 80
+  - 85
+  beam_m: 8.2
+  draught_m: 2.7
+  air_draft_m: null
+  dwt_t:
+  - 1051
+  - 1250
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf; Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 2 (p20)
+  confidence: high
+  notes: 'Verlengd Dortmund Eems (L>74 m); CEMT III. Table 2 (CEMT III): 910-1250 t, 490-640 kW, bow 160-210 kW. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam
+    tolerance.'
+  reference_vessels: []
+- id: RWS-M6
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m:
+  - 80
+  - 85
+  beam_m: 9.5
+  draught_m: 2.9
+  air_draft_m: null
+  dwt_t:
+  - 1251
+  - 1750
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Rijn-Herne Schip (L<=86 m); CEMT IVa. B 8.31-9.60. Renovation-only. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.
+  reference_vessels: []
+- id: RWS-M7
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 105
+  beam_m: 9.5
+  draught_m: 3.0
+  air_draft_m: null
+  dwt_t:
+  - 1751
+  - 2050
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf; Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 2 (p20)
+  confidence: high
+  notes: 'Verlengd Rijn-Herne (L>86 m); CEMT IVa. Table 2 (CEMT IV): 1370-2040 t, 750-1070 kW, bow 250 kW. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.'
+  reference_vessels: []
+- id: RWS-M8
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 110
+  beam_m: 11.4
+  draught_m: 3.5
+  air_draft_m: null
+  dwt_t:
+  - 2051
+  - 3300
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf; Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 2 (p20)
+  confidence: high
+  notes: 'Groot Rijnschip (L<=111 m) / GMS 110; CEMT Va. B 9.61-11.50. Renovation-only lower bound of Va. Table 2 (CEMT Va): 2900-3735 t, 1375-1750 kW, bow 435-705 kW, air draught empty 6.40 m. Draught
+    = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.'
+  reference_vessels:
+  - *id007
+  - &id013
+    name: Gas 94
+    imo_or_eni: null
+    built: 2021
+    yard: 'Hull: Partner Shipyard, Szczecin (PL); outfitting: TeamCo, Heusden (NL)'
+    loa_m: 110.0
+    beam_m: 12.5
+    draught_m: null
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: diesel-electric
+    service_speed_kn: null
+    crew: null
+    source: https://www.hgk.de/fileadmin/pressemitteilungen/2023/01_10_2021_Press_Release_HGK_Shipping_Gas_94_naming_ceremony.pdf
+    notes: HGK Shipping low-water liquefied-gas tanker for BASF (ADN Type G implied by cargo; not stated). Carries 200 t at Kaub gauge 30 cm. Capacity and power not published in the release.
+  - &id014
+    name: LNG London
+    imo_or_eni: null
+    built: 2019
+    yard: null
+    loa_m: 110.0
+    beam_m: 15.0
+    draught_m: null
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: 3000
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.lngindustry.com/small-scale-lng/11072025/lng-london-completes-1000-safe-bunkering-operations
+    notes: Inland LNG bunker vessel (ADN Type G, cargo -163 C), chartered by Shell, owner LNG Shipping, operator Victrol; launched 2019. Power/propulsion not found.
+  - *id008
+- id: RWS-M9
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 135
+  beam_m: 11.4
+  draught_m: 3.5
+  air_draft_m: null
+  dwt_t:
+  - 3301
+  - 4000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Verlengd Groot Rijnschip (L>111 m) / 135 m Rhine vessel; CEMT Va. B 9.61-11.50, L>=111.01. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.
+  reference_vessels:
+  - &id011
+    name: MTS Gambler
+    imo_or_eni: null
+    built: 2025
+    yard: Concordia Damen, Werkendam (NL)
+    loa_m: 135.0
+    beam_m: 11.45
+    draught_m: null
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: 4180
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1418
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://swzmaritime.nl/news/2025/11/13/concordia-damen-delivers-tanker-to-gambler-shipping/
+    notes: Design CDS Tanker 135; 2 x CAT C32 at 709 kW. Mineral-oil tanker; ADN type not stated (mineral oil normally Type N/C).
+- id: RWS-M10
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 110
+  beam_m: 13.5
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t:
+  - 4001
+  - 4300
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Maatgevend schip 13.5 x 110; CEMT VIa. B 11.51-14.30. Renovation-only. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.
+  reference_vessels: []
+- id: RWS-M11
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 135
+  beam_m: 14.2
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t:
+  - 4301
+  - 5600
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Maatgevend schip 14.2 x 135; CEMT VIa. B 11.51-14.30, L>=111.01. Renovation-only. Draught = loaded design draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.
+  reference_vessels: []
+- id: RWS-M12
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 135
+  beam_m: 17.0
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t: 5601
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf; Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 2 (p20)
+  confidence: high
+  notes: 'Rijnmax Schip (Jowi class); CEMT VIa. B>=14.31. Table 2 (CEMT VIa): 6000 t, 2400 kW, bow 1135 kW, air draught empty 8.75 m. RWS labels it VIa (not VIb) for consistency. Draught = loaded design
+    draught of maatgevend ship. Dims carry +/-1 m length, +/-0.10 m beam tolerance.'
+  reference_vessels:
+  - &id010
+    name: Jowi
+    imo_or_eni: null
+    built: 1998
+    yard: Breko (NL)
+    loa_m: 135.0
+    beam_m: null
+    draught_m: null
+    depth_m: null
+    dwt_t: 5600
+    teu: 470
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.informare.it/news/cisco/1998/0698cuk.asp
+    notes: 'Single hull, 6 containers abreast; 398 TEU on 4 tiers, 470 TEU on 5 tiers. Owner Henk Wanders, chartered to CCS Duisburg. Beam conflict: secondary sources give 16 m and 17 m; RVW Rijnmax class
+      = 17.0 m. A search snippet tied IMO 9517173 / MMSI 244620628 to ''Jowi'' -- that IMO series dates ~2009+, so likely a different vessel; not used.'
+  - &id012
+    name: Stolt Ludwigshafen
+    imo_or_eni: null
+    built: 2023
+    yard: null
+    loa_m: 135.0
+    beam_m: 17.5
+    draught_m: null
+    depth_m: null
+    dwt_t: 5100
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: diesel-electric
+    service_speed_kn: null
+    crew: null
+    source: https://www.stolt-nielsen.com/news-insights/news/celebrating-a-milestone-hull-of-innovative-tanker-stolt-ludwigshafen-arrives-in-rotterdam/ ; search summary of BASF/Stolt releases
+    notes: Low-water chemical tanker for BASF; 3 electric motors fed by Stage-V gensets (kW not published in sources read). 800 t at Kaub gauge 30 cm (1.6 m depth); ~2,300-2,500 t at moderate low water.
+      One search summary gave beam 30 m -- treated as an error; 17.5 m from multiple reports. Yard not confirmed (hull arrived Rotterdam). Christened 26 May 2023.
+- id: RWS-BO1
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m: 55
+  beam_m: 5.2
+  draught_m: 1.9
+  air_draft_m: null
+  dwt_t:
+  - 0
+  - 400
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 1 voorspanbak (CEMT I). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels: []
+- id: RWS-BO2
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m:
+  - 60
+  - 70
+  beam_m: 6.6
+  draught_m: 2.6
+  air_draft_m: null
+  dwt_t:
+  - 401
+  - 600
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 1 voorspanbak (CEMT II). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels: []
+- id: RWS-BO3
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m: 80
+  beam_m: 7.5
+  draught_m: 2.6
+  air_draft_m: null
+  dwt_t:
+  - 601
+  - 800
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 1 voorspanbak (CEMT III). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels: []
+- id: RWS-BO4
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m: 85
+  beam_m: 8.2
+  draught_m: 2.7
+  air_draft_m: null
+  dwt_t:
+  - 801
+  - 1250
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 1 voorspanbak (CEMT III). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels: []
+- id: RWS-BI
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 85
+  - 105
+  beam_m: 9.5
+  draught_m: 3.0
+  air_draft_m: null
+  dwt_t:
+  - 1251
+  - 1800
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Europa I duwstel (CEMT IV). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels: []
+- id: RWS-BII-1
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 95
+  - 110
+  beam_m: 11.4
+  draught_m: 3.5
+  air_draft_m: null
+  dwt_t:
+  - 1801
+  - 2450
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Europa II duwstel (CEMT Va). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels:
+  - *id009
+- id: RWS-BIIa-1
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 92
+  - 110
+  beam_m: 11.4
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t:
+  - 2451
+  - 3200
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Europa IIa duwstel (CEMT Va). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels: []
+- id: RWS-BIIL-1
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 125
+  - 135
+  beam_m: 11.4
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t:
+  - 3201
+  - 3950
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Europa II lang (CEMT Va). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels: []
+- id: RWS-BII-2l
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 170
+  - 190
+  beam_m: 11.4
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: null
+  dwt_t:
+  - 3951
+  - 7050
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 2-baksduwstel lang (CEMT Vb). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels:
+  - *id003
+- id: RWS-BII-2b
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 95
+  - 145
+  beam_m: 22.8
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: null
+  dwt_t:
+  - 3951
+  - 7050
+  teu: null
+  n_abreast: 2
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 2-baksduwstel breed (CEMT VIa). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses for VIb/VIc/VIIa
+    read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels:
+  - *id003
+- id: RWS-BII-4
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m:
+  - 185
+  - 195
+  beam_m: 22.8
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: null
+  dwt_t:
+  - 7051
+  - 12000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 4-baksduwstel incl. 3-baks lang (CEMT VIb). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses
+    for VIb/VIc/VIIa read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels:
+  - *id003
+- id: RWS-BII-6l
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m: 270
+  beam_m: 22.8
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: null
+  dwt_t:
+  - 12001
+  - 18000
+  teu: null
+  n_abreast: 2
+  n_in_line: 3
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 6-baksduwstel lang incl. 5-baks lang (CEMT VIc). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in parentheses
+    for VIb/VIc/VIIa read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels:
+  - *id003
+- id: RWS-BII-6b
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id002
+  loa_m: 195
+  beam_m: 34.2
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: null
+  dwt_t:
+  - 12001
+  - 18000
+  teu: null
+  n_abreast: 3
+  n_in_line: 2
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 6 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 6-baksduwstel breed incl. 5-baks breed (CEMT VIIa). RVW 2017 uses BO1-BO4 then BI/BII-x; the brief's 'BO5-BO7' labels were not found in RVW 2017 (RVW 2020 not read). Table 8 tonnage brackets in
+    parentheses for VIb/VIc/VIIa read (7051-9000)/(12001-15000) as alternative lower values. Heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW (RVW §2.4.2).
+  reference_vessels:
+  - *id003
+- id: RWS-C1l
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: coupled_unit
+  cargo_modes: *id002
+  loa_m:
+  - 77
+  - 80
+  beam_m: 5.05
+  draught_m: 2.5
+  air_draft_m: 5.25
+  dwt_t:
+  - 0
+  - 900
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 7 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 2 spitsen lang. Coupled formations are not in CEMT; RWS added them. Air draft = Table 8 doorvaarthoogte (incl. 0.30 m margin). DWT given as '<= 900' for C1 (stored [0,900]); C4 '>= 7251'.
+  reference_vessels: []
+- id: RWS-C1b
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: coupled_unit
+  cargo_modes: *id002
+  loa_m: 38.5
+  beam_m: 10.1
+  draught_m: 2.5
+  air_draft_m: 5.25
+  dwt_t:
+  - 0
+  - 900
+  teu: null
+  n_abreast: 2
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 7 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 2 spitsen breed. Coupled formations are not in CEMT; RWS added them. Air draft = Table 8 doorvaarthoogte (incl. 0.30 m margin). DWT given as '<= 900' for C1 (stored [0,900]); C4 '>= 7251'.
+  reference_vessels: []
+- id: RWS-C2l
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: coupled_unit
+  cargo_modes: *id002
+  loa_m:
+  - 170
+  - 185
+  beam_m: 9.5
+  draught_m: 3.0
+  air_draft_m: 7.0
+  dwt_t:
+  - 901
+  - 3350
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 7 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Klasse IV + Europa I lang (CEMT IVb). Coupled formations are not in CEMT; RWS added them. Air draft = Table 8 doorvaarthoogte (incl. 0.30 m margin). DWT given as '<= 900' for C1 (stored [0,900]);
+    C4 '>= 7251'.
+  reference_vessels: []
+- id: RWS-C2b
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: coupled_unit
+  cargo_modes: *id002
+  loa_m:
+  - 85
+  - 105
+  beam_m: 19.0
+  draught_m: 3.0
+  air_draft_m: 7.0
+  dwt_t:
+  - 901
+  - 3350
+  teu: null
+  n_abreast: 2
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 7 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Klasse IV + Europa I breed. Coupled formations are not in CEMT; RWS added them. Air draft = Table 8 doorvaarthoogte (incl. 0.30 m margin). DWT given as '<= 900' for C1 (stored [0,900]); C4 '>=
+    7251'.
+  reference_vessels: []
+- id: RWS-C3l
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: coupled_unit
+  cargo_modes: *id002
+  loa_m:
+  - 170
+  - 190
+  beam_m: 11.4
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: 9.1
+  dwt_t:
+  - 3351
+  - 7250
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 7 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Klasse Va + Europa II lang (CEMT Vb). Coupled formations are not in CEMT; RWS added them. Air draft = Table 8 doorvaarthoogte (incl. 0.30 m margin). DWT given as '<= 900' for C1 (stored [0,900]);
+    C4 '>= 7251'.
+  reference_vessels: []
+- id: RWS-C3b
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: coupled_unit
+  cargo_modes: *id002
+  loa_m:
+  - 95
+  - 110
+  beam_m: 22.8
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: 9.1
+  dwt_t:
+  - 3351
+  - 7250
+  teu: null
+  n_abreast: 2
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 7 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Klasse Va + Europa II breed (CEMT VIa). Coupled formations are not in CEMT; RWS added them. Air draft = Table 8 doorvaarthoogte (incl. 0.30 m margin). DWT given as '<= 900' for C1 (stored [0,900]);
+    C4 '>= 7251'.
+  reference_vessels: []
+- id: RWS-C4
+  family: RWS-2010
+  region: europe-inland
+  waters: inland
+  formation: coupled_unit
+  cargo_modes: *id002
+  loa_m: 185
+  beam_m: 22.8
+  draught_m:
+  - 3.5
+  - 4.0
+  air_draft_m: 9.1
+  dwt_t:
+  - 0
+  - 7251
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 7 (p23) + Table 8, https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Klasse Va + 3 Europa II (CEMT VIb). Coupled formations are not in CEMT; RWS added them. Air draft = Table 8 doorvaarthoogte (incl. 0.30 m margin). DWT given as '<= 900' for C1 (stored [0,900]);
+    C4 '>= 7251'.
+  reference_vessels: []
+- id: RWS-TEU-II-III
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - container
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 28
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: medium
+  notes: 'Layout abreast x tiers x rows = 2 x 2 x 7. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    CEMT II/III.'
+  reference_vessels: []
+- id: RWS-TEU-Neokemp
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - container
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 48
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: medium
+  notes: 'Layout abreast x tiers x rows = 2 x 3 x 8. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    Neokemp: designed for small waterways (Kempenaar-based). Neo Logistic Services 32/48 TEU vessels.'
+  reference_vessels: []
+- id: RWS-TEU-IVa
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - container
+  loa_m: null
+  beam_m: 9.5
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 90
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: medium
+  notes: 'Layout abreast x tiers x rows = 3 x 3 x 10. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    CEMT IVa.'
+  reference_vessels: []
+- id: RWS-TEU-Va
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - container
+  loa_m: 110
+  beam_m: 11.4
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 208
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 'Layout abreast x tiers x rows = 4 x 4 x 13. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    CEMT Va 110 m. Dimensions inferred from class, not in Table 4.'
+  reference_vessels:
+  - *id008
+- id: RWS-TEU-Va-ext
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - container
+  loa_m: 135
+  beam_m: 11.4
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 272
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 'Layout abreast x tiers x rows = 4 x 4 x 17. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    Va lengthened 135 m. Dimensions inferred from class, not in Table 4.'
+  reference_vessels: []
+- id: RWS-TEU-VIa
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - container
+  loa_m: 135
+  beam_m: 17.0
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 398
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 'Layout abreast x tiers x rows = 6 x 4 x 17. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    Rijnmax/Jowi; 470 TEU at 5 tiers (Jowi). Dimensions inferred from class, not in Table 4.'
+  reference_vessels:
+  - *id010
+- id: RWS-TEU-EI-barge
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - container
+  loa_m: 70
+  beam_m: 9.5
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 81
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 'Layout abreast x tiers x rows = 3 x 3 x 9. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    Europa I barge. Dimensions inferred from class, not in Table 4.'
+  reference_vessels: []
+- id: RWS-TEU-EII-barge
+  family: RWS-container
+  region: europe-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - container
+  loa_m: 76.5
+  beam_m: 11.4
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: 160
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 4 (p21), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 'Layout abreast x tiers x rows = 4 x 4 x 10. Bridge clearance needs: 5.25/7.00/9.10 m for 2/3/4 tiers (CEMT), but Rhine measurements show 90% of container ships need 5.80/8.50/11.05 m (RVW §2.3.3).
+    Europa II barge. Dimensions inferred from class, not in Table 4.'
+  reference_vessels: []
+- id: BARGE-Europa-I
+  family: Europa-barge
+  region: europe-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes: *id002
+  loa_m: 70.0
+  beam_m: 9.5
+  draught_m: 3.0
+  air_draft_m: null
+  dwt_t: 1450
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Standard push barge, CEMT IV. Empty barge draught ~0.6 m, pusher ~1.8 m (RVW §2.4.1). ~30% of NL push traffic uses barges smaller than Europa I.
+  reference_vessels: []
+- id: BARGE-Europa-II
+  family: Europa-barge
+  region: europe-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes: *id002
+  loa_m: 76.5
+  beam_m: 11.4
+  draught_m: 3.5
+  air_draft_m: null
+  dwt_t: 2450
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Standard push barge, CEMT Va. Empty barge draught ~0.6 m, pusher ~1.8 m (RVW §2.4.1). ~30% of NL push traffic uses barges smaller than Europa I.
+  reference_vessels:
+  - *id009
+- id: BARGE-Europa-IIa
+  family: Europa-barge
+  region: europe-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes: *id002
+  loa_m: 76.5
+  beam_m: 11.4
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t: 2780
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Standard push barge, CEMT Va. Empty barge draught ~0.6 m, pusher ~1.8 m (RVW §2.4.1). ~30% of NL push traffic uses barges smaller than Europa I.
+  reference_vessels: []
+- id: BARGE-Europa-IIa-ext
+  family: Europa-barge
+  region: europe-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes: *id002
+  loa_m: 90.0
+  beam_m: 11.4
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t: 3220
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Standard push barge, CEMT Va. Empty barge draught ~0.6 m, pusher ~1.8 m (RVW §2.4.1). ~30% of NL push traffic uses barges smaller than Europa I.
+  reference_vessels: []
+- id: BARGE-Europa-IIb
+  family: Europa-barge
+  region: europe-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes: *id001
+  loa_m: 76.5
+  beam_m:
+  - 11.0
+  - 11.44
+  draught_m:
+  - 2.7
+  - 3.1
+  air_draft_m: null
+  dwt_t:
+  - 1717
+  - 2033
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Danube variant; built examples on mebspb.com (Projects RDB06, 1635OU) + search summary (Linz-built 76.5 x 11 x 2.7, 1,717 t, Ukrainian Danube Shipping)
+  confidence: medium
+  notes: 'No primary class definition found. Danube standard barge commonly 76.5 x 11.0 m. Beam conflict: 11.0 (Danube) vs 11.4/11.44 (Rhine Europa II).'
+  reference_vessels:
+  - *id009
+  - name: UDP-SL-016 / UDP-SL-017 (Project 1635OU, 'Europa 2B' barge)
+    imo_or_eni: null
+    built: 1999
+    yard: Kiliya Shipyard (UA)
+    loa_m: 76.5
+    beam_m: 11.0
+    draught_m: 3.1
+    depth_m: 3.9
+    dwt_t: 2033
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://mebspb.com/drye/1635OUe.html
+    notes: RS class K-anchor B2. Ukrainian Danube Shipping Co.
+- id: PUSHER-Rhine-heavy
+  family: RVW-2017
+  region: europe-inland
+  waters: inland
+  formation: pusher
+  cargo_modes: []
+  loa_m: 40
+  beam_m: 15
+  draught_m: 1.8
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 §2.4.1-2.4.2
+  confidence: medium
+  notes: 'No standard pusher dims exist; RVW: heaviest Rhine pushers ~40 x 15 m, up to 4,000 kW; small pushers <=1,500 kW. Draught 1.8 m is RVW''s typical pusher draught.'
+  reference_vessels:
+  - *id003
+- id: PUSHER-Danube-small
+  family: Danube-practice
+  region: europe-inland
+  waters: inland
+  formation: pusher
+  cargo_modes: []
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: HSP fleet page (operator)
+  confidence: low
+  notes: Placeholder to carry a Danube towboat reference; no class definition found.
+  reference_vessels:
+  - name: Botond (HSP towboat)
+    imo_or_eni: null
+    built: null
+    yard: null
+    loa_m: 21.72
+    beam_m: 8.35
+    draught_m: 1.1
+    depth_m: 2.4
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 588
+    propulsion: diesel
+    service_speed_kn: null
+    crew: 3
+    source: https://en.hsp.hu/fleet/botond-towboat-800-le/
+    notes: LBP 18.65 m; moulded breadth 8.16 m; displacement 193 m3. 2 x 294 kW. Pushes two 80 m TS barges, 3,200 t. Danube (Hungary).
+- id: DANUBE-standard-convoy
+  family: Danube-Commission
+  region: europe-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes: *id001
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: ECMT 92/2 footnote 9; Danube Commission recommendations NOT read (no primary text retrieved)
+  confidence: low
+  notes: Danube convoys of up to 9 barges and more (ECMT fn 9); standard Danube barge 76.5 x 11.0 m. Fill from Danube Commission 'Recommendations on establishing the gabarits' when sourced.
+  reference_vessels: []
+- id: FREYCINET
+  family: historic-FR
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m: 38.5
+  beam_m: 5.05
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'RVW 2017 §2.1.1 (Freycinet law 1879: 38.5 x 5.05 m, péniche ~300 t at the time)'
+  confidence: medium
+  notes: Alias of CEMT I-W / RWS-M1. Kept so the tool resolves legacy names.
+  reference_vessels:
+  - *id004
+- id: KEMPENAAR
+  family: historic-NL/BE
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id001
+  loa_m:
+  - 50
+  - 55
+  beam_m: 6.6
+  draught_m: 2.6
+  air_draft_m: null
+  dwt_t:
+  - 401
+  - 650
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Alias of CEMT II-W / RWS-M2. Kept so the tool resolves legacy names.
+  reference_vessels:
+  - *id005
+- id: GUSTAV-KOENIGS
+  family: historic-DE
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m:
+  - 67
+  - 80
+  beam_m: 8.2
+  draught_m: 2.5
+  air_draft_m: null
+  dwt_t:
+  - 650
+  - 1000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: Alias of CEMT III-W ('Gustav Koenigs'); Dortmund-Ems ~1,000 t type. Kept so the tool resolves legacy names.
+  reference_vessels: []
+- id: DORTMUND-EMS
+  family: historic-DE
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m:
+  - 67
+  - 73
+  beam_m: 8.2
+  draught_m: 2.7
+  air_draft_m: null
+  dwt_t:
+  - 801
+  - 1050
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 'Alias of RWS-M4; RVW: Dortmund-Ems canal type ~1,000 t. Kept so the tool resolves legacy names.'
+  reference_vessels: []
+- id: RHINE-HERNE
+  family: historic-DE
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m:
+  - 80
+  - 85
+  beam_m: 9.5
+  draught_m: 2.9
+  air_draft_m: null
+  dwt_t:
+  - 1251
+  - 1750
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: 'Alias of RWS-M6; RVW: Rhine-Herne type ~1,350 t; CEMT IV ''Johann Welker''/Europaschiff. Kept so the tool resolves legacy names.'
+  reference_vessels: []
+- id: JOHANN-WELKER
+  family: historic-DE
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m:
+  - 80
+  - 85
+  beam_m: 9.5
+  draught_m: 2.5
+  air_draft_m: null
+  dwt_t:
+  - 1000
+  - 1500
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)'
+  confidence: high
+  notes: Alias of CEMT IV. Kept so the tool resolves legacy names.
+  reference_vessels: []
+- id: GMS-110
+  family: historic-DE
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 110
+  beam_m: 11.4
+  draught_m: 3.5
+  air_draft_m: null
+  dwt_t:
+  - 2051
+  - 3300
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Alias of Großmotorgüterschiff = CEMT Va / RWS-M8. Kept so the tool resolves legacy names.
+  reference_vessels:
+  - *id007
+- id: RHINE-135
+  family: trade-label
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 135
+  beam_m: 11.4
+  draught_m: 3.5
+  air_draft_m: null
+  dwt_t:
+  - 3301
+  - 4000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf
+  confidence: high
+  notes: Alias of RWS-M9 (verlengd Groot Rijnschip). Kept so the tool resolves legacy names.
+  reference_vessels:
+  - *id011
+- id: JOWI-RHINEMAX
+  family: trade-label
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes: *id006
+  loa_m: 135
+  beam_m: 17.0
+  draught_m: 4.0
+  air_draft_m: null
+  dwt_t: 5601
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 8 (p24-25), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf; Ankobra engine/vessel_design/vessel_standards.py (PIANC
+    WG141 Table 2.1 p15) (CEMT_VIa_motor_NL2011)
+  confidence: high
+  notes: Alias of RWS-M12; CEMT VIa motor in RVW/NL-2011. Kept so the tool resolves legacy names.
+  reference_vessels:
+  - *id010
+  - *id012
+- id: ADN-TYPE-N
+  family: ADN
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - liquid
+  loa_m:
+  - 80
+  - 135
+  beam_m:
+  - 9.5
+  - 17.5
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: UNECE ADN Regulations 1.2.1 (type definitions); dimensions follow the RWS/CEMT motor-vessel class
+  confidence: medium
+  notes: 'Type N tank vessel: open (N-open, flame arrester) or closed tanks; liquids of low hazard (e.g. most mineral oils, diesel). Single or double hull per substance. ADN types fix CONSTRUCTION, not
+    envelope; hull dims span RWS M6-M12 (typical new builds 110 x 11.45 and 135 x 11.45/17.5). Envelope range here is from the reference vessels, not a rule.'
+  reference_vessels:
+  - *id011
+- id: ADN-TYPE-C
+  family: ADN
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - liquid
+  loa_m:
+  - 80
+  - 135
+  beam_m:
+  - 9.5
+  - 17.5
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: UNECE ADN Regulations 1.2.1 (type definitions); dimensions follow the RWS/CEMT motor-vessel class
+  confidence: medium
+  notes: 'Type C tank vessel: double hull, closed cargo tanks (independent or integral), for higher-hazard liquids (chemicals, benzene etc.). ADN types fix CONSTRUCTION, not envelope; hull dims span RWS
+    M6-M12 (typical new builds 110 x 11.45 and 135 x 11.45/17.5). Envelope range here is from the reference vessels, not a rule.'
+  reference_vessels:
+  - *id007
+- id: ADN-TYPE-G
+  family: ADN
+  region: europe-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - liquid
+  - gas
+  loa_m:
+  - 80
+  - 135
+  beam_m:
+  - 9.5
+  - 17.5
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: UNECE ADN Regulations 1.2.1 (type definitions); dimensions follow the RWS/CEMT motor-vessel class
+  confidence: medium
+  notes: 'Type G gas tanker: pressure tanks (LPG, ammonia, etc.) or refrigerated/insulated tanks (LNG at -163 C, ethylene). Includes inland LNG bunker vessels. ADN types fix CONSTRUCTION, not envelope;
+    hull dims span RWS M6-M12 (typical new builds 110 x 11.45 and 135 x 11.45/17.5). Envelope range here is from the reference vessels, not a rule.'
+  reference_vessels:
+  - *id013
+  - *id014

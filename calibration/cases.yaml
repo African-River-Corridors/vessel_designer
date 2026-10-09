@@ -1,0 +1,139 @@
+# Calibration cases: real (or published design) vessels whose inputs we run through the core
+# and whose published figures we compare against. One row = one vessel/design at one condition.
+# Every observed figure cites a source (see calibration/ga_sources notes and catalogue/raw/).
+# kind:
+#   dry_barge  — pushed dry-cargo barge. Checks lightship and/or deadweight at a stated draught.
+#   motor_point — self-propelled design point with displacement, cargo and installed power.
+
+# hold_type: box (vertical inner sides) | container. All cases below are pushed barges.
+# exclude_from_fit: a reason, when the published figures cannot all describe one condition.
+dry_barge:
+  - id: para-mississippi-2200
+    hold_type: box
+    what: "Mississippi-type box hopper barge, model barge of UFPA thesis Table 04"
+    loa_m: 60.96
+    beam_m: 10.67
+    depth_m: 4.27
+    draught_m: 3.66
+    observed: {lightship_t: 263.85, dwt_t: 2200}
+    source: "UFPA dissertation 2022, Formação de comboios fluviais, sec 3.1.1 / Tabela 04 (repositorio.ufpa.br/bitstream/2011/15059)"
+    confidence: medium
+    exclude_from_fit_cb: "implied Cb > 1 on LOA: DWT and lightship cannot both be at T = 3.66 m"
+  - id: amaggi-box-2000
+    hold_type: box
+    what: "Amaggi Amazon box barge, 195 x 35 ft Mississippi hull"
+    loa_m: 60.96
+    beam_m: 10.67
+    depth_m: 4.27
+    draught_m: 3.56
+    observed: {dwt_t: 2000}
+    source: "UFPA dissertation 2022, sec 2.5.1.2"
+    confidence: medium
+  - id: mcdonough-195x35x12
+    hold_type: box
+    what: "McDonough Marine 195x35x12 ft hopper, 2 ft freeboard"
+    loa_m: 59.44
+    beam_m: 10.67
+    depth_m: 3.66
+    draught_m: 3.05
+    observed: {dwt_t: 1478.7}
+    source: "mcdonoughmarine.com fleet table (1,630 short tons at 2 ft freeboard; short tons assumed)"
+    confidence: medium
+  - id: jeffboat-am2100
+    hold_type: box
+    what: "Jeffboat AM 2100/2101 deep stretch hopper, 200 x 35 x 15 ft"
+    loa_m: 60.96
+    beam_m: 10.67
+    depth_m: 4.57
+    draught_m: 3.84
+    observed: {dwt_t: 1905.1}
+    source: "WorkBoat, Jeffboat building barges for Ashton Marine (2,100 tons; short tons assumed)"
+    confidence: medium
+  - id: hidrovia-lhg-3200
+    hold_type: box
+    what: "LHG Mining 3000 DWT jumbo hopper (box), Robert Allan design"
+    loa_m: 61.0
+    beam_m: 15.0
+    depth_m: 4.27
+    draught_m: 3.96
+    observed: {dwt_t: 3200}
+    source: "ral.ca 2025-05-09, groundbreaking fleet of 3000 DWT hopper barges"
+    confidence: medium
+    exclude_from_fit_cb: "implied Cb > 1 on LOA with any plausible lightship; 3,200 is a nominal rating"
+  - id: cargill-amazon-jumbo
+    hold_type: box
+    what: "Cargill Amazon box barge, 61 x 15 m"
+    loa_m: 61.0
+    beam_m: 15.0
+    depth_m: 4.27
+    draught_m: 4.00
+    observed: {dwt_t: 3126.49}
+    source: "UFPA dissertation 2022, sec 2.5.5.1"
+    confidence: medium
+  - id: europa-iib-rdb06
+    hold_type: box
+    what: "Europa IIb barge DS1863/1864, MEB project RDB06"
+    loa_m: 76.02
+    beam_m: 11.44
+    depth_m: 3.20
+    draught_m: 3.00
+    observed: {dwt_t: 2000, light_draught_m: 0.56}
+    source: "mebspb.com/drye/RDB06e.html"
+    confidence: medium
+  - id: europa-iib-1635ou
+    hold_type: box
+    what: "Europa 2B barge UDP-SL-016/017, MEB project 1635OU"
+    loa_m: 76.5
+    beam_m: 11.0
+    depth_m: 3.90
+    draught_m: 3.10
+    observed: {dwt_t: 2033}
+    source: "mebspb.com/drye/1635OUe.html"
+    confidence: medium
+  - id: danube-barge-77
+    hold_type: box
+    what: "Typical Danube barge, upper bound of 21 framing variants"
+    loa_m: 77.0
+    beam_m: 11.0
+    depth_m: 2.8
+    draught_m: 2.5
+    observed: {lightship_t: 290, dwt_t: 1700}
+    source: "Momcilovic & Motok, FME Transactions 37 (2009) 123-128"
+    confidence: medium
+  - id: victor-83-container-barge
+    hold_type: container
+    what: "83 m container push barge design (initial scantlings)"
+    loa_m: 83.0
+    beam_m: 11.45
+    depth_m: 2.8
+    draught_m: 2.6
+    observed: {lightship_t: 455.24, steel_t: 379.56, dwt_t: 1975.8, cb: 0.969}
+    source: "Victor 2022, ULiege master thesis, Tables 8-9"
+    confidence: medium
+    note: "Container hold, not hopper — expect the hopper-steel term to misfit."
+  - id: stretch-hopper-light
+    hold_type: box
+    what: "Open hopper, 200 x 35 x 12 ft, 12 sisters — light draught only"
+    loa_m: 60.96
+    beam_m: 10.67
+    depth_m: 3.66
+    draught_m: null
+    observed: {light_draught_m: 0.79}
+    source: "oceanmarine.com listing 16478 (PDF read)"
+    confidence: high
+    note: "Light draught alone needs a light-condition Cb; used as a cross-check only, not in the fit."
+  - id: us-hopper-195x35-generic
+    hold_type: box
+    what: "Typical US river hopper, 195 x 35 x 12-13 ft — trade rule of thumb"
+    loa_m: 59.44
+    beam_m: 10.67
+    depth_m: 3.81          # 12.5 ft, middle of the 12-13 ft range
+    draught_m: null
+    observed: {lightship_t: 267}   # 280-310 short tons = 254-281 t; midpoint
+    source: "Practitioner statements (eng-tips / proz.com answers via search summary): lightship 280-310 st; light draft 1 ft 6 in - 1 ft 10 in. Not a primary source."
+    confidence: low
+
+motor_point:
+  # GB 38030.1 draft explanatory note (2018), Tables 3-3/3-4: design-study points.
+  # Columns: loa, boa, T, displacement t, cargo t, main power kW. Speed per table.
+  source: "calibration/cn_yangtze_gb38030_draft_2018.yaml"

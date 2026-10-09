@@ -1,0 +1,23 @@
+# Calibration data read from the GB 38030.1 consultation-draft explanatory note
+# (长江水系过闸运输船舶标准船型主尺度系列（征求意见稿）编制说明), WUT + 交通运输部水运科学研究院, May 2018.
+# Source: http://hzldzy.com/upload/file/20180902110812128.pdf  (53 pp, sha256 fe81ec32516e33a9223e5465e5f0daf176503997341488e745eb372f29ba768d)
+# A DRAFT note, not the issued standard. Facts transcribed; no text reproduced. Read 2026-10-06.
+source_id: GB38030.1-draft-2018-note
+method:  # §2.2 技术模型, pp. 11-12
+  lightship:
+    formula: "LW = C * Lpp^1.4 * B^0.75 * D^0.4"     # t; Lpp, B, D in m
+    C: {bulk: 0.128, liquid: 0.130, container: 0.129}
+    ro_ro: {formula: "LW = 0.13 * Lpp^1.85 * B^0.9 * D^0.7"}
+    open_issue: "Heading says 空船重量 (lightship), body says 钢料重量 (steel weight). Resolve before use."
+  deadweight: "DW = displacement - LW"
+  consumables_t: "YW = P_main_kW * n_engines * 0.25 * endurance / speed / 1000 + crew * 1.5"
+  cargo: "cargo = DW - YW"
+  cost_wan_cny: "P = C1 * LW  (+ length term L when LOA > 120 m: if L/B > 7.3 then (L/B - 7.3)*30 + 100)"
+  C1: {bulk: 1.0, liquid: 1.8, container: 1.2}
+  note: "The cost-formula layout across the page break is ambiguous; the length term's units are not stated."
+design_points:   # Tables 3-3 to 3-5, p. 18. Loa/Boa/T in m, displacement and cargo in t, power in kW.
+  bulk:      {speed_kmh: 18, rows: [[88,16.3,4.3,5151,4051,1258],[130,16.3,4.3,7610,5862,1480],[130,17.2,4.3,8030,6210,1546],[130,19.2,4.3,8964,6987,1698],[130,22.0,4.3,10271,8082,1908],[130,24.0,4.3,11205,8868,2070],[130,26.0,4.3,12139,9657,2234]]}
+  liquid:    {speed_kmh: 20, rows: [[88,16.3,4.2,5032,3956,1656],[130,16.3,4.2,7433,5575,1922],[130,17.2,4.2,7844,5909,2043],[130,19.2,4.2,8756,6655,2251],[130,22.0,4.2,10032,7706,2491],[130,24.0,4.2,10944,8461,2692],[130,26.0,4.2,11856,9220,2856]]}
+  container: {speed_kmh: 20, columns_note: "5th value is TEU, not t", rows: [[88,16.3,4.1,4912,225,1662],[110,17.2,4.1,6479,324,1854],[110,19.2,4.3,7585,403,2098],[130,19.2,4.3,8964,450,2284],[130,22.0,4.3,10365,530,2584],[130,25.5,4.3,11905,619,2968]]}
+  columns: [loa_m, boa_m, design_draught_m, displacement_t, cargo_t_or_teu, main_power_kw]
+  caveat: "These are design-study points (论证船型), not built vessels. Depth D not given in these tables."

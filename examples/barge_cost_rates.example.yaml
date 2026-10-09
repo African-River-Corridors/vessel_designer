@@ -1,0 +1,35 @@
+# Illustrative rates for the example only — not market quotes; supply your own.
+#
+# Fabrication and supply rates for vessel_designer.core.barge_cost. Every number here is a
+# round placeholder chosen to make the example run. Do not use it for a budget or a bid.
+# Copy this file, put in rates from your own yard quotes, and pass it in:
+#
+#     from vessel_designer.core.barge_cost import BargeCostInputs, compute
+#     result = compute(BargeCostInputs(), rates="my_rates.yaml")
+#
+# Units: "_rate" is currency per tonne of the matching mass unless stated; "_lump" is per
+# ATB unit (barge + tug); "yard_margin_fraction" is a fraction of the barge + tug subtotal.
+
+currency: USD
+
+# --- barge fabrication / supply (per tonne) ---
+hull_steel_rate: 2500.0          # fabricated hull structure; also used for the tug hull
+tank_shell_rate: 10000.0         # Type-C pressure-vessel shell and heads
+tank_supports_rate: 2000.0       # saddles, anti-flotation, internals
+insulation_rate: 4000.0          # installed insulation system, per tonne equivalent
+piping_rate: 4500.0              # piping and machinery
+outfitting_rate: 4000.0
+
+# --- cargo system (lump sums per unit) ---
+cargo_system_lump: 500000.0      # pumps, manifold, ESD, relief, gauging
+paint_anodes_misc: 100000.0
+
+# --- electric pusher tug ---
+battery_rate_per_kwh: 250.0      # per kWh installed
+propulsion_rate_per_kw: 1000.0   # per kW installed: thrusters, drives, switchboard
+wheelhouse_accom_lump: 450000.0  # wheelhouse, crew spaces, navigation and controls
+tug_outfitting_lump: 200000.0
+
+# --- yard and delivery ---
+yard_margin_fraction: 0.10       # engineering, class, trials, margin
+delivery_lump: 200000.0          # delivery voyage or heavy-lift, per unit

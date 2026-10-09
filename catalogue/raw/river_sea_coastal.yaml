@@ -1,0 +1,849 @@
+# River-sea, coastal/short-sea cargo, ATBs and tugs — calibration catalogue
+# Compiled 2026-10-06. Units SI. Imperial source figures converted (1 ft = 0.3048 m;
+# 1 hp = 0.7457 kW; 1 bbl = 0.158987 m3) — original value kept in notes.
+# null = not found. Lightship/steel weight was not published for any reference found.
+
+notation_reference:
+  - scheme: "BV NR217 inland range of navigation IN(x)"
+    meaning: "x = admissible significant wave height Hs (m). IN(0.6) sheltered; dry-dock survey required when range > IN(1.2) or brackish/salt water; annual survey may be required when wave height > 1.20 m."
+    estuary_plus: "Optional notation 'Estuary Plus' for inland vessels in restricted maritime areas with Hs 0.6 < x <= 2 m. Example: '5 Z IN(1,7) / Estuary Plus / Belgian coast ... within 5NM from shore / Beaufort 7'."
+    source: "J.M. Chatelier (BV), CCNR workshop 2019-09-11, https://ccr-zkr.org/files/documents/workshops/wrshp110919/03_JMChatelier_en.pdf slides 4,5,14; ISSW2017 Chatelier et al. (IN(0.6<=Hs<=2 m))"
+    confidence: high
+  - scheme: "RS (Russian Maritime Register) restricted area R2-RSN / R2-RSN(4,5) / R3-RSN"
+    meaning: "R3-RSN: sea and river navigation at 3% wave height 3.5 m, max 50 miles from place of refuge. R2-RSN(4,5): intermediate class, same areas as R2-RSN but stricter sea state (4.5 m). R2-RSN limits not confirmed from a primary source in this pass."
+    source: "rs-class.org NTS issue 36 (2013) abstract via search; full text behind login"
+    confidence: medium
+  - scheme: "Russian River Register (RRR) classes M-SP, M-PR, O-PR"
+    meaning: "Mixed river-sea classes. 'Sibirsky', 'Volgo-Balt', 'Amur', 'STK', 'Omsky', 'Volgoneft', 'Lenaneft' types belong to M-SP and M-PR. Numeric suffix (e.g. 'O-PR 2,0', 'M-SP 3.5') is the permitted wave height (m). Exact wave thresholds per class not confirmed from primary source."
+    source: "search summary of PCA exhibit UA-92 / RS papers; RSD30 notation 'O-PR 2,0 (ice 20) A' at https://mebspb.com/drye/RSD30e.html"
+    confidence: low
+
+classes:
+  # ---------------- RIVER-SEA (Russia) ----------------
+  - id: RS-VOLGODON-MAX
+    family: river-sea-RU
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [dry_bulk, general, timber, project_cargo]
+    loa_m: [138.7, 141.0]
+    beam_m: [16.5, 16.9]
+    draught_m: [3.6, 4.71]      # 3.6 river (canal-limited), up to 4.706 sea
+    air_draft_m: null
+    dwt_t: [5290, 8144]
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "RS KM Ice1/Ice2 R2-RSN or R2 (see refs); RRR M-SP"
+    source: "nssz.ru RSD49 page; mebspb.com 507B page; bairdmaritime RSD59; RST27 tanker 140.85 x 16.6 m via portnews"
+    confidence: high
+    notes: "Volga-Don canal lock-limited class. River draught 3.60 m is the canal governing draught. RST27 tanker variant (140.85 x 16.6 m; 7,030/5,428 t sea/river at 4.20/3.60 m) belongs to the tanker slice."
+    reference_vessels:
+      - name: "Neva-Leader series (Project RSD49, 10 ships)"
+        imo_or_eni: null
+        built: [2011, 2013]
+        yard: "Nevsky Shipyard (Shlisselburg)"
+        loa_m: 139.95
+        beam_m: 16.7
+        draught_m: {river: 3.6, sea: 4.7}
+        depth_m: 6.0
+        dwt_t: {river: 4520, sea: 7150}
+        teu: null
+        cargo_capacity_m3: 10920
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 2400   # 2 x 1,200 kW Wartsila
+        propulsion: diesel
+        service_speed_kn: 11.5
+        crew: 10
+        source: "https://www.nssz.ru/en/portfolio/sudostroenie/mnogocelevoy-suhogruznyiy-teplohod-dedveytom-7150-tonn-proekt-rsd49.html"
+      - name: "Pola-series (Project RSD59)"
+        imo_or_eni: null
+        built: null
+        yard: "Krasnoye Sormovo / Nevsky Shipyard; design Marine Engineering Bureau"
+        loa_m: 141.0
+        beam_m: null
+        draught_m: {river: 3.60, sea: 4.706}
+        depth_m: null
+        dwt_t: {river: 5320, sea: 8144}
+        teu: null
+        cargo_capacity_m3: 11400
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 2400   # 2 x 1,200 kW
+        propulsion: diesel
+        service_speed_kn: 10.5
+        crew: null
+        source: "https://www.bairdmaritime.com/shipping/dry-cargo/russian-shipyard-lays-keel-for-project-rsd59-dry-cargo-ship ; dwt/draught via search summary of worldports/nssz RSD59 items. Class 'KM Ice2 R2 AUT1-ICS BWM(T) CONT DG'. Baird gives 7,500 dwt (conflict with 8,144 t sea dwt)."
+      - name: "Ahmat Kadyrov (Project 507B modernisation)"
+        imo_or_eni: null
+        built: 2008
+        yard: "Priboy shipyard, Rostov-on-Don (keel 2007-08-29)"
+        loa_m: 138.74
+        beam_m: 16.70
+        draught_m: {river: 3.60, sea: 3.771}
+        depth_m: 5.50
+        dwt_t: {river: 5290, sea: 5650}
+        teu: null
+        cargo_capacity_m3: 9360
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 1324   # 2 x 662 kW
+        propulsion: diesel
+        service_speed_kn: 10.0
+        crew: 14
+        source: "https://mebspb.com/drye/507Be.html (class 'KM L4 II SP'; built year inferred from keel date — treat as approx.)"
+
+  - id: RS-VOLGO-BALT-2-95
+    family: river-sea-RU
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [dry_bulk, general, timber]
+    loa_m: 114
+    beam_m: 13.0
+    draught_m: 3.70
+    air_draft_m: null
+    dwt_t: [3187, 3581]
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "RRR M-SP / M-PR (type list)"
+    source: "https://ocean-shipyard.com/?p=1398 ; class family per search summary"
+    confidence: medium
+    notes: "Volga-Baltic waterway size. Built ZTS Komarno (Slovakia) 1960s-80s. Engine kW from a single hull."
+    reference_vessels:
+      - name: "Volgo-Balt 235 (project 2-95A/R)"
+        imo_or_eni: null
+        built: 1981
+        yard: "Zavody tazkeho strojarstva (Komarno, Slovakia)"
+        loa_m: 113.92
+        beam_m: 13.00
+        draught_m: 3.70
+        depth_m: 5.50
+        dwt_t: 3581
+        teu: null
+        cargo_capacity_m3: null
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel
+        service_speed_kn: 8
+        crew: null
+        source: "https://ocean-shipyard.com/?p=1398"
+      - name: "Volgo-Balt 229"
+        imo_or_eni: null
+        built: 1989
+        yard: null
+        loa_m: null
+        beam_m: null
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        teu: null
+        cargo_capacity_m3: null
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 1030
+        propulsion: diesel
+        service_speed_kn: null
+        crew: null
+        source: "https://www.hafen-hamburg.de/en/vessels/volgo-balt-229-27606/ (via search summary)"
+
+  - id: RS-OMSKIY-1743
+    family: river-sea-RU
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [dry_bulk, general]
+    loa_m: 108
+    beam_m: 15
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "RRR M-SP / M-PR (type list)"
+    source: "https://en.wikipedia.org/wiki/Omskiy_type_ship"
+    confidence: low
+    notes: "Built 1972-1995 (USSR/Russia/Romania); variants 1743, 1743.1, 1743.7. 2 x 515 kW, 9 kn, crew 11, ~2,500 GRT (Wikipedia). Wikipedia's draft '1.0 m' is implausible — discarded. dwt not found."
+    reference_vessels: []
+
+  - id: RS-RSD30-117x13.5
+    family: river-sea-RU
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [dry_bulk, general, container]
+    loa_m: 117.25
+    beam_m: 13.50
+    draught_m: [3.60, 4.40]
+    air_draft_m: null
+    dwt_t: [3100, 4400]
+    teu: 144
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "RRR 'O-PR 2,0 (ice 20) A'; RS 'KM Ice1 R2-RSN A3'"
+    source: "https://mebspb.com/drye/RSD30e.html"
+    confidence: high
+    notes: "Marine Engineering Bureau design; Volgo-Balt-size modern replacement. 3 holds; 144 TEU (96 hold/48 deck). 2 x 515 kW; 10.0 kn at 3.60 m; crew 9. Built hulls not named on page."
+    reference_vessels: []
+
+  - id: RS-SORMOVSKY
+    family: river-sea-RU
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [dry_bulk, general]
+    loa_m: null
+    beam_m: null
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "not found in this pass"
+    confidence: low
+    notes: "Placeholder: Sormovsky (projects 488A/1557) particulars not found from a citable source. Fill later."
+    reference_vessels: []
+
+  # ---------------- RIVER-SEA (Europe) ----------------
+  - id: EU-RHINE-SEA-COASTER
+    family: euro-sea-river-coaster
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [dry_bulk, general, steel]
+    loa_m: [87.95, 88]
+    beam_m: 11.40
+    draught_m: null
+    air_draft_m: 6.5
+    dwt_t: [2300, 2574]
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "Motorship 'New sea-river coaster class for UK operator' https://www.motorship.com/news101/ships-and-shipyards/406489.article ; Kaapcoaster 2300 'Tharsis' (SWZ Maritime PDF, via search snippet)"
+    confidence: medium
+    notes: "Low-air-draught sea-river coaster (Duisburg–UK trades). Air draught 6.5 m is ballast, wheelhouse/masts lowered."
+    reference_vessels:
+      - name: "Union Gold (sisters Union Silver, Union Bronze) — Damen Combi Coaster 2500"
+        imo_or_eni: null
+        built: 2010
+        yard: "Damen (hull Ceske Lodenice, Decin; outfit Damen Bergum)"
+        loa_m: null     # "less than 88 m"
+        beam_m: null
+        draught_m: null
+        depth_m: null
+        dwt_t: 2574
+        teu: null
+        cargo_capacity_m3: 3425   # 121,000 ft3
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 1104
+        propulsion: diesel
+        service_speed_kn: 11.2   # trial, light
+        crew: null
+        source: "https://www.motorship.com/news101/ships-and-shipyards/406489.article"
+      - name: "Tharsis (Kaapcoaster 2300)"
+        imo_or_eni: null
+        built: null
+        yard: null
+        loa_m: 87.95
+        beam_m: 11.40
+        draught_m: null
+        depth_m: null
+        dwt_t: 2300
+        teu: null
+        cargo_capacity_m3: null
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel
+        service_speed_kn: null
+        crew: null
+        source: "https://swzmaritime.nl/wp-content/uploads/2012/09/253-Kaapcoaster-2300-Tharsis.pdf (404 on fetch; figures from search snippet)"
+
+  - id: FR-SEINE-FLUVIOMARITIME-CONTAINER
+    family: seine-sea-river
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [container]
+    loa_m: 100
+    beam_m: null
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    teu: [200, 344]
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "actunautique.com / tendanceouest.com (Serenada, Marfret Fluvio-Feeder) via search"
+    confidence: low
+    notes: "Rouen (Grand-Couronne) – Le Havre Port 2000 shuttle, 6 h, 2 round trips/week. TEU conflict: 200 vs 344 between sources."
+    reference_vessels:
+      - name: "Serenada (Marfret / Fluvio-Feeder)"
+        imo_or_eni: null
+        built: null
+        yard: null
+        loa_m: 100
+        beam_m: null
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        teu: 200
+        cargo_capacity_m3: null
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel
+        service_speed_kn: null
+        crew: null
+        source: "https://www.actunautique.com/article-nouveau-une-navette-fluvio-maritime-entre-le-havre-et-rouen-97597902.html"
+
+  # ---------------- COASTAL / SHORT-SEA DRY CARGO ----------------
+  - id: DAMEN-CF-3850
+    family: damen-combi-freighter
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [general, dry_bulk, project_cargo]
+    loa_m: 89.75
+    beam_m: 12.50
+    draught_m: 5.48
+    air_draft_m: null
+    dwt_t: 3800
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "incl. Class 1 DG (explosives)"
+    source: "https://damen.com/vessels/cargo/multi-purpose-cargo-vessels/combi-freighter-3850"
+    confidence: high
+    notes: "GT 2,518 (Damen page) vs 2,570 (search snippet). Hold 62.5 x 10.1 x 8.4 m, 5,250 m3. ME 1,104 kW; 11.8 kn at 3.0 m draught. Built for Feyz Group, Reederei Gerdes, Blue Fin (2023-)."
+    reference_vessels: []
+
+  - id: DAMEN-CF-5000
+    family: damen-combi-freighter
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [general, dry_bulk]
+    loa_m: 86.60
+    beam_m: 15.20
+    draught_m: 6.55
+    air_draft_m: null
+    dwt_t: 5130
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "incl. Class 1 DG (explosives)"
+    source: "https://damen.com/vessels/cargo/multi-purpose-cargo-vessels/combi-freighter-5000"
+    confidence: high
+    notes: "GT 3,339; hold 7,001 m3; ME 1,326 kW; 12 kn. Search snippet gives 5,080 t dwt (conflict). Series spans 2,750–12,000 dwt; no 'CF 11000' exists — nearest is CF 12000 (ICE)."
+    reference_vessels: []
+
+  - id: DAMEN-CF-12000-ICE
+    family: damen-combi-freighter
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [general, dry_bulk]
+    loa_m: 144.95
+    beam_m: 19.3
+    draught_m: 7.9
+    air_draft_m: null
+    dwt_t: 12000
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "ice class (unspecified)"
+    source: "https://www.damen.com/vessels/cargo/multi-purpose-cargo-vessels/combi-freighter-12000-ice"
+    confidence: high
+    notes: "GT 9,300; hold 17,250 m3; 4,000 kW; 14 kn. Design only (2026 launch of series expansion)."
+    reference_vessels: []
+
+  - id: CONOSHIP-EUROTRADER-5000
+    family: conoship-trader
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [general, dry_bulk]
+    loa_m: 89.52
+    beam_m: 14.72
+    draught_m: [5.00, 5.75]
+    air_draft_m: null
+    dwt_t: [4000, 4980]
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "https://www.conoship.com/portfolio-item/euro-trader-40005000/"
+    confidence: high
+    notes: "Depth 6.60 m; GT 2,999; hold 224,000 ft3 (~6,343 m3); 11.0 kn; 4,000 t cargo at 5.00 m. Power not stated. Delivered 2022 (Neptune Marine, Hardinxveld). Conoship eConology Trader 3000 page 404."
+    reference_vessels: []
+
+  - id: JP-499GT-COASTER
+    family: japan-domestic-coaster
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [general, steel, dry_bulk]
+    loa_m: [74.9, 74.97]
+    beam_m: null
+    draught_m: null
+    air_draft_m: null
+    dwt_t: 1600
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "ports.marinelink.com vessel pages (Shozui Maru, Kokusei Maru, Sankou Maru) via search"
+    confidence: medium
+    notes: "Tonnage-threshold class (499 GT) under Japanese domestic manning rules. ~11 kn. Power not found."
+    reference_vessels:
+      - name: "Shozui Maru"
+        imo_or_eni: "IMO 9805075"
+        built: 2016
+        yard: null
+        loa_m: 74.9
+        beam_m: null
+        draught_m: null
+        depth_m: null
+        dwt_t: 1600
+        teu: null
+        cargo_capacity_m3: null
+        gt: 499
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel
+        service_speed_kn: 11
+        crew: null
+        source: "https://ports.marinelink.com/vessels/vessel/431009498"
+      - name: "Kokusei Maru"
+        imo_or_eni: "IMO 9365051"
+        built: 2006
+        yard: null
+        loa_m: 74.90
+        beam_m: null
+        draught_m: null
+        depth_m: null
+        dwt_t: 1600
+        teu: null
+        cargo_capacity_m3: null
+        gt: 499
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel
+        service_speed_kn: 11.0
+        crew: null
+        source: "https://ports.marinelink.com/vessels/vessel/431402028"
+
+  - id: JP-749GT-COASTER
+    family: japan-domestic-coaster
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [general, steel, dry_bulk]
+    loa_m: 74.87
+    beam_m: 12.0
+    draught_m: 4.5
+    air_draft_m: null
+    dwt_t: 1900
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "ports.marinelink.com vessel 431002191 (Chokai Maru) via search"
+    confidence: medium
+    notes: "Single reference; band likely wider."
+    reference_vessels:
+      - name: "Chokai Maru"
+        imo_or_eni: null
+        built: 2010
+        yard: null
+        loa_m: 74.87
+        beam_m: 12.0
+        draught_m: 4.5
+        depth_m: null
+        dwt_t: 1900
+        teu: null
+        cargo_capacity_m3: null
+        gt: 749
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel
+        service_speed_kn: 11
+        crew: null
+        source: "https://ports.marinelink.com/vessels/vessel/431002191"
+
+  - id: SEAWAYMAX
+    family: st-lawrence-seaway
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [dry_bulk, general]
+    loa_m: 225.5
+    beam_m: 23.8
+    draught_m: 8.08
+    air_draft_m: 35.5
+    dwt_t: null
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "St Lawrence Seaway limits via https://en.wikipedia.org/wiki/Seawaymax and greatlakes-seaway.com facts page (search summary). Primary Seaway Handbook not read."
+    confidence: medium
+    notes: "LOCK-LIMITED class (Seaway locks), not a class-society type. Height above waterline 35.5 m."
+    reference_vessels:
+      - name: "Algoma Mariner (Equinox class)"
+        imo_or_eni: null
+        built: 2011
+        yard: "Chengxi Shipyard, China"
+        loa_m: 225.56
+        beam_m: 23.77
+        draught_m: null
+        depth_m: null
+        dwt_t: 38000   # Equinox: 29,300 t at max Seaway draught
+        teu: null
+        cargo_capacity_m3: null
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 7159   # 9,600 hp MAN 2-stroke, 6 cyl
+        propulsion: diesel
+        service_speed_kn: null
+        crew: null
+        source: "https://en.wikipedia.org/wiki/MV_Algoma_Mariner ; Equinox 29,300 t at Seaway draught via marinelog. Built year from memory of Wikipedia page — verify."
+
+  - id: MINIBULKER-GC-10-15K
+    family: handy-small-general-cargo
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [general, dry_bulk, project_cargo]
+    loa_m: 119.93
+    beam_m: 21.20
+    draught_m: 9.00
+    air_draft_m: null
+    dwt_t: 13465
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "NK"
+    source: "JSEA 'Shipbuilding and Marine Engineering in Japan 2026' General Cargo Ships, p.88 (ARIETTA) https://www.jsea.or.jp/wp_2022/wp-content/themes/nihon_senpaku/img/publications/sameij_2026/by-ship-type/General%20Cargo%20Ships.pdf"
+    confidence: high
+    notes: "Above the 3–10k mini-bulker band requested; no primary 3–10k mini-bulker sheet found beyond Damen CF series."
+    reference_vessels:
+      - name: "ARIETTA"
+        imo_or_eni: null
+        built: 2024
+        yard: "Shin Kurushima Hiroshima Dockyard"
+        loa_m: 119.93
+        beam_m: 21.20
+        draught_m: 9.00
+        depth_m: 14.05
+        dwt_t: 13465
+        teu: null
+        cargo_capacity_m3: 18848   # bale
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 3030   # MCR, MAN B&W 6S35MC7.1
+        propulsion: diesel
+        service_speed_kn: 12.0
+        crew: null
+        source: "JSEA SAMEIJ 2026 p.88 (as above)"
+
+  # ---------------- SHORT-SEA CONTAINER FEEDERS ----------------
+  - id: FEEDER-200-350TEU
+    family: short-sea-feeder
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [container]
+    loa_m: 99.93
+    beam_m: null
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    teu: 230
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "Baird Maritime 'Dutch firm unveils new shortsea feeder ship design' (Conoship 230 TEU) via search"
+    confidence: medium
+    notes: "Design only. Diesel-electric: 4 x 350 kW gensets, 2 x 600 kW motors."
+    reference_vessels: []
+
+  - id: FEEDER-800TEU
+    family: short-sea-feeder
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [container]
+    loa_m: 140.64
+    beam_m: 21.80
+    draught_m: 7.33
+    air_draft_m: null
+    dwt_t: 9300
+    teu: 788
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "DNV 1A Container Ship E0 NAUT(NAV) DG(P) LCS SAFELASH BWM(T) BIS TMON"
+    source: "Damen Container Feeder 800 standard spec sheet https://www.marine-marchande.net/Voyage/Bruno/Henrike-Schepers/specification-container-feeders-800.pdf"
+    confidence: high
+    notes: "Lpp 130.00 m; depth 9.50 m; GT 7,950; 206 TEU hold / 582 deck; 90 reefer plugs; ME 6,000 kW @750 rpm MGO, CPP 4.9 m; shaft gen 1,600 kW; 17.0 kn at 7.33 m 100% MCR; crew 15; MGO 974 m3; ballast 4,598 m3. Sheet hosted on a page for 'Henrike Schepers' (likely a built CF800) — particulars of that hull not verified."
+    reference_vessels: []
+
+  # ---------------- ATBs (US Jones Act) ----------------
+  - id: ATB-80K-BBL
+    family: us-jones-act-atb
+    region: coastal
+    waters: coastal
+    formation: atb
+    cargo_modes: [liquid_bulk_petroleum]
+    loa_m: 122.8     # barge 403 ft
+    beam_m: 22.6     # 74 ft
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "marinelog Vane Brothers / Conrad BHGI-designed ATB items via search"
+    confidence: medium
+    notes: "Barge 403 x 74 x 32 ft (122.8 x 22.6 x 9.75 m), ~12,700 m3 (80,000 bbl). Another 80k unit: barge 405 x 74 ft, tug 110 x 38 ft (33.5 x 11.6 m). Tug hp not captured."
+    reference_vessels: []
+
+  - id: ATB-155K-BBL
+    family: us-jones-act-atb
+    region: coastal
+    waters: coastal
+    formation: atb
+    cargo_modes: [liquid_bulk_petroleum]
+    loa_m: 158.8     # barge 521 ft
+    beam_m: 21.95    # 72 ft
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "Fincantieri Bay Shipbuilding / Kirby delivery Dec 2018 (marinelog ?p=26410; workboat) via search"
+    confidence: medium
+    notes: "~24,640 m3. Intercon coupler. Alternative Kirby 155k tug (Paul McLernan): 123 x 38 x 22 ft, 6,000 hp."
+    reference_vessels:
+      - name: "Ronnie Murph (tug) + Kirby 155-03 (barge)"
+        imo_or_eni: null
+        built: 2018
+        yard: "Fincantieri Bay Shipbuilding, Sturgeon Bay"
+        loa_m: {tug: 39.6, barge: 158.8}       # 130 ft / 521 ft
+        beam_m: {tug: 12.8, barge: 21.95}      # 42 ft / 72 ft
+        draught_m: {tug: 5.79}                 # 19 ft
+        depth_m: {tug: 7.0, barge: 12.5}       # 23 ft / 41 ft
+        dwt_t: null
+        teu: null
+        cargo_capacity_m3: 24643               # 155,000 bbl
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 5966               # 8,000 hp
+        propulsion: diesel
+        service_speed_kn: 12
+        crew: null
+        source: "https://www.marinelog.com/?p=26410 (403 on fetch; figures via search summary)"
+
+  - id: ATB-185K-BBL
+    family: us-jones-act-atb
+    region: coastal
+    waters: coastal
+    formation: atb
+    cargo_modes: [liquid_bulk_petroleum]
+    loa_m: 178.9     # barge 587 ft; coupled 210 m (689 ft)
+    beam_m: 22.6     # 74 ft
+    draught_m: 9.14  # 30 ft loaded
+    air_draft_m: null
+    dwt_t: 27000
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "Crowley 650-series (VT Halter Marine, 10 units 2006-2009) via marinelog/maritime-executive search"
+    confidence: medium
+    notes: "Barge 587 x 74 x 40 ft; ~29,400 m3."
+    reference_vessels:
+      - name: "Pacific Reliance (tug) + 650-1 (barge)"
+        imo_or_eni: null
+        built: 2006
+        yard: "VT Halter Marine, Pascagoula"
+        loa_m: {barge: 178.9, coupled: 210.0}
+        beam_m: {barge: 22.6}
+        draught_m: 9.14
+        depth_m: {barge: 12.2}
+        dwt_t: 27000
+        teu: null
+        cargo_capacity_m3: 29413
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 6920   # 9,280 hp
+        propulsion: diesel
+        service_speed_kn: null
+        crew: null
+        source: "https://www.marinelink.com/news/maritime/karsten-djuve ; https://maritime-executive.com/article/vt-halter-marine-delivers-the-final-of-ten-articulated-tug-barge-units-for-crowley-maritime"
+
+  - id: ATB-250K-BBL
+    family: us-jones-act-atb
+    region: coastal
+    waters: coastal
+    formation: atb
+    cargo_modes: [liquid_bulk_petroleum]
+    loa_m: 190.5     # barge 625 ft
+    beam_m: 27.7     # 91 ft
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "marinelog 'Bouchard christens new 250,000 bbl ATB in New Orleans' / professionalmariner via search"
+    confidence: medium
+    notes: "Barge 625 x 91 x 47 ft (14.3 m depth); tug 150 x 50 x 29 ft (45.7 x 15.2 x 8.8 m). Intercon coupler, 64-inch rams. 10,000 hp cited for Danielle M. Bouchard (1997) — tug/barge pairing of dims vs hp not confirmed."
+    reference_vessels:
+      - name: "Danielle M. Bouchard (tug) — 250k bbl unit"
+        imo_or_eni: null
+        built: 1997
+        yard: null
+        loa_m: null
+        beam_m: null
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        teu: null
+        cargo_capacity_m3: 39747
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 7457   # 10,000 hp
+        propulsion: diesel
+        service_speed_kn: null
+        crew: null
+        source: "https://www.marinelog.com/inland-coastal/coastal/bouchard-christens-new-250000-bbl-atb-unit-in-new-orleans/ (403; via search)"
+
+  - id: ATB-330K-BBL
+    family: us-jones-act-atb
+    region: coastal
+    waters: coastal
+    formation: atb
+    cargo_modes: [liquid_bulk_petroleum]
+    loa_m: 182.9    # 600 ft
+    beam_m: 32.2    # 105 ft 6 in
+    draught_m: 10.67  # 35 ft
+    air_draft_m: null
+    dwt_t: 45000
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "https://www.bairdmaritime.com/offshore/crowley-launches-atb-legacy750-1"
+    confidence: high
+    notes: "Crowley 750 series. Barge depth 54 ft 3 in (16.5 m); ~52,470 m3. Tug >=15 kn; hp not stated."
+    reference_vessels:
+      - name: "Legacy (tug) + 750-1 (barge)"
+        imo_or_eni: null
+        built: 2011
+        yard: "Barge: Halter Marine, Pascagoula; Tug: Dakota Creek Industries, Anacortes"
+        loa_m: {barge: 182.9}
+        beam_m: {barge: 32.2}
+        draught_m: 10.67
+        depth_m: {barge: 16.5}
+        dwt_t: 45000
+        teu: null
+        cargo_capacity_m3: 52466
+        gt: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel
+        service_speed_kn: 15
+        crew: null
+        source: "https://www.bairdmaritime.com/offshore/crowley-launches-atb-legacy750-1"
+
+  # ---------------- TUGS ----------------
+  - id: TUG-ASD-60T-BP
+    family: damen-asd-tug
+    region: coastal
+    waters: coastal
+    formation: tug
+    cargo_modes: []
+    loa_m: 28.67
+    beam_m: 10.43
+    draught_m: 4.94
+    air_draft_m: null
+    dwt_t: null
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: "LR 100 A1 Escort Tug LMC UMS IWS (ref hull)"
+    source: "Damen Trading folio 07413 https://medialibrary.damen.com/m/4a280eda4f9624d1/original/asd-tug-2810-damen-trading-07413-1.pdf"
+    confidence: high
+    notes: "Harbour/escort ASD band ~60 t BP. Other ASD 2810 hulls quote 60–62.7 t BP (Cherbourg 1: 60 t, ~13 kn)."
+    reference_vessels:
+      - name: "Damen ASD Tug 2810 (folio 07413)"
+        imo_or_eni: null
+        built: 2015
+        yard: "Damen, Netherlands"
+        loa_m: 28.67
+        beam_m: 10.43
+        draught_m: 4.94
+        depth_m: 4.60
+        dwt_t: null
+        teu: null
+        cargo_capacity_m3: null
+        gt: 294
+        lightship_t: null       # displacement 574 t given, not lightship
+        steel_weight_t: null
+        installed_power_kw: 3680   # 4,935 bhp total, 2 x MTU 16V4000M63R
+        propulsion: diesel
+        service_speed_kn: 13.4
+        crew: 8
+        source: "https://medialibrary.damen.com/m/4a280eda4f9624d1/original/asd-tug-2810-damen-trading-07413-1.pdf (BP 60.7 t ahead / 56.8 t astern; displacement 574 t; fuel 74.5 m3)"
+
+  # ---------------- COASTAL BULK TRANSHIPMENT ----------------
+  - id: AFR-BAUXITE-SP-TRANSHIP-BARGE
+    family: west-africa-bauxite-transhipment
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [dry_bulk]
+    loa_m: null
+    beam_m: null
+    draught_m: null
+    air_draft_m: null
+    dwt_t: 13000
+    teu: null
+    n_abreast: 1
+    n_in_line: 1
+    class_notation: null
+    source: "splash247 (?p=92442) LDA order at Wuchang; financialafrik/alcircle EGA–LD Ports & Logistics (2018) via search"
+    confidence: medium
+    notes: "Self-propelled barges shuttle from GAC berth Kamsar (Rio Nunez) to two floating transfer stations ~37 km offshore; floating cranes with grabs either side of Capesize. 4 x 13,000 dwt ordered by Louis Dreyfus Armateurs at Wuchang, delivery late 2019. Dimensions, power not found. The 8,000–12,000 t CBG/Boké barge band requested was not confirmed."
+    reference_vessels: []

@@ -1,0 +1,71 @@
+{
+ "box_k": {
+  "value": 0.1093,
+  "min": 0.095,
+  "max": 0.1223,
+  "n": 3,
+  "evidence": [
+   {
+    "case": "para-mississippi-2200",
+    "k": 0.095,
+    "confidence": "medium"
+   },
+   {
+    "case": "danube-barge-77",
+    "k": 0.1223,
+    "confidence": "medium"
+   },
+   {
+    "case": "us-hopper-195x35-generic",
+    "k": 0.1105,
+    "confidence": "low"
+   }
+  ]
+ },
+ "box_cb": {
+  "value": 0.928,
+  "min": 0.883,
+  "max": 0.995,
+  "n": 7,
+  "evidence": [
+   {
+    "case": "amaggi-box-2000",
+    "cb": 0.995
+   },
+   {
+    "case": "mcdonough-195x35x12",
+    "cb": 0.896
+   },
+   {
+    "case": "jeffboat-am2100",
+    "cb": 0.893
+   },
+   {
+    "case": "cargill-amazon-jumbo",
+    "cb": 0.971
+   },
+   {
+    "case": "europa-iib-rdb06",
+    "cb": 0.883
+   },
+   {
+    "case": "europa-iib-1635ou",
+    "cb": 0.917
+   },
+   {
+    "case": "danube-barge-77",
+    "cb": 0.94
+   }
+  ],
+  "excluded": [
+   {
+    "case": "para-mississippi-2200",
+    "why": "implied Cb > 1 on LOA: DWT and lightship cannot both be at T = 3.66 m"
+   },
+   {
+    "case": "hidrovia-lhg-3200",
+    "why": "implied Cb > 1 on LOA with any plausible lightship; 3,200 is a nominal rating"
+   }
+  ]
+ }
+}

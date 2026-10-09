@@ -1,0 +1,81 @@
+# Calibration source documents (files live in S3, ADR 0001).
+sources:
+- sha256: 06786180642083639f6ec5fdcc654cd0379346c69a7e9026a75aff5afd15cf79
+  key: sources/standards/GB38030/06786180642083639f6ec5fdcc654cd0379346c69a7e9026a75aff5afd15cf79.pdf
+  title: 'GB 38030.1-2026 Dimensions series of standard transport ship types passing the locks of inland rivers
+    — Part 1: Changjiang River system'
+  url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=EE5E5D400956C3F10DCC6276F6C9DA91
+  original_name: GB+38030.1-2026.pdf
+  bytes: 414150
+  stored: '2026-10-06'
+  licence: Chinese mandatory national standard, full text published free to read by SAMR; copyright reserved — internal
+    reference only, do not redistribute
+  note: In force 2026-12-01; replaces GB 38030.1-2019
+- sha256: c9cf28f4fa91acf0e84d37ccc81ae41a7dee2a5c38b52a62451f3c8625c502b4
+  key: sources/standards/GB38030/c9cf28f4fa91acf0e84d37ccc81ae41a7dee2a5c38b52a62451f3c8625c502b4.pdf
+  title: 'GB 38030.1-2019 … Part 1: Changjiang River system'
+  url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=5237C33522EE8DF362FC9975925F5430
+  original_name: GB+38030.1-2019.pdf
+  bytes: 359375
+  stored: '2026-10-06'
+  licence: Chinese mandatory national standard, full text published free to read by SAMR; copyright reserved — internal
+    reference only, do not redistribute
+  note: Superseded 2026-12-01; carries reference DWT
+- sha256: 7c8e83c88192053d25394dc507748225b4e19a5e43b1d0ab5f659d7e00f4863b
+  key: sources/standards/GB38030/7c8e83c88192053d25394dc507748225b4e19a5e43b1d0ab5f659d7e00f4863b.pdf
+  title: 'GB 38030.2-2019 … Part 2: Beijing-Hangzhou Canal and Huai River system'
+  url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=3835779137EC418F1F9657DF3950DF3E
+  original_name: GB+38030.2-2019.pdf
+  bytes: 320498
+  stored: '2026-10-06'
+  licence: Chinese mandatory national standard, full text published free to read by SAMR; copyright reserved — internal
+    reference only, do not redistribute
+  note: ''
+- sha256: 28665d48ddf06aa6b91638e70acb67e340c5008d09574f422ef2fa4d2bc6664a
+  key: sources/standards/GB38030/28665d48ddf06aa6b91638e70acb67e340c5008d09574f422ef2fa4d2bc6664a.pdf
+  title: 'GB 38030.3-2019 … Part 3: Xijiang trunk line'
+  url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=530463F88812EA54628BC05BCE0A92B0
+  original_name: GB+38030.3-2019.pdf
+  bytes: 293901
+  stored: '2026-10-06'
+  licence: Chinese mandatory national standard, full text published free to read by SAMR; copyright reserved — internal
+    reference only, do not redistribute
+  note: Text layer has broken font encoding; read from images
+- sha256: bd429ea5c5784b04dbb275e9d20c525318d05eccd759bb2200582a54581e03af
+  key: sources/standards/GB38030/bd429ea5c5784b04dbb275e9d20c525318d05eccd759bb2200582a54581e03af.pdf
+  title: 'GB 38030.4-2019 … Part 4: Pearl River ''three lines'''
+  url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=864EB34C3BD70DA839926FB47393E3FB
+  original_name: GB+38030.4-2019.pdf
+  bytes: 312825
+  stored: '2026-10-06'
+  licence: Chinese mandatory national standard, full text published free to read by SAMR; copyright reserved — internal
+    reference only, do not redistribute
+  note: Text layer has broken font encoding; read from images
+- sha256: 26195dd97f59d6882b507e063d24ba90dcead4a9697344619be7b4da4094e780
+  key: sources/standards/GB38030/26195dd97f59d6882b507e063d24ba90dcead4a9697344619be7b4da4094e780.pdf
+  title: 'GB 38030.5-2019 … Part 5: Heilongjiang-Songhua River'
+  url: https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=A1503496B8CE7B1406E47F74A4A1A50A
+  original_name: GB+38030.5-2019.pdf
+  bytes: 216670
+  stored: '2026-10-06'
+  licence: Chinese mandatory national standard, full text published free to read by SAMR; copyright reserved — internal
+    reference only, do not redistribute
+  note: ''
+- sha256: fe81ec32516e33a9223e5465e5f0daf176503997341488e745eb372f29ba768d
+  key: sources/standards/GB38030/fe81ec32516e33a9223e5465e5f0daf176503997341488e745eb372f29ba768d.pdf
+  title: GB 38030.1 consultation draft, explanatory note (Changjiang), WUT + WTI, May 2018
+  url: http://hzldzy.com/upload/file/20180902110812128.pdf
+  original_name: 20180902110812128.pdf
+  bytes: 926433
+  stored: '2026-10-06'
+  licence: Public consultation document; copyright reserved — internal reference only
+  note: Holds the LW formula and 20 design points (calibration/cn_yangtze_gb38030_draft_2018.yaml)
+- sha256: 6f3144704dce378f787b127d1c6c9f9239e38ba8ccb7c4dd8ac02036ce90d80a
+  key: sources/standards/GB38030/6f3144704dce378f787b127d1c6c9f9239e38ba8ccb7c4dd8ac02036ce90d80a.pdf
+  title: GB 38030.2 consultation draft, explanatory note (Beijing-Hangzhou Canal / Huai), May 2018
+  url: http://hzldzy.com/upload/file/20180902111144240.pdf
+  original_name: 20180902111144240.pdf
+  bytes: 931136
+  stored: '2026-10-06'
+  licence: Public consultation document; copyright reserved — internal reference only
+  note: Not yet read

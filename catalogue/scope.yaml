@@ -1,0 +1,20 @@
+# Which Vessel Classes are in the working set. Data outside it stays in the catalogue.
+# Decided 2026-10-06 (Niall): narrow to CEMT, China, US and Paraná; focus on hulls.
+families:
+  - CEMT-1992
+  - Europa-barge          # the barge hulls that make up CEMT pushed convoys
+  - CN-GB50139
+  - CN-Yangtze-standard
+  - CN-GB38030            # Chinese standard ship types (GB 38030), added 2026-10-06
+  - US-inland
+  - SA-Hidrovia           # Paraná–Paraguay
+  - SA-Tiete-Parana
+# Hulls added outside those families (Q20, 2026-10-06): the pusher that makes up CEMT convoys.
+extra_classes:
+  - PUSHER-Rhine-heavy
+# Classes with no length or beam are not prepared (Q21, 2026-10-06) — they stay in the catalogue as gaps.
+require: [loa_m, beam_m]
+# Within a family, these categories are out of scope (not our cargoes): GB 38030 ro-ro and sand carriers.
+exclude_notes_matching: ["category: ro_ro", "category: sand_self_unloader"]
+# Formations are arrangements of hulls, not hulls. Only these get a GA of their own.
+hull_formations: [motor_vessel, pushed_barge, towed_barge, pusher, towboat, tug]

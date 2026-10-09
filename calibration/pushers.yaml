@@ -1,0 +1,246 @@
+# Pusher / pushboat reference vessels — Paraná–Paraguay, Amazon, Tietê–Paraná, China.
+# Researched 2026-10-06. Only values stated by the cited source; null = not stated.
+# installed_power_kw = sum of stated per-unit ratings (unit x count) unless noted.
+# Licence: all sources are copyrighted trade press / designer press releases; facts
+# (particulars) are cited, no text reproduced. Not open-licensed.
+pushers:
+  - system: parana-hidrovia
+    name: "RApide 4500 class (8 units) - Hidrovias do Brasil / Vale Corumba ore fleet"
+    imo_or_eni: null
+    built: 2014        # first two on trials 2014; all delivered by Q3 2015
+    yard: "Uzmar, Turkey"
+    designer: "Robert Allan Ltd"
+    loa_m: 46.5
+    beam_m: 16.5
+    depth_m: 4.0
+    draught_m: 2.4     # 2.1 dry season / 2.4 wet season (ral.ca); 2.5 full load (Marine Link)
+    installed_power_kw: 5130   # 3 x 1,710 ekW Wartsila 9L20 gensets; 3 x 1,600 kW AC motors
+    propulsion: diesel-electric
+    bollard_pull_t: 69  # Marine Link only: 69 t ahead / 63 t astern; ral.ca says "exceeded contract"
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: 530        # 500 m3 HFO + 30 m3 MDO (ral.ca)
+    crew: 18
+    pushes: "16 x 61x15x4.27 m hopper barges (2,500 t dwt), 4x4, ~40,000 t (ral.ca/Baird); Marine Link: 290x60 m convoy, 45,500 t at current draft, up to 50,000 t at 3.96 m"
+    url: "https://ral.ca/?p=2513"
+    document: "press (designer)"
+    licence: "copyright Robert Allan Ltd; facts cited only"
+    confidence: high
+    notes: "Corumba to Nueva Palmira/Buenos Aires, ~2,500 km. Schottel SRP 1215 Z-drives in nozzles; 13.2 kn free running (Marine Log snippet). Second source https://www.marinelink.com/news/optimized-tugbarge395605 (2015) names the class 'RApide 4600-Z3'. Barges by ZPMC (128) + CIE Asuncion (16). A Baird search summary said ZPMC built the pushboats; the Baird page itself says Uzmar."
+  - system: parana-hidrovia
+    name: "Veronica V (Concordia Damen CDS 4115)"
+    imo_or_eni: null
+    built: 2025
+    yard: "Concordia Damen"
+    designer: "Concordia Damen"
+    loa_m: 41.0
+    beam_m: 15.5
+    depth_m: null
+    draught_m: 2.0
+    installed_power_kw: 3990   # 3 x Yanmar 6EY22AW, 1,330 kW each @ 900 rpm
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: 421
+    crew: 15
+    pushes: "12 barges, combination 281 x 48 m (barge size not stated; implies 4 abreast of ~12 m beam - inference, not stated)"
+    url: "https://www.bairdmaritime.com/tugs/inland-tug-operations/vessel-review-veronica-v-pusher-tug-to-support-cargo-transport-along-paraguay-river"
+    document: "press (vessel review)"
+    licence: "copyright Baird Maritime; facts cited only"
+    confidence: high
+    notes: "Owner Girona SA - Rio Sur Transporte y Logistica, Paraguay. Soy/bulk. 7.0 kn cruise; 380 dwt (shipsmonthly). Source states 3 engines but 2 propellers - unresolved. Contract press (2023) called it 5,400 HP; a second CDS 4115 (5,490 HP, Caterpillar) is on order for 2027 delivery."
+  - system: parana-hidrovia
+    name: "Papu Sur"
+    imo_or_eni: null
+    built: 1999
+    yard: "Sanym (with Halter group), Argentina"
+    designer: ""
+    loa_m: 34.13
+    beam_m: 9.75
+    depth_m: 3.20
+    draught_m: null
+    installed_power_kw: 2237   # converted from stated 3,000 HP
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: 13
+    pushes: ""
+    url: "https://www.lanacion.com.ar/economia/comercio-exterior/sanym-entrego-otro-remolcador-nid217002"
+    document: "press"
+    licence: "copyright La Nacion; facts cited only"
+    confidence: medium
+    notes: "Built for export, Parana/Paraguay service. Two main rudders, four flanking rudders. Owner not stated. Context (CEPAL 2022 snippet): typical hidrovia convoy 16 x 60x10 m barges 4x4, 24,000 t, pushed by ~4,000 HP; rule of thumb 0.12 HP/t."
+  - system: amazon
+    name: "HB Mapara / HB Dourada (RApide 4600-Z3)"
+    imo_or_eni: null
+    built: 2023
+    yard: "Uzmar Shipyard, Izmit, Turkey"
+    designer: "Robert Allan Ltd"
+    loa_m: 45.6
+    beam_m: 16.5
+    depth_m: 4.0
+    draught_m: 2.65    # normal operating; 2.1 min (ral.ca). Baird: 2.5 design
+    installed_power_kw: 5010   # 3 x 1,670 ekW Wartsila 8L20 gensets
+    propulsion: diesel-electric
+    bollard_pull_t: 65
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: 18
+    pushes: "mega convoys of 35 barges, each >2,000 t dwt (ral.ca); convoys ~299 m long (Baird)"
+    url: "https://ral.ca/2023/10/06/robert-allan-ltd-designs-a-new-pusher-tug-for-hidrovias-do-brasil-s-a-2/"
+    document: "press (designer)"
+    licence: "copyright Robert Allan Ltd; facts cited only"
+    confidence: high
+    notes: "Hidrovias do Brasil, Amazon system. ABS + NORMAM-02. Schottel SRP 430 FP L-drives (3). Diesel/HFO. Baird review: https://www.bairdmaritime.com/tugs/inland-tug-operations/vessel-review-hb-mapara-powerful-river-pushboats-for-brazilian-towage-company"
+  - system: amazon
+    name: "Louis Dreyfus Company RApide 4000-Z3 linehaul pusher"
+    imo_or_eni: null
+    built: 2017
+    yard: "INACE, Fortaleza, Brazil"
+    designer: "Robert Allan Ltd"
+    loa_m: 39.6
+    beam_m: 18.0
+    depth_m: 4.0
+    draught_m: 3.0     # normal; 2.5 min
+    installed_power_kw: null   # 3 x Wartsila 8L20, rating not stated
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: 18
+    pushes: "16 barges; fleet of 64 jumbo hopper barges 61.0 x 13.75 m, max draft 4.5 m (Rio Maguari)"
+    url: "https://ral.ca/2017/03/13/pusher-tugs-barges-louis-dreyfus/"
+    document: "press (designer)"
+    licence: "copyright Robert Allan Ltd; facts cited only"
+    confidence: high
+    notes: "Schottel SRP 1215 Z-drives. Same order included RApide 2600-Z3 (25.6x10.5x3.0 m, 3 x Cat C18, 12 crew) and RApide 2000-Z2 port-assist (19.5x9.0x3.2 m). Propulsion type assumed direct diesel from wording; source does not say diesel-electric."
+  - system: amazon
+    name: "Cargill Cachara / Cargill Tucunare (RApide 2800-Z2)"
+    imo_or_eni: null
+    built: 2016
+    yard: "INACE, Fortaleza, Brazil"
+    designer: "Robert Allan Ltd"
+    loa_m: 28.0
+    beam_m: 10.5
+    depth_m: 3.2
+    draught_m: 2.5     # normal; 2.2 min
+    installed_power_kw: null   # 2 x Caterpillar 3512B, rating not stated
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: 13
+    pushes: "convoy not stated; companion order of 20 hopper barges 61.0 x 15.0 m, 4.0 m max draft (Rio Maguari)"
+    url: "https://ral.ca/2016/03/16/robert-allan-ltd-designs-for-new-pushboats-and-barges-for-cargill-transportations-amazon-river-service/"
+    document: "press (designer)"
+    licence: "copyright Robert Allan Ltd; facts cited only"
+    confidence: high
+    notes: "Schottel SRP 550 Z-drives. ABS + NORMAM-02. Port-assist sister class Cargill Jau (RApide 2000-Z2, 19.5x9.0x3.1 m, 2.1 m draft, 2 x Cat C18, Rio Maguari)."
+  - system: amazon
+    name: "Hermasa Navegacao (Amaggi) RApide 3000-Z2, 2 units (on order)"
+    imo_or_eni: null
+    built: 2027        # scheduled delivery
+    yard: "Brazilian yard (not named)"
+    designer: "Robert Allan Ltd"
+    loa_m: 30.0
+    beam_m: 12.0
+    depth_m: 3.0
+    draught_m: 2.0
+    installed_power_kw: 2300   # 2 x Wartsila 6L20, 1,150 kW each
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: 10
+    pushes: "up to 20 barges, 32,000 t grain total"
+    url: "https://www.rivieramm.com/news-content-hub/amaggi-invests-in-biofueled-pusher-newbuilds-87826"
+    document: "press"
+    licence: "copyright Riviera Maritime Media; facts cited only"
+    confidence: medium
+    notes: "Madeira River. 2 x Kongsberg US155 P14 Z-drives, 1,800 mm FP props; B100 biodiesel capable; ABS inland. Not yet built."
+  - system: tiete-parana
+    name: "Typical Tiete-Parana empurrador (generic, no named vessel)"
+    imo_or_eni: null
+    built: null
+    yard: ""
+    designer: ""
+    loa_m: null
+    beam_m: null
+    depth_m: null
+    draught_m: null
+    installed_power_kw: null
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: null
+    pushes: "4 chatas (barges) + pusher, up to 9,000 t (Nova Avanhandava - Sao Simao); Tiete locks pass 2 barges at a time"
+    url: "https://semil.sp.gov.br/htp/wp-content/uploads/sites/13/2024/02/Anexo-Plano-Diretor-Hidrovia-Tiete-Comboios-jun2021.pdf"
+    document: "search snippet (government plan); PDF >10 MB, not read"
+    licence: "SP state government document; terms not checked"
+    confidence: low
+    notes: "Snippets only: pushers with 2 x 650 HP azimuth sets; current 800 HP pushers need assist boats; 54 convoys in operation. Snippet source document not confirmed. Transpetro Promef Hidrovia: 20 convoys (pusher + 4 barges, 7.2 M litres ethanol) from Estaleiro Rio Tiete - no particulars found."
+  - system: cn-yangtze
+    name: "Yigang Tug 3001"
+    imo_or_eni: null
+    built: null
+    yard: "Zhijiang Jiangrui Shipping, China"
+    designer: ""
+    loa_m: 44.85
+    beam_m: 10.5
+    depth_m: 3.8
+    draught_m: null
+    installed_power_kw: 2200   # stated 3,000 hp (2,200 kW)
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: null
+    pushes: "pushes/tows non-self-propelled barges; convoy not stated"
+    url: "https://www.bairdmaritime.com/tugs/harbour-tugs-and-operation/vessel-review-yigang-tug-3001-ship-assist-and-salvage-tug-for-chinese-inland-and-coastal-waters"
+    document: "press (vessel review)"
+    licence: "copyright Baird Maritime; facts cited only"
+    confidence: medium
+    notes: "Owner Yichang Port Group; Yangtze A/B/C zones and Three Gorges Dam. Multi-role tug-pusher (towing/pushing, berthing, salvage), not a dedicated linehaul pusher. Weak calibration point."
+  - system: cn-yangtze
+    name: "Changjiang 26004 / 'Minzu' 6,000 hp class linehaul pusher (US-imported, 1980s)"
+    imo_or_eni: null
+    built: 1981        # first convoy voyage 1981-11-02
+    yard: "imported from USA (yard not stated)"
+    designer: ""
+    loa_m: null
+    beam_m: null
+    depth_m: null
+    draught_m: null
+    installed_power_kw: null   # stated 6,000 hp class only (~4,470 kW if converted)
+    propulsion: diesel
+    bollard_pull_t: null
+    lightship_t: null
+    steel_weight_t: null
+    displacement_t: null
+    fuel_m3: null
+    crew: null
+    pushes: "20 x 2,000 t sectional barges (分节驳), ~40,000 t, convoy 291 m x 54 m"
+    url: "http://www.eworldship.com/html/2018/ship_market_observation_0406/137899.html"
+    document: "press (trade news, Chinese)"
+    licence: "copyright eworldship; facts cited only"
+    confidence: low
+    notes: "CONFLICT: search snippet says pusher 'Changjiang 26004' pushed 20 x 2,000 t barges to Shanghai; page fetch read 26004 as a barge in the 'Minzu' pusher's convoy. Treat name as unresolved. Context: lower Yangtze convoys 30-40 barges, 40-60 kt. Standard 1-push-2-barge 2x2000 t convoy 161 x 15.8 x 2.7-2.9 m with 68 x 15.8 m barges (channel design code snippet). No pusher particulars found."

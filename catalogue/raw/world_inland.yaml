@@ -1,0 +1,2009 @@
+classes:
+- id: US-STD-HOPPER-175
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 53.3
+  beam_m: 10.7
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 907
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://myshare-cms.siemens.com/size-of-barge (secondary aggregator page, read via search summary only)
+  confidence: low
+  notes: Brief names 175x26 ft (53.3x7.9 m) as the old 'standard' barge; NOT confirmed by any source read. The only
+    source found gives 175x35 ft (53.3x10.7 m) at ~1,000 tons. Kept as a placeholder; dims below are the sourced
+    175x35 ft variant.
+  reference_vessels: []
+- id: US-JUMBO-HOPPER
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 59.4
+  beam_m: 10.7
+  draught_m:
+  - 2.7
+  - 2.7
+  air_draft_m: null
+  dwt_t: 1361
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://myshare-cms.siemens.com/size-of-barge (secondary aggregator page, read via search summary only)
+    ; https://magazines.marinelink.com/Magazines/MaritimeReporter/199406/page/14 (Maritime Reporter, June 1994,
+    p12) ; https://mundomaritimo.cl/noticias/convoyes-de-barcazas-de-290-por-60-metros-en-hidrovia-paraguay-parana-adicionarian-volumen-de-carga-de-12000-toneladas
+  confidence: medium
+  notes: 195x35 ft (59.4x10.7 m), depth 10-14 ft (3.0-4.3 m), 9 ft (2.7 m) draught, 1,500 short tons (=1,361 t);
+    typical light weight ~300 short tons (=272 t) per the aggregator page (low). Upper-Miss 600x110 ft lock takes
+    3 abreast. Same unit is the Paraná 'Mississippi barge' (60x11 m, 1,600 t).
+  reference_vessels:
+  - name: RCT 12 (covered hopper)
+    imo_or_eni: null
+    built: 1997
+    yard: Jeffboat
+    loa_m: 59.4
+    beam_m: 10.7
+    draught_m: 2.7
+    depth_m: 3.7
+    dwt_t: 1051
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://vesselinfo.kirbycorp.com/BargeInfo/Details/55665 (Kirby vessel-info page; read via search summary,
+      site refused direct fetch)
+- id: US-STRETCH-HOPPER-200
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 61.0
+  beam_m: 10.7
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: 'https://www.oceanmarine.com/vessels/16478/pdf/view (Ocean Marine Brokerage listing #16478, PDF read)'
+  confidence: medium
+  notes: 200x35x12 ft (61.0x10.7x3.7 m) open hopper. Light draught 2.6 ft (0.79 m) from broker sheet — a usable
+    lightship proxy (displacement at 0.79 m ~ L*B*T*Cb). The broker's metric conversions are wrong; use the ft values.
+  reference_vessels:
+  - name: 'Open hopper barge (12 sisters, broker #16478)'
+    imo_or_eni: null
+    built: 2003
+    yard: ''
+    loa_m: 61.0
+    beam_m: 10.7
+    draught_m: null
+    depth_m: 3.7
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: 'https://www.oceanmarine.com/vessels/16478/pdf/view (Ocean Marine Brokerage listing #16478, PDF read)'
+- id: US-SUPER-JUMBO-HOPPER
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 79.2
+  beam_m: 16.0
+  draught_m:
+  - 2.9
+  - 2.9
+  air_draft_m: null
+  dwt_t: 3039
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://magazines.marinelink.com/Magazines/MaritimeReporter/199406/page/14 (Maritime Reporter, June 1994,
+    p12)
+  confidence: high
+  notes: Trinity Marine 260x52.5 ft (79.2x16.0 m). 3,350 short tons (=3,039 t) coal per barge at 9.5 ft (2.9 m).
+    Two abreast fit 110 ft locks.
+  reference_vessels:
+  - name: Trinity Super Jumbo hopper (first series)
+    imo_or_eni: null
+    built: null
+    yard: Trinity Marine, Madisonville LA
+    loa_m: 79.2
+    beam_m: 16.0
+    draught_m: 2.9
+    depth_m: null
+    dwt_t: 3039
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://magazines.marinelink.com/Magazines/MaritimeReporter/199406/page/14 (Maritime Reporter, June
+      1994, p12)
+- id: US-TANK-BARGE-297
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - liquid_bulk
+  loa_m: 90.7
+  beam_m: 16.5
+  draught_m:
+  - 2.1
+  - 3.0
+  air_draft_m: null
+  dwt_t:
+  - 2141
+  - 3447
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://vesselinfo.kirbycorp.com/BargeInfo/Details/220651 and /73639 (Kirby vessel-info pages; read via
+    search summary, site refused direct fetch) ; https://myshare-cms.siemens.com/size-of-barge (secondary aggregator
+    page, read via search summary only)
+  confidence: medium
+  notes: 297.5x54 ft (90.7x16.5 m), depth ~12 ft (3.7 m). ~29,000-30,000 bbl; ~2,360 tons at 7 ft (2.1 m) to 3,800+
+    tons at 10+ ft (3.0 m) (Kirby, units probably short tons). Aggregator gives light weight ~1,000 short tons (=907
+    t) — low confidence; check against a Kirby light-draught line.
+  reference_vessels: []
+- id: US-TOWBOAT-2000HP
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: towboat
+  cargo_modes:
+  - dry_bulk
+  - liquid_bulk
+  loa_m:
+  - 23.8
+  - 25.6
+  beam_m: 10.4
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.workboat.com/news/shipbuilding/master-marine-delivers-z-drive-towboat/ (search summary) ;
+    https://www.marinelog.com/inland-coastal/inland/maritime-partners-welcomes-m-v-troy-bernier-to-its-fleet/ (search
+    summary)
+  confidence: medium
+  notes: Harbour/fleeting and small-line band, 78-84 x 34 ft (23.8-25.6 x 10.4 m), 1,800-2,600 hp (1,342-1,939 kW).
+  reference_vessels:
+  - name: Kieffer E. Bailey
+    imo_or_eni: null
+    built: null
+    yard: Master Marine, Bayou La Batre AL
+    loa_m: 23.8
+    beam_m: 10.4
+    draught_m: null
+    depth_m: 3.4
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1491
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.workboat.com/news/shipbuilding/master-marine-delivers-z-drive-towboat/ (search summary)
+  - name: Troy Bernier
+    imo_or_eni: null
+    built: null
+    yard: C&C Marine & Repair, Belle Chasse LA
+    loa_m: 25.6
+    beam_m: 10.4
+    draught_m: null
+    depth_m: 3.4
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1939
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.marinelog.com/inland-coastal/inland/maritime-partners-welcomes-m-v-troy-bernier-to-its-fleet/
+      (search summary)
+- id: US-TOWBOAT-6000HP
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: towboat
+  cargo_modes:
+  - dry_bulk
+  - liquid_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.workboat.com/news/shipbuilding/conrad-delivers-6000-hp-towboat-to-canal-barge/
+  confidence: high
+  notes: Line-haul band (Ohio/Upper Miss/GIWW).
+  reference_vessels:
+  - name: H. Merritt 'Heavy' Lane Jr.
+    imo_or_eni: null
+    built: 2020
+    yard: Conrad Shipyard (Amelia), LA
+    loa_m: 50.6
+    beam_m: 14.9
+    draught_m: 3.2
+    depth_m: 3.8
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 4476
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.workboat.com/news/shipbuilding/conrad-delivers-6000-hp-towboat-to-canal-barge/
+- id: US-TOWBOAT-11000HP
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: towboat
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://professionalmariner.com/acbl-christens-most-powerful-towboat-on-mississippi-river/
+  confidence: high
+  notes: Lower-Miss line-haul. ACBL Mariner pushes up to 64 barges (>75,000 tons).
+  reference_vessels:
+  - name: ACBL Mariner
+    imo_or_eni: null
+    built: 2024
+    yard: C&C Marine & Repair, Belle Chasse LA
+    loa_m: 61.0
+    beam_m: 15.2
+    draught_m: null
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 8203
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://professionalmariner.com/acbl-christens-most-powerful-towboat-on-mississippi-river/
+- id: US-UMR-15-TOW
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 297.2
+  beam_m: 32.0
+  draught_m:
+  - 2.7
+  - 2.7
+  air_draft_m: null
+  dwt_t: 20415
+  teu: null
+  n_abreast: 3
+  n_in_line: 5
+  source: https://www.farmprogress.com/tv-and-radio/lock-and-dam-25-funding-clears-major-hurdle-in-congress ; https://en.wikipedia.org/wiki/Melvin_Price_Locks_and_Dam
+    (search summaries)
+  confidence: medium
+  notes: 'Upper Miss limit 15 barges (3 abreast x 5 long of 195x35 ft). Barge train 975x105 ft (297.2x32.0 m) DERIVED
+    from unit size, excludes towboat. 600x110 ft (182.9x33.5 m) chambers force a double lockage; 1,200 ft (365.8
+    m) chambers pass it whole. DWT derived: 15 x 1,361 t. Curated 2026-10-06 (Niall, Q22): lock entries are Waterway
+    Limits; kept as Formations only where useful.'
+  reference_vessels: []
+  waterway_limits:
+  - name: Upper Miss 1,200 x 110 ft chamber (e.g. Melvin Price main)
+    length_m: 365.8
+    width_m: 33.5
+    fits: single lockage incl. towboat
+  - name: Upper Miss 600 x 110 ft chamber
+    length_m: 182.9
+    width_m: 33.5
+    fits: double lockage (see US-UMR-9-CUT)
+  members:
+  - hull: US-JUMBO-HOPPER
+    n_abreast: 3
+    n_in_line: 5
+  - hull: US-TOWBOAT
+    n: 1
+- id: US-LMR-LARGE-TOW
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 68038
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://professionalmariner.com/acbl-christens-most-powerful-towboat-on-mississippi-river/
+  confidence: medium
+  notes: 'Lock-free Lower Miss: 40+ barges common; ACBL Mariner rated for 64 barges / >75,000 tons. Geometry varies.'
+  reference_vessels: []
+- id: US-UMR-9-CUT
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  - liquid_bulk
+  loa_m: 178.3
+  beam_m: 32.0
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 3
+  n_in_line: 3
+  source: https://www.farmprogress.com/tv-and-radio/lock-and-dam-25-funding-clears-major-hurdle-in-congress ; https://en.wikipedia.org/wiki/Melvin_Price_Locks_and_Dam
+    (search summaries)
+  confidence: medium
+  notes: '3x3 cut of 195x35 ft jumbo hoppers = 585 x 105 ft (178.3 x 32.0 m), DERIVED; the first cut of a 15-barge
+    tow at a 600 ft chamber. Curated 2026-10-06 (Niall, Q22): lock entries are Waterway Limits; kept as Formations
+    only where useful.'
+  reference_vessels: []
+  members:
+  - hull: US-JUMBO-HOPPER
+    n_abreast: 3
+    n_in_line: 3
+  waterway_limits:
+  - name: Upper Miss 600 x 110 ft chamber
+    length_m: 182.9
+    width_m: 33.5
+    fits: barges only; towboat locks with the second cut
+- id: US-COLUMBIA-SNAKE-TOW
+  family: US-inland
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.asce.org/about-civil-engineering/history-and-heritage/historic-landmarks/the-dalles-lock-and-dam
+    (search summary)
+  confidence: medium
+  notes: 'Formation dimensions unknown until the grain barge hull is sourced. Curated 2026-10-06 (Niall, Q22): lock
+    entries are Waterway Limits; kept as Formations only where useful.'
+  reference_vessels: []
+  waterway_limits:
+  - name: Columbia-Snake standard chamber 675 x 86 ft
+    length_m: 205.7
+    width_m: 26.2
+    fits: tug + 4-5 grain barges
+- id: CN-I-MOTOR
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 95.0
+  beam_m: 16.2
+  draught_m:
+  - 3.2
+  - 3.2
+  air_draft_m: null
+  dwt_t: 3000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163, as transcribed in src/vessel_designer/core/vessel_standards.py
+  confidence: high
+  notes: Reused from vessel_standards.py (PIANC WG 141 Table 2.3). Class I is the LARGEST.
+  reference_vessels: []
+- id: CN-II-MOTOR
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 90.0
+  beam_m: 14.8
+  draught_m:
+  - 2.6
+  - 2.6
+  air_draft_m: null
+  dwt_t: 2000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163, as transcribed in src/vessel_designer/core/vessel_standards.py
+  confidence: high
+  notes: Reused from vessel_standards.py (PIANC WG 141 Table 2.3). Class I is the LARGEST.
+  reference_vessels: []
+- id: CN-III-MOTOR
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 85.0
+  beam_m: 10.8
+  draught_m:
+  - 2.0
+  - 2.0
+  air_draft_m: null
+  dwt_t: 1000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163, as transcribed in src/vessel_designer/core/vessel_standards.py
+  confidence: high
+  notes: Reused from vessel_standards.py (PIANC WG 141 Table 2.3). Class I is the LARGEST.
+  reference_vessels: []
+- id: CN-IV-MOTOR
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 67.5
+  beam_m: 10.8
+  draught_m:
+  - 1.6
+  - 1.6
+  air_draft_m: null
+  dwt_t: 500
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163, as transcribed in src/vessel_designer/core/vessel_standards.py
+  confidence: high
+  notes: Reused from vessel_standards.py (PIANC WG 141 Table 2.3). Class I is the LARGEST.
+  reference_vessels: []
+- id: CN-I-CONVOY-2x2
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 223.0
+  beam_m: 32.4
+  draught_m:
+  - 3.5
+  - 3.5
+  air_draft_m: null
+  dwt_t: 12000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163, as transcribed in src/vessel_designer/core/vessel_standards.py
+  confidence: medium
+  notes: Reused from vessel_standards.py (PIANC WG 141 Table 2.3). Class I is the LARGEST. Convoy DWT is INFERRED
+    (4 x unit DWT); WG 141 does not tabulate it.
+  reference_vessels: []
+- id: CN-II-CONVOY-2x2
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 186.0
+  beam_m: 32.4
+  draught_m:
+  - 2.6
+  - 2.6
+  air_draft_m: null
+  dwt_t: 8000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163, as transcribed in src/vessel_designer/core/vessel_standards.py
+  confidence: medium
+  notes: Reused from vessel_standards.py (PIANC WG 141 Table 2.3). Class I is the LARGEST. Convoy DWT is INFERRED
+    (4 x unit DWT); WG 141 does not tabulate it.
+  reference_vessels: []
+- id: CN-III-CONVOY-2x2
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 167.0
+  beam_m: 21.6
+  draught_m:
+  - 2.0
+  - 2.0
+  air_draft_m: null
+  dwt_t: 4000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163, as transcribed in src/vessel_designer/core/vessel_standards.py
+  confidence: medium
+  notes: Reused from vessel_standards.py (PIANC WG 141 Table 2.3). Class I is the LARGEST. Convoy DWT is INFERRED
+    (4 x unit DWT); WG 141 does not tabulate it.
+  reference_vessels: []
+- id: CN-V
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 300
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: GB 50139-2014 Navigation Standard of Inland Waterway, class tonnage list via https://www.chinabaogao.com/free/202606/801029.html
+    (search summary; standard text not read)
+  confidence: medium
+  notes: GB 50139-2014 class V = 300 t vessel. Dimensions NOT found; standard text not read.
+  reference_vessels: []
+- id: CN-VI
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 100
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: GB 50139-2014 Navigation Standard of Inland Waterway, class tonnage list via https://www.chinabaogao.com/free/202606/801029.html
+    (search summary; standard text not read)
+  confidence: medium
+  notes: GB 50139-2014 class VI = 100 t vessel. Dimensions NOT found; standard text not read.
+  reference_vessels: []
+- id: CN-VII
+  family: CN-GB50139
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 50
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: GB 50139-2014 Navigation Standard of Inland Waterway, class tonnage list via https://www.chinabaogao.com/free/202606/801029.html
+    (search summary; standard text not read)
+  confidence: medium
+  notes: GB 50139-2014 class VII = 50 t vessel. Dimensions NOT found; standard text not read.
+  reference_vessels: []
+- id: CN-YANGTZE-130-THREE-GORGES
+  family: CN-Yangtze-standard
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m:
+  - 128.0
+  - 130.0
+  beam_m: 16.2
+  draught_m:
+  - 5.2
+  - 5.2
+  air_draft_m: null
+  dwt_t:
+  - 7500
+  - 10000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.bairdmaritime.com/shipping/dry-cargo/bulkers/chinese-builder-delivers-electric-inland-bulk-carrier
+    ; https://www.hellenicshippingnews.com/chinas-largest-all-electric-bulk-carrier-launched-in-central-china/ ;
+    https://www.researching.cn/articles/OJ3c6081a53ee288df/figureandtable (Chinese Journal of Ship Research; read
+    via search summary only, site TLS failed)
+  confidence: medium
+  notes: 'Yangtze trunk / Three Gorges lock ''130 m class'' standard ship type (GB/T 23432-2009 dimension series;
+    standard text not read). Beam ~16.2-16.3 m lets two ships lie abreast in the 34 m-wide Three Gorges chamber
+    (chamber width from general knowledge, not verified this pass). A 7,500 t design: LWL 130, LPP 128, B 16.2,
+    D 7.2, T 5.2 m (CJSR, low).'
+  reference_vessels:
+  - name: Gezhouba (all-electric bulk carrier)
+    imo_or_eni: null
+    built: 2025
+    yard: Yichang Zigui Huaxing Shipyard
+    loa_m: 129.9
+    beam_m: null
+    draught_m: null
+    depth_m: null
+    dwt_t: 10000
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: electric
+    service_speed_kn: null
+    crew: null
+    source: https://www.bairdmaritime.com/shipping/dry-cargo/bulkers/chinese-builder-delivers-electric-inland-bulk-carrier
+      ; https://www.hellenicshippingnews.com/chinas-largest-all-electric-bulk-carrier-launched-in-central-china/
+  - name: 7,500 t Yangtze bulk carrier design (CJSR table)
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 130.0
+    beam_m: 16.2
+    draught_m: 5.2
+    depth_m: 7.2
+    dwt_t: 7500
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.researching.cn/articles/OJ3c6081a53ee288df/figureandtable (Chinese Journal of Ship Research;
+      read via search summary only, site TLS failed)
+- id: IN-IWAI-1-MOTOR
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 32
+  beam_m: 5
+  draught_m:
+  - 1.0
+  - 1.0
+  air_draft_m: 4
+  dwt_t: 100
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Self-propelled variant of IWAI class.
+  reference_vessels: []
+- id: IN-IWAI-1-CONVOY
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 80
+  beam_m: 5
+  draught_m:
+  - 1.0
+  - 1.0
+  air_draft_m: 4
+  dwt_t: 200
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Tug + 2 barges (1 abreast x 2 long).
+  reference_vessels: []
+- id: IN-IWAI-2-MOTOR
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 45
+  beam_m: 8
+  draught_m:
+  - 1.2
+  - 1.2
+  air_draft_m: 5
+  dwt_t: 300
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Self-propelled variant of IWAI class.
+  reference_vessels: []
+- id: IN-IWAI-2-CONVOY
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 110
+  beam_m: 8
+  draught_m:
+  - 1.2
+  - 1.2
+  air_draft_m: 5
+  dwt_t: 600
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Tug + 2 barges (1 abreast x 2 long).
+  reference_vessels: []
+- id: IN-IWAI-3-MOTOR
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 58
+  beam_m: 9
+  draught_m:
+  - 1.5
+  - 1.5
+  air_draft_m: 6
+  dwt_t: 500
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Self-propelled variant of IWAI class.
+  reference_vessels: []
+- id: IN-IWAI-3-CONVOY
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 141
+  beam_m: 9
+  draught_m:
+  - 1.5
+  - 1.5
+  air_draft_m: 6
+  dwt_t: 1000
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Tug + 2 barges (1 abreast x 2 long).
+  reference_vessels: []
+- id: IN-IWAI-4-MOTOR
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 70
+  beam_m: 12
+  draught_m:
+  - 1.8
+  - 1.8
+  air_draft_m: 7
+  dwt_t: 1000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Self-propelled variant of IWAI class.
+  reference_vessels: []
+- id: IN-IWAI-4-CONVOY
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 170
+  beam_m: 12
+  draught_m:
+  - 1.8
+  - 1.8
+  air_draft_m: 7
+  dwt_t: 2000
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Tug + 2 barges (1 abreast x 2 long).
+  reference_vessels: []
+- id: IN-IWAI-5-MOTOR
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 70
+  beam_m: 12
+  draught_m:
+  - 1.8
+  - 1.8
+  air_draft_m: 10
+  dwt_t: 1000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Self-propelled variant of IWAI class.
+  reference_vessels: []
+- id: IN-IWAI-5-CONVOY
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 170
+  beam_m: 24
+  draught_m:
+  - 1.8
+  - 1.8
+  air_draft_m: 10
+  dwt_t: 4000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Tug + 4 barges (2 abreast x 2 long).
+  reference_vessels: []
+- id: IN-IWAI-6-MOTOR
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 86
+  beam_m: 14
+  draught_m:
+  - 2.5
+  - 2.5
+  air_draft_m: 10
+  dwt_t: 2000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Self-propelled variant of IWAI class. DST design (110x12x2.8 m, 2,515 t) sits between class 4 beam and
+    class 6 draught — a 2x500 kW plant quoted with 'total 900 kW' (source inconsistency); 13 km/h.
+  reference_vessels:
+  - name: IWAI/DST standard design — dry bulk carrier type 2 (NW-1)
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 110.0
+    beam_m: 12.0
+    draught_m: 2.8
+    depth_m: 4.3
+    dwt_t: 2515
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 900
+    propulsion: diesel
+    service_speed_kn: 7.0
+    crew: null
+    source: https://www.ship-technology.com/news/iwai-unveils-13-ship-designs-large-barge-haulage/ ; https://www.maritimeprofessional.com/amp/news/inland-waterways-authority-india-releases-321073
+      (table read via search summary only)
+- id: IN-IWAI-6-CONVOY
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 210
+  beam_m: 14
+  draught_m:
+  - 2.5
+  - 2.5
+  air_draft_m: 10
+  dwt_t: 4000
+  teu: null
+  n_abreast: 1
+  n_in_line: 2
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Tug + 2 barges (1 abreast x 2 long).
+  reference_vessels: []
+- id: IN-IWAI-7-MOTOR
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 86
+  beam_m: 14
+  draught_m:
+  - 2.5
+  - 2.5
+  air_draft_m: 10
+  dwt_t: 2000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Self-propelled variant of IWAI class.
+  reference_vessels: []
+- id: IN-IWAI-7-CONVOY
+  family: IN-IWAI
+  region: asia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 210
+  beam_m: 28
+  draught_m:
+  - 2.5
+  - 2.5
+  air_draft_m: 10
+  dwt_t: 8000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: https://en.wikipedia.org/wiki/Inland_Waterways_Authority_of_India (classification table; uncited on Wikipedia;
+    IWAI primary notification not read)
+  confidence: medium
+  notes: Tug + 4 barges (2 abreast x 2 long).
+  reference_vessels: []
+- id: RU-R156-PUSHED-BARGE
+  family: RU-RRR
+  region: russia-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m:
+  - 114.45
+  - 114.6
+  beam_m: 14.24
+  draught_m:
+  - 3.7
+  - 3.7
+  air_draft_m: null
+  dwt_t:
+  - 4500
+  - 4575
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.volgaflot.com/en/fleet/river/project-r156/ (Volga Shipping fleet page)
+  confidence: high
+  notes: Russian River Register class O 2.0 (Ice 20) (O = 2.0 m wave category). Head and end sections; forms single/twin/triple
+    trains of 9,000-18,000 t.
+  reference_vessels:
+  - name: Project R156 head section
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 114.6
+    beam_m: 14.24
+    draught_m: 3.7
+    depth_m: null
+    dwt_t: 4500
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.volgaflot.com/en/fleet/river/project-r156/ (Volga Shipping fleet page)
+  - name: Project R156 end section
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 114.45
+    beam_m: 14.24
+    draught_m: 3.7
+    depth_m: null
+    dwt_t: 4575
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.volgaflot.com/en/fleet/river/project-r156/ (Volga Shipping fleet page)
+- id: RU-PUSHER-OT2000-2400
+  family: RU-RRR
+  region: russia-inland
+  waters: inland
+  formation: pusher
+  cargo_modes:
+  - dry_bulk
+  loa_m:
+  - 45.4
+  - 51.6
+  beam_m: 12.0
+  draught_m:
+  - 2.25
+  - 2.3
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.volgaflot.com/en/fleet/river/ot-2000/ ; https://www.volgaflot.com/en/fleet/river/ot-2400/
+    ; https://seanews.ru/en/2025/02/17/en-new-pusher-tug-concept-developed
+  confidence: high
+  notes: ~140 OT-2000/OT-2400 (Hungarian-built) still in service, 35-56 years old. 'Depth overall' on the operator
+    pages (15.75 / 14.36 m) is height to top of wheelhouse, i.e. air draught, not hull depth.
+  reference_vessels:
+  - name: OT-2000 (Project 428)
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 45.4
+    beam_m: 12.0
+    draught_m: 2.25
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1470
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.volgaflot.com/en/fleet/river/ot-2000/
+  - name: OT-2400 (Project N3290)
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 51.6
+    beam_m: 12.0
+    draught_m: 2.3
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1766
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.volgaflot.com/en/fleet/river/ot-2400/
+  - name: Design 00443 (concept replacement)
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 47.0
+    beam_m: 14.0
+    draught_m: 2.3
+    depth_m: 3.5
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 2000
+    propulsion: diesel
+    service_speed_kn: null
+    crew: 10-12
+    source: https://seanews.ru/en/2025/02/17/en-new-pusher-tug-concept-developed
+- id: RU-R156-TRAIN-4
+  family: RU-RRR
+  region: russia-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 18000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://seanews.ru/en/2025/02/17/en-new-pusher-tug-concept-developed ; https://www.volgaflot.com/en/fleet/river/project-r156/
+    (Volga Shipping fleet page)
+  confidence: medium
+  notes: 00443 pusher designed for 'four-vessel' trains of 18,000 t (4 x R156-size barges). Geometry not stated.
+  reference_vessels: []
+- id: RU-VOLGO-DON-5000
+  family: RU-RRR
+  region: russia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m:
+  - 138.3
+  - 138.74
+  beam_m: 16.7
+  draught_m:
+  - 3.5
+  - 3.6
+  air_draft_m: null
+  dwt_t:
+  - 5000
+  - 5290
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.volgaflot.com/en/fleet/river/volgo-don/ ; https://mebspb.com/drye/507Be.html (Marine Engineering
+    Bureau, Project 507B modernisation)
+  confidence: high
+  notes: 'Projects 1565/507B. River Register classes M 2.0/2.5, O-PR 2.0, M-PR 2.5 (overlaps river-sea slice). Hold
+    volume conflict: operator 6,320 m3 vs MEB 507B-modernised 9,360 m3.'
+  reference_vessels:
+  - name: Volgo-Don (Volga Shipping series, Pr 1565/507B)
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 138.3
+    beam_m: 16.7
+    draught_m: 3.5
+    depth_m: null
+    dwt_t: 5000
+    teu: null
+    cargo_capacity_m3: 6320
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.volgaflot.com/en/fleet/river/volgo-don/
+  - name: Project 507B modernised
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 138.74
+    beam_m: 16.7
+    draught_m: 3.6
+    depth_m: 5.5
+    dwt_t: 5290
+    teu: null
+    cargo_capacity_m3: 9360
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1324
+    propulsion: diesel
+    service_speed_kn: 10.0
+    crew: 14
+    source: https://mebspb.com/drye/507Be.html (Marine Engineering Bureau, Project 507B modernisation)
+- id: RU-VOLGA-DON-CANAL-MAX
+  family: RU-RRR
+  region: russia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  - liquid_bulk
+  loa_m: 141.0
+  beam_m: 16.8
+  draught_m:
+  - 3.6
+  - 3.6
+  air_draft_m: null
+  dwt_t: 5000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Volga%E2%80%93Don_Canal
+  confidence: medium
+  notes: 'Envelope: smallest Volga-Don canal lock 145x17 m, 3.6 m; 13 locks; max ship 141x16.8x3.6 m, ~5,000 t.'
+  reference_vessels: []
+- id: RU-VOLGONEFT-TANKER
+  family: RU-RRR
+  region: russia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - liquid_bulk
+  loa_m:
+  - 132.6
+  - 137.81
+  beam_m:
+  - 16.9
+  - 17.0
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://en.wikipedia.org/wiki/Volgoneft
+  confidence: medium
+  notes: Soviet Volga/canal tankers (Pr 558/550/1577/550A/630). Draught and DWT not given in source.
+  reference_vessels:
+  - name: Volgoneft Pr 550/1577/550A
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 132.6
+    beam_m: 16.9
+    draught_m: null
+    depth_m: 5.5
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1472
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://en.wikipedia.org/wiki/Volgoneft
+  - name: Volgoneft Pr 630
+    imo_or_eni: null
+    built: null
+    yard: Ivan Dimitrov / Ruse Shipyard, Bulgaria
+    loa_m: 137.81
+    beam_m: 17.0
+    draught_m: null
+    depth_m: 6.4
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1764
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://en.wikipedia.org/wiki/Volgoneft
+- id: SA-HIDROVIA-MISSISSIPPI-BARGE
+  family: SA-Hidrovia
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 60.0
+  beam_m: 11.0
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 1600
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://mundomaritimo.cl/noticias/convoyes-de-barcazas-de-290-por-60-metros-en-hidrovia-paraguay-parana-adicionarian-volumen-de-carga-de-12000-toneladas
+  confidence: medium
+  notes: Paraná-Paraguay 'Mississippi' barge 60x11 m, 1,600 t.
+  reference_vessels: []
+- id: SA-HIDROVIA-JUMBO-BARGE
+  family: SA-Hidrovia
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m:
+  - 60.0
+  - 61.0
+  beam_m:
+  - 15.0
+  - 16.0
+  draught_m: null
+  air_draft_m: null
+  dwt_t:
+  - 1500
+  - 2600
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://mundomaritimo.cl/noticias/convoyes-de-barcazas-de-290-por-60-metros-en-hidrovia-paraguay-parana-adicionarian-volumen-de-carga-de-12000-toneladas
+    ; https://www.bairdmaritime.com/tugs/new-push-boats-and-barges-for-paraguay
+  confidence: medium
+  notes: '''Jumbo'' 60x16 m, 1,500-2,600 t (source wording ambiguous). HBSA iron-ore hoppers 61x15x4.27 m, 2,500
+    dwt (box mid-convoy + raked ends).'
+  reference_vessels:
+  - name: HBSA Mississippi-style hopper (144 built)
+    imo_or_eni: null
+    built: 2014
+    yard: ZPMC, China
+    loa_m: 61.0
+    beam_m: 15.0
+    draught_m: null
+    depth_m: 4.27
+    dwt_t: 2500
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.bairdmaritime.com/tugs/new-push-boats-and-barges-for-paraguay
+- id: SA-HIDROVIA-CONVOY-290x50
+  family: SA-Hidrovia
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 290.0
+  beam_m: 50.0
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 24000
+  teu: null
+  n_abreast: 4
+  n_in_line: 4
+  source: https://mundomaritimo.cl/noticias/convoyes-de-barcazas-de-290-por-60-metros-en-hidrovia-paraguay-parana-adicionarian-volumen-de-carga-de-12000-toneladas
+    ; https://www.boletinoficial.gob.ar/pdf/linkQR/eDdRRVpjVUZ6TXcrdTVReEh2ZkU0dz09 (Argentine Boletín Oficial;
+    read via search summary only)
+  confidence: medium
+  notes: Authorised San Lorenzo-Nueva Palmira, 24,000 t. 4x4 Mississippi barges at 1,500 t need >= 4,114 hp (3,068
+    kW) installed (Boletín Oficial, via summary). Proposed 290x60 m (12 jumbo + 4 Mississippi, 36,000 t) and 290x65
+    m.
+  reference_vessels: []
+- id: SA-PARAGUAY-4x4-HBSA
+  family: SA-Hidrovia
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 40000
+  teu: null
+  n_abreast: 4
+  n_in_line: 4
+  source: https://www.bairdmaritime.com/tugs/new-push-boats-and-barges-for-paraguay
+  confidence: high
+  notes: 16 x 2,500 t hoppers, ~40,000 t per shipment. Pusher draught 2.1 m dry / 2.4 m wet season.
+  reference_vessels:
+  - name: RApide 4500 pusher (8 built)
+    imo_or_eni: null
+    built: 2014
+    yard: Uzmar, Turkey
+    loa_m: 46.5
+    beam_m: 16.5
+    draught_m: 2.4
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: diesel-electric
+    service_speed_kn: null
+    crew: 18
+    source: https://www.bairdmaritime.com/tugs/new-push-boats-and-barges-for-paraguay
+- id: SA-AMAZON-CONVOY
+  family: SA-Amazon
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t:
+  - 20000
+  - 72000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://maritimesouth.com/2021/04/23/the-battle-for-higher-convoy-efficiency-in-the-amazonian-inland-waterways/
+    ; https://www.bairdmaritime.com/tugs/inland-tug-operations/hidrovias-do-brasils-newest-river-tugs-begin-operations
+  confidence: medium
+  notes: 'Madeira/Tapajós/Amazon grain. Mississippi barge 61x10.7 m, 2,000 dwt; local 2,500-3,000 dwt. Convoys 2x3
+    to 5x5: 20,000-50,000 dwt; TBL 3x5 37,000 dwt (~15 t/kW); HBSA 36-barge 72,000 dwt (~13 t/kW).'
+  reference_vessels:
+  - name: HB Pirarara / HB Pirarucu (pusher)
+    imo_or_eni: null
+    built: null
+    yard: Estaleiro Rio Maguari (Robert Allan design)
+    loa_m: 39.6
+    beam_m: 18.0
+    draught_m: 2.8
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: 17
+    source: https://www.bairdmaritime.com/tugs/inland-tug-operations/hidrovias-do-brasils-newest-river-tugs-begin-operations
+- id: SA-TIETE-BARGE
+  family: SA-Tiete-Parana
+  region: americas-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 59.44
+  beam_m: 10.67
+  draught_m:
+  - 2.5
+  - 3.0
+  air_draft_m: null
+  dwt_t: 1500
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://semil.sp.gov.br/htp/wp-content/uploads/sites/13/2024/02/Anexo-Plano-Diretor-Hidrovia-Tiete-Comboios-jun2021.pdf
+    (Plano Diretor da Hidrovia Tietê-Paraná Vol I, Depto Hidroviário SP, pp13-15)
+  confidence: high
+  notes: Primary state document. Light weight ~220 t per barge (250 t with steel hatch covers) — a direct steel-weight
+    calibration point for a 59.4x10.7x3.5 m Mississippi-type hull.
+  reference_vessels:
+  - name: Tietê standard chata
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 59.44
+    beam_m: 10.67
+    draught_m: 3.0
+    depth_m: 3.5
+    dwt_t: 1500
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: 220
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://semil.sp.gov.br/htp/wp-content/uploads/sites/13/2024/02/Anexo-Plano-Diretor-Hidrovia-Tiete-Comboios-jun2021.pdf
+      (Plano Diretor da Hidrovia Tietê-Paraná Vol I, Depto Hidroviário SP, pp13-15)
+- id: SA-TIETE-CONVOY-2x2
+  family: SA-Tiete-Parana
+  region: americas-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - dry_bulk
+  loa_m: 138.0
+  beam_m: 21.7
+  draught_m:
+  - 2.5
+  - 2.8
+  air_draft_m: null
+  dwt_t: 6000
+  teu: null
+  n_abreast: 2
+  n_in_line: 2
+  source: https://semil.sp.gov.br/htp/wp-content/uploads/sites/13/2024/02/Anexo-Plano-Diretor-Hidrovia-Tiete-Comboios-jun2021.pdf
+    (Plano Diretor da Hidrovia Tietê-Paraná Vol I, Depto Hidroviário SP, pp13-15)
+  confidence: high
+  notes: '4 barges + pusher, 138.0x21.7 m, ~6,000 t at up to 2.8 m. Tietê locks ~145x12 m, 2.5 m (approx.) — convoy
+    splits to pass. Pusher 18.5x8.5 m, T 2.2 m, 800-950 hp. Proposed 9,000 t: 6 barges + bow thruster unit, ~210x21.3x3.0
+    m.'
+  reference_vessels:
+  - name: Tietê standard pusher
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 18.5
+    beam_m: 8.5
+    draught_m: 2.2
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw:
+    - 597
+    - 708
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://semil.sp.gov.br/htp/wp-content/uploads/sites/13/2024/02/Anexo-Plano-Diretor-Hidrovia-Tiete-Comboios-jun2021.pdf
+      (Plano Diretor da Hidrovia Tietê-Paraná Vol I, Depto Hidroviário SP, pp13-15)
+- id: ID-BARGE-180FT
+  family: ID-Indonesian-standard
+  region: asia-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 54.9
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: null
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://transtrack.co/blog/barges-2/ (Indonesian logistics vendor blog — secondary)
+  confidence: low
+  notes: Indonesian standard deck/coal barge, named by length in feet. Capacity from vendor blog (secondary). 180
+    ft units feed upriver legs (e.g. Lok Buntar) and tranship into 300 ft barges. Capacity not found.
+  reference_vessels: []
+- id: ID-BARGE-230FT
+  family: ID-Indonesian-standard
+  region: asia-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 70.1
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 4000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://transtrack.co/blog/barges-2/ (Indonesian logistics vendor blog — secondary)
+  confidence: medium
+  notes: Indonesian standard deck/coal barge, named by length in feet. Capacity from vendor blog (secondary). Reference
+    Barlian 231 quoted at 5,000 t — conflicts with the 4,000 t band.
+  reference_vessels:
+  - name: Barlian 231
+    imo_or_eni: null
+    built: 2007
+    yard: Batam
+    loa_m: 70.1
+    beam_m: 21.3
+    draught_m: null
+    depth_m: 4.9
+    dwt_t: 5000
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.scribd.com/doc/264487738/barge-built (read via search summary only)
+- id: ID-BARGE-270FT
+  family: ID-Indonesian-standard
+  region: asia-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 82.3
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 6000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://transtrack.co/blog/barges-2/ (Indonesian logistics vendor blog — secondary)
+  confidence: medium
+  notes: Indonesian standard deck/coal barge, named by length in feet. Capacity from vendor blog (secondary).
+  reference_vessels: []
+- id: ID-BARGE-300FT
+  family: ID-Indonesian-standard
+  region: asia-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 91.4
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 8000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://transtrack.co/blog/barges-2/ (Indonesian logistics vendor blog — secondary) ; https://www.argusmedia.com/en/news-and-insights/latest-market-news/2869712-barito-river-bottleneck-hits-indonesian-coal-flows
+    (search summary) ; https://en.sxcoal.com/news/detail/2097489163615506433 (search summary)
+  confidence: medium
+  notes: 'Indonesian standard deck/coal barge, named by length in feet. Capacity from vendor blog (secondary). Beam
+    seen 80-90 ft (24.4-27.4 m). Barito: ''standard 7,500-10,000 t barges, draft ~6.5 m'' (Argus) — 6.5 m looks
+    like depth, not draught; low water cuts loads to 3,000-4,000 t. Mahakam normal ~7,000 t, restricted to 5,500-6,000
+    t. LOI evidence: 300 ft set = 7,500 t.'
+  reference_vessels:
+  - name: 300 ft barge, PT Karya Tekhnik Utama
+    imo_or_eni: null
+    built: 2008
+    yard: PT Karya Tekhnik Utama, Batam
+    loa_m: 91.44
+    beam_m: 24.38
+    draught_m: null
+    depth_m: 5.48
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.scribd.com/doc/79585735/Barge-Specification (read via search summary only)
+  - name: Patria 22 (tug for 91 m Barito coal barges)
+    imo_or_eni: null
+    built: 2020
+    yard: Patria Maritim Perkasa
+    loa_m: 23.6
+    beam_m: 9.2
+    draught_m: 2.0
+    depth_m: 3.0
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 1220
+    propulsion: diesel
+    service_speed_kn: 12.0
+    crew: null
+    source: https://www.bairdmaritime.com/work-boat-world/tug-and-salvage-world/inland-tug-operations/vessel-review-patria-22-shallow-draught-barge-handling-tug-designed-for-indonesias-barito-river
+- id: ID-BARGE-330FT
+  family: ID-Indonesian-standard
+  region: asia-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 100.6
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t:
+  - 10000
+  - 12000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://transtrack.co/blog/barges-2/ (Indonesian logistics vendor blog — secondary)
+  confidence: medium
+  notes: Indonesian standard deck/coal barge, named by length in feet. Capacity from vendor blog (secondary). Dimensions
+    not found.
+  reference_vessels: []
+- id: ID-BARGE-250FT
+  family: ID-Indonesian-standard
+  region: asia-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: 76.2
+  beam_m: 21.3
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 4500
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.cummins.com/en-eu/case-studies/nongsa-jaya-buana-tugs-all-jobs (read via search summary only;
+    direct fetch 403)
+  confidence: low
+  notes: 250x70 ft (76.2x21.3 m) 4,500 dwt barge towed by a 2x KTA19 tug, 1,200 hp combined (895 kW), ~12 t BP.
+  reference_vessels:
+  - name: Nongsa Jaya Buana 1,200 hp tug
+    imo_or_eni: null
+    built: null
+    yard: Nongsa Jaya Buana, Batam
+    loa_m: null
+    beam_m: null
+    draught_m: null
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 895
+    propulsion: diesel
+    service_speed_kn: null
+    crew: null
+    source: https://www.cummins.com/en-eu/case-studies/nongsa-jaya-buana-tugs-all-jobs (read via search summary
+      only; direct fetch 403)
+- id: ID-SELF-UNLOADING-COAL-BARGE
+  family: ID-Indonesian-standard
+  region: asia-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m:
+  - 79.2
+  - 106.0
+  beam_m:
+  - 20.5
+  - 22.5
+  draught_m:
+  - 3.5
+  - 4.5
+  air_draft_m: null
+  dwt_t:
+  - 3500
+  - 7000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.macgregor.com/globalassets/picturepark/imported-assets/71758.pdf (MacGregor case sheet, PDF
+    text read)
+  confidence: high
+  notes: East Kalimantan coastal transfer (strictly coastal). Two sizes; self-unloading conveyors.
+  reference_vessels:
+  - name: MacGregor self-unloader 3,500 dwt
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 79.2
+    beam_m: 20.5
+    draught_m: 3.5
+    depth_m: 5.6
+    dwt_t: 3500
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.macgregor.com/globalassets/picturepark/imported-assets/71758.pdf (MacGregor case sheet,
+      PDF text read)
+  - name: MacGregor self-unloader 7,000 dwt
+    imo_or_eni: null
+    built: null
+    yard: ''
+    loa_m: 106.0
+    beam_m: 22.5
+    draught_m: 4.5
+    depth_m: 6.6
+    dwt_t: 7000
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: null
+    propulsion: null
+    service_speed_kn: null
+    crew: null
+    source: https://www.macgregor.com/globalassets/picturepark/imported-assets/71758.pdf (MacGregor case sheet,
+      PDF text read)
+- id: MEKONG-LOWER-ENVELOPE
+  family: Mekong
+  region: asia-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  - container
+  loa_m: 110.0
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t:
+  - 2000
+  - 7000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://archive.iwlearn.net/mrcmekong.org/RAK/html/1.15.2_river_transportation.html ; https://www.unescap.org/sites/default/d8files/event-documents/14-Cambodia.pdf
+    (search summary)
+  confidence: medium
+  notes: 'Vietnam border-Phnom Penh: bends limit LOA to ~110 m (~7,000 DWT). Kampong Cam-Phnom Penh: 2,000 DWT year-round.
+    Phnom Penh-Vam Nao: 3,000-4,000 DWT low water, 5,000 mean-high. Tonle Sap: 1,000/2,000 DWT. Up to Kratie: 150
+    t boats.'
+  reference_vessels: []
+- id: AF-NILE-SELF-PROPELLED-BARGE
+  family: Nile-NNCRT
+  region: africa-inland
+  waters: inland
+  formation: motor_vessel
+  cargo_modes:
+  - dry_bulk
+  loa_m: 100.2
+  beam_m: 11.2
+  draught_m:
+  - 2.2
+  - 2.2
+  air_draft_m: null
+  dwt_t: 1600
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://alexyard.com.eg/?p=2130 (Alexandria Shipyard project page) ; https://www.thenationalnews.com/business/signs-of-a-revival-on-the-nile-1.507493
+    (search summary)
+  confidence: medium
+  notes: Cairo-Aswan. Capacity up to 1,600 t (The National). ASY lists 16 kn — implausible for 600 hp; treat as
+    error.
+  reference_vessels:
+  - name: NNCRT self-propelled barge (6 built)
+    imo_or_eni: null
+    built: null
+    yard: Alexandria Shipyard
+    loa_m: 100.2
+    beam_m: 11.2
+    draught_m: 2.2
+    depth_m: null
+    dwt_t: null
+    teu: null
+    cargo_capacity_m3: null
+    lightship_t: null
+    steel_weight_t: null
+    installed_power_kw: 447
+    propulsion: diesel
+    service_speed_kn: null
+    crew: 9
+    source: https://alexyard.com.eg/?p=2130 (Alexandria Shipyard project page)
+- id: AF-CONGO-CONVOY
+  family: Congo-SCTP
+  region: africa-inland
+  waters: inland
+  formation: pushed_convoy
+  cargo_modes:
+  - general
+  - dry_bulk
+  loa_m: 200.0
+  beam_m: 30.0
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 5000
+  teu: null
+  n_abreast: 2
+  n_in_line: 4
+  source: https://www.vliz.be/imisdocs/publications/ocrd/375261.pdf ; https://www.visapourlimage.com/en/festival/exhibitions/fleuve-congo
+    (search summaries)
+  confidence: low
+  notes: 'ONATRA/SCTP barges: PG 800 (800 t), 1,000 t and 500 t types. Kotakoli convoy: 8 barges two-by-two, ~200x30
+    m, >5,000 t.'
+  reference_vessels: []
+- id: AF-VOLTA-LAKE-BARGE
+  family: Volta-VLTC
+  region: africa-inland
+  waters: inland
+  formation: pushed_barge
+  cargo_modes:
+  - dry_bulk
+  - liquid_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 2250
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://thebftonline.com/2023/03/20/vltc-boss-calls-for-government-intervention-highlights-advantages-of-volta-lake-transport/
+    ; https://gna.org.gh/?p=266221 (search summaries)
+  confidence: low
+  notes: 'Akosombo-Buipe. VLTC: 3 bulk barges of 2,250 t; 6 more totalling 4,676 t; one tug moves up to 9 barges.
+    No dimensions found. Highest-priority gap for a Ghana bauxite/manganese tool.'
+  reference_vessels: []
+- id: AF-NIGER-BENUE-BARGE
+  family: Niger-NIWA
+  region: africa-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t:
+  - 500
+  - 1000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://shippingposition.com.ng/niwa-licenses-eight-companies-for-barge-operations-md/ ; https://gazettengr.com/niwa-begins-transportation-activities-on-river-niger/
+    (search summaries)
+  confidence: low
+  notes: NIWA procured 500, 800 and 1,000 t dump barges; Lagos-Onitsha barge licences. No dimensions found.
+  reference_vessels: []
+- id: SA-GUYANA-BERBICE-BAUXITE-BARGE
+  family: Guyana-bauxite
+  region: americas-inland
+  waters: inland
+  formation: towed_barge
+  cargo_modes:
+  - dry_bulk
+  loa_m: null
+  beam_m: null
+  draught_m: null
+  air_draft_m: null
+  dwt_t: 3000
+  teu: null
+  n_abreast: 1
+  n_in_line: 1
+  source: https://www.oldendorff.com/pages/transshipment/guyana (search-index text; current page no longer shows
+    it) ; https://boskalis.com/media/52cjvkee/guyana_-_the_berbice_river_project.pdf ; https://pubs.usgs.gov/myb/vol3/2016/myb3-2016-guyana.pdf
+    (USGS Minerals Yearbook 2016 Guyana; search summary)
+  confidence: low
+  notes: 'Aroaima mine to Berbice mouth, 240 km: 20 purpose-built covered barges of 3,000 tdw + 6 tugs, 1-3 Mtpa,
+    transhipped by floating crane. Bosai (Linden, Demerara) ships 5,000-6,000 t lots to New Amsterdam. Trombetas
+    (Brazil) is NOT a barge case: MRN loads ocean ships direct at Porto Trombetas (max LOA 245 m, B 40 m, sailing
+    draught 11.58 m).'
+  reference_vessels: []

@@ -1,0 +1,996 @@
+# Gas carriers + specialist bulk (inland / river-sea / small coastal) — calibration catalogue
+# Compiled 2026-10-06. Every figure cites a source; null = not found. Class envelopes are the
+# span of the reference vessels below unless a source gives a band. Unit conversions (ft->m)
+# are noted where made. Lightship / steel weight: NOT found in any open source for any vessel.
+classes:
+
+  # ---------------------------------------------------------------- LNG, inland Europe
+  - id: EU-INLAND-LNG-BUNKER-BARGE
+    family: inland-LNG-bunker-barge
+    region: europe-inland
+    waters: inland
+    formation: pushed_barge        # FlexFueler001 is dumb (pushboat); LNG London self-propelled - see refs
+    cargo_modes: [gas]
+    cargoes: [LNG]
+    containment: type_c_cylindrical
+    cargo_capacity_m3: [1480, 3000]
+    loa_m: [76.4, 110]
+    beam_m: [11.45, 15]
+    draught_m: null
+    air_draft_m: null              # LNG London: "restricted air draft" stated, no figure
+    dwt_t: null
+    source: "https://www.rivieramm.com/news-content-hub/europersquos-first-lng-inland-bunker-barge-55681 ; https://en.sudohodstvo.org/lng-bunker-vessel-started-operation-rotterdam/"
+    confidence: medium
+    notes: >
+      Rhine/ARA bunker barges. Note the brief's examples 'Eiger-Nordwand' (a 179 m LNG-FUELLED
+      container coupled unit, 60 m3 fuel tank) and 'Sirocco' (Chemgas 110 m conventional gas
+      tanker, LNG-FUELLED, LPG cargo) are NOT LNG cargo vessels - Sirocco is listed under
+      EU-INLAND-GAS-TANKER-ADN-G. No built European inland LNG *cargo* tanker found.
+    reference_vessels:
+      - name: "FlexFueler001"
+        imo_or_eni: null
+        built: 2019
+        yard: null
+        loa_m: 76.4
+        beam_m: 11.45
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 1480
+        gt: null
+        n_tanks: 4
+        tank_type: "IMO Type C, vacuum insulated, 370 m3 each"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: "vacuum"
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null            # non-self-propelled; bow thruster; chartered pushboat
+        service_speed_kn: null
+        crew: null
+        source: "https://www.rivieramm.com/news-content-hub/europersquos-first-lng-inland-bunker-barge-55681"
+      - name: "LNG London"
+        imo_or_eni: null
+        built: null
+        yard: null
+        loa_m: 110
+        beam_m: 15                  # from search snippet attributed to Riviera/Tradewinds; primary paywalled
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 3000
+        gt: null
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null
+        service_speed_kn: null
+        crew: null
+        source: "https://en.sudohodstvo.org/lng-bunker-vessel-started-operation-rotterdam/ (LOA, capacity); beam via search snippet of https://www.tradewindsnews.com/gas/1813828/shell-puts-inland-lng-bunker-barge-to-work-off-rotterdam (paywalled)"
+
+  # ---------------------------------------------------------------- LNG, US bunker barge (pushed/towed)
+  - id: US-LNG-BUNKER-BARGE-2200
+    family: LNG-bunker-barge
+    region: americas-inland
+    waters: coastal                 # harbour/sheltered (Jacksonville)
+    formation: pushed_barge
+    cargo_modes: [gas]
+    cargoes: [LNG]
+    containment: membrane
+    cargo_capacity_m3: 2200
+    loa_m: 70.7                     # 232 ft converted
+    beam_m: 14.9                    # 49 ft converted
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    source: "https://naturalgasworld.com/first-us-built-lng-bunkering-barge-delivered-63775 ; https://maritime-executive.com/article/north-america-s-first-lng-bunker-barge-delivered"
+    confidence: medium
+    notes: "Only membrane-tank barge found in slice. Designed by Bristol Harbor Group."
+    reference_vessels:
+      - name: "Clean Jacksonville"
+        imo_or_eni: null
+        built: 2018
+        yard: "Conrad Orange Shipyard, Orange TX"
+        loa_m: 70.7                 # 232 ft
+        beam_m: 14.9                # 49 ft
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 2200
+        gt: null
+        n_tanks: 1
+        tank_type: "GTT Mark III Flex membrane"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: "Mark III Flex (PU foam system)"
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null            # unpowered barge
+        service_speed_kn: null
+        crew: null
+        source: "https://maritime-executive.com/article/north-america-s-first-lng-bunker-barge-delivered ; https://www.ship-technology.com/?p=13277 (built year from delivery reports; verify)"
+
+  # ---------------------------------------------------------------- LNG, US ATB
+  - id: US-LNG-ATB-4000-5500
+    family: LNG-bunker-ATB
+    region: americas-inland
+    waters: coastal
+    formation: atb
+    cargo_modes: [gas]
+    cargoes: [LNG]
+    containment: type_c_cylindrical
+    cargo_capacity_m3: [4000, 5500]
+    loa_m: [98.7, 103.6]            # barge only
+    beam_m: [19.5, 20.1]
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    source: "https://www.bairdmaritime.com/tugs/inland-tug-operations/vessel-review-q-ocean-service-q-lng-4000-first-us-flagged-offshore-lng-bunkering-atb-to-serve-southeastern-coastal-clients ; https://gcaptain.com/lng-bunker-barge-christened-at-fincantieri-bay-shipbuilding/"
+    confidence: high
+    notes: >
+      Correction to brief: Q-LNG 4000 was built by VT Halter Marine (Pascagoula), not Fincantieri Bay.
+      Fincantieri Bay built Clean Canaveral and Clean Everglades (5,400-5,500 m3; sources differ).
+    reference_vessels:
+      - name: "Q-LNG 4000 (barge) + Q Ocean Service (tug)"
+        imo_or_eni: null
+        built: 2021
+        yard: "VT Halter Marine, Pascagoula MS"
+        loa_m: 98.7
+        beam_m: 19.5
+        draught_m: null
+        depth_m: 9.9
+        dwt_t: null
+        cargo_capacity_m3: 4000
+        gt: null
+        n_tanks: 4
+        tank_type: "IMO Type C, 1,000 m3 each"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 3800    # tug: 2 x Wabtec GE 6L250 @ 1,900 kW; barge has 5 x Cummins QSK19 gensets (603 hp each)
+        propulsion: diesel
+        service_speed_kn: 10        # design speed of tug
+        crew: null
+        source: "https://www.bairdmaritime.com/tugs/inland-tug-operations/vessel-review-q-ocean-service-q-lng-4000-first-us-flagged-offshore-lng-bunkering-atb-to-serve-southeastern-coastal-clients (tug 39 m x 12.8 m x 6.4 m depth; bollard pull 58.9 t)"
+      - name: "Clean Everglades (barge)"
+        imo_or_eni: null
+        built: 2023
+        yard: "Fincantieri Bay Shipbuilding, Sturgeon Bay WI"
+        loa_m: 103.6                # 340 ft
+        beam_m: 20.1                # 66 ft
+        draught_m: null
+        depth_m: 10.0               # 32 ft 10 in
+        dwt_t: null
+        cargo_capacity_m3: 5500     # 4 x 1,375; other reports say 5,400
+        gt: null
+        n_tanks: 4
+        tank_type: "IMO Type C, 1,375 m3 each"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null
+        service_speed_kn: null
+        crew: null
+        source: "https://gcaptain.com/lng-bunker-barge-christened-at-fincantieri-bay-shipbuilding/ ; https://lngprime.com/?p=95663 (delivery 2023); cargo handling by Wartsila; sister Clean Canaveral"
+
+  # ---------------------------------------------------------------- LNG, China inland pontoon/barge
+  - id: CN-INLAND-LNG-BUNKER-PONTOON
+    family: inland-LNG-bunker-pontoon
+    region: asia-inland
+    waters: inland
+    formation: pushed_barge         # non-self-propelled pontoon/barge
+    cargo_modes: [gas]
+    cargoes: [LNG]
+    containment: type_c_cylindrical
+    cargo_capacity_m3: [200, 500]
+    loa_m: 65
+    beam_m: 12
+    draught_m: 1.6
+    air_draft_m: null
+    dwt_t: null
+    source: "https://www.bairdmaritime.com/amp/story/shipping/tankers/gas/vessel-review-xiang-neng-yuan-yi-hao-gas-bunker-barge-for-chinas-hunan-province ; https://doaj.org/article/ae566216ebce4b83b2e5c3299c71890a (500 m3 pontoon standard, Yangtze/Pearl)"
+    confidence: medium
+    notes: "~30 x 500 m3 Type C bunkering pontoons planned on Yangtze/Pearl by 2025 (Natural Gas Industry B, 2018). No built Xijiang LNG cargo tanker found."
+    reference_vessels:
+      - name: "Xiang Neng Yuan Yi Hao"
+        imo_or_eni: null
+        built: 2021
+        yard: "Hunan Jinhang Shipbuilding"
+        loa_m: 65
+        beam_m: 12
+        draught_m: 1.6
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 200      # LNG; also 395 m3 diesel
+        gt: null
+        n_tanks: null
+        tank_type: "multiple IMO Type C"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null            # non-self-propelled; LNG gensets on board
+        service_speed_kn: null
+        crew: null
+        source: "https://www.bairdmaritime.com/amp/story/shipping/tankers/gas/vessel-review-xiang-neng-yuan-yi-hao-gas-bunker-barge-for-chinas-hunan-province"
+
+  # ---------------------------------------------------------------- LNG, China river-sea
+  - id: CN-RIVERSEA-LNG-14000
+    family: river-sea-LNG-carrier
+    region: river-sea
+    waters: river-sea
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [LNG]
+    containment: null               # tank type not stated in sources read
+    cargo_capacity_m3: 14000
+    loa_m: 130
+    beam_m: 23.6
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    source: "https://www.hellenicshippingnews.com/?p=1048910"
+    confidence: medium
+    notes: "Yangtze <-> sea LNG transport/bunker vessel, Anhui Changjiang LNG. Electric propulsion with dual-fuel gensets."
+    reference_vessels:
+      - name: "Huaihe Nengyuan Qihang"
+        imo_or_eni: null
+        built: 2024
+        yard: "Hudong-Zhonghua Shipbuilding"
+        loa_m: 130
+        beam_m: 23.6
+        draught_m: null
+        depth_m: 15
+        dwt_t: null
+        cargo_capacity_m3: 14000
+        gt: null
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel-electric   # "dual-fuel power generator sets ... electric propulsion"
+        service_speed_kn: null
+        crew: null
+        source: "https://www.hellenicshippingnews.com/?p=1048910"
+
+  # ---------------------------------------------------------------- small-scale LNG by band
+  - id: SS-LNG-1000-5000
+    family: small-scale-LNG
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [LNG]
+    containment: type_c_cylindrical
+    cargo_capacity_m3: [1100, 5000]
+    loa_m: [69, 107.6]
+    beam_m: [11.8, 18.4]
+    draught_m: 3.5                   # Pioneer Knutsen only
+    air_draft_m: null
+    dwt_t: 817                       # Pioneer Knutsen only
+    source: "https://knutsenoas.com/?p=65 ; https://nyk.com/english/news/2017/20170215_01.html"
+    confidence: medium
+    notes: "Green Zeebrugge tank type not confirmed in sources read (brief suggests membrane) - left null."
+    reference_vessels:
+      - name: "Pioneer Knutsen"
+        imo_or_eni: null
+        built: 2004
+        yard: "Scheepswerf Bijlsma, Netherlands"
+        loa_m: 69
+        beam_m: 11.8
+        draught_m: 3.5
+        depth_m: null
+        dwt_t: 817
+        cargo_capacity_m3: 1100
+        gt: 1687
+        n_tanks: 2
+        tank_type: "IMO Type C pressure tanks"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 3100     # 2 x 910 kW gas + 2 x 640 kW diesel (Mitsubishi)
+        propulsion: dual-fuel        # separate gas and diesel engines
+        service_speed_kn: 14
+        crew: null
+        source: "https://knutsenoas.com/?p=65"
+      - name: "Green Zeebrugge (ex Engie Zeebrugge)"
+        imo_or_eni: null
+        built: 2017
+        yard: "Hanjin Heavy Industries, Yeongdo, Busan"
+        loa_m: 107.6
+        beam_m: 18.4
+        draught_m: null
+        depth_m: 9.0
+        dwt_t: null
+        cargo_capacity_m3: 5000
+        gt: 7403
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: dual-fuel
+        service_speed_kn: null
+        crew: null
+        source: "https://nyk.com/english/news/2017/20170215_01.html"
+
+  - id: SS-LNG-5000-7500
+    family: small-scale-LNG
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [LNG, ethylene, LPG]
+    containment: type_c_cylindrical
+    cargo_capacity_m3: [7500, 7551]
+    loa_m: [117.8, 123.44]
+    beam_m: 18.6
+    draught_m: [5.65, 6.8]
+    air_draft_m: null
+    dwt_t: 6150
+    source: "https://anthonyveder.com/blog/vessel/coral-methane/ ; https://www.lngindustry.com/liquid-natural-gas/14102020/avenir-lng-takes-delivery-of-avenir-advantage"
+    confidence: medium
+    notes: >
+      Kairos (HMD, 7,500 m3, Type C, ice 1A) reported as '171 m' LOA by Maritime Executive/search
+      snippet - likely an error (sister size implies ~117 m); not used. Multi-gas (LNG/LEG/LPG) and
+      bunker conversions common in this band.
+    reference_vessels:
+      - name: "Coral Methane"
+        imo_or_eni: null
+        built: 2009
+        yard: "Remontowa, Gdansk"
+        loa_m: 117.8
+        beam_m: 18.6
+        draught_m: 6.8
+        depth_m: null
+        dwt_t: 6150
+        cargo_capacity_m3: 7551
+        gt: 7833
+        n_tanks: null
+        tank_type: "IMO Type C (semi-ref, Type 2G)"
+        tank_material: "AISI 304L stainless"
+        design_pressure_barg: 3.2
+        cargo_temp_c: -163
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null
+        service_speed_kn: 15.5       # max speed per Marine Insight
+        crew: null
+        source: "https://anthonyveder.com/blog/vessel/coral-methane/ (LOA, beam, GT, m3, pressure, temp); https://www.marineinsight.com/coral-methane-the-first-multipurpose-lng-carrier/ (draught, dwt, 304L, yard, speed). Converted to LNG bunker vessel 2018."
+      - name: "Avenir Advantage"
+        imo_or_eni: null
+        built: 2020
+        yard: "Keppel Nantong Shipyard, China"
+        loa_m: 123.44
+        beam_m: 18.6
+        draught_m: 5.65
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 7500
+        gt: null
+        n_tanks: 2
+        tank_type: "IMO Type C"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 2700     # Wartsila 6L34DF @ 750 rpm
+        propulsion: dual-fuel
+        service_speed_kn: null
+        crew: null
+        source: "https://www.lngindustry.com/liquid-natural-gas/14102020/avenir-lng-takes-delivery-of-avenir-advantage (yard, tanks); dims+engine via search snippet of https://lngprime.com/?p=5370"
+
+  - id: SS-LNG-7500-20000
+    family: small-scale-LNG
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [LNG, ethylene]
+    containment: type_c_cylindrical
+    cargo_capacity_m3: [10000, 15600]
+    loa_m: [137, 155]
+    beam_m: [19.8, 22.7]
+    draught_m: 8.2
+    air_draft_m: null
+    dwt_t: 12259
+    source: "https://anthonyveder.com/blog/vessel/coral-furcata ; https://www.meyerwerft.de/en/press/press_detail/lng_tanker_coral_energy_completed.jsp"
+    confidence: high
+    notes: "Huaihe Nengyuan Qihang (14,000 m3) also falls in this band - see CN-RIVERSEA-LNG-14000."
+    reference_vessels:
+      - name: "Coral Furcata"
+        imo_or_eni: null
+        built: 2011
+        yard: null                   # sister Coral Fraseri built Taizhou Wuzhou
+        loa_m: 137.0
+        beam_m: 19.8
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 10000
+        gt: 10105
+        n_tanks: 2
+        tank_type: "IMO Type C"
+        tank_material: null
+        design_pressure_barg: 5.0
+        cargo_temp_c: -164
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null
+        service_speed_kn: null
+        crew: null
+        source: "https://anthonyveder.com/blog/vessel/coral-furcata ; tank count via https://scheepvaartwest.be/CMS/index.php/gas-tankers/12854-coral-fraseri-imo-9378278 (sister)"
+      - name: "Coral Energy"
+        imo_or_eni: null
+        built: 2013
+        yard: "Meyer Werft / Neptun Werft"
+        loa_m: 155.0
+        beam_m: 22.7
+        draught_m: 8.2
+        depth_m: 14.95
+        dwt_t: 12259                 # secondary (search snippet)
+        cargo_capacity_m3: 15600
+        gt: 13500                    # secondary (search snippet)
+        n_tanks: null
+        tank_type: "IMO Type C (Type 2G)"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: -161
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 7800     # Wartsila dual-fuel, mechanical drive
+        propulsion: dual-fuel
+        service_speed_kn: 15.8
+        crew: 25                     # cabins
+        source: "https://www.meyerwerft.de/en/press/press_detail/lng_tanker_coral_energy_completed.jsp ; dwt/GT via https://www.neptunwerft.de/en/press/press_detail/delevery_of_lng_tanker_coral_energice.jsp (snippet). Ice class IA."
+
+  - id: SS-LNG-20000-30000
+    family: small-scale-LNG
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [LNG]
+    containment: type_c_bilobe
+    cargo_capacity_m3: [30000, 30422]
+    loa_m: [176.8, 184.7]
+    beam_m: [28.1, 28.8]
+    draught_m: null
+    air_draft_m: null
+    dwt_t: null
+    source: "https://lngprime.com/?p=63604 ; https://offshore-energy.biz/?p=374846"
+    confidence: medium
+    notes: >
+      Source conflict on Coral Nordic tank split: LNG Prime says 16,000 + 14,000 m3; another LNG Prime
+      item says 2 x 15,000 m3 TGE bilobes. Haiyang Shiyou 301 converted to LNG bunker vessel ~2022-23.
+    reference_vessels:
+      - name: "Coral Nordic"
+        imo_or_eni: null
+        built: 2022
+        yard: "Jiangnan Shipyard (CSSC)"
+        loa_m: 176.8
+        beam_m: 28.8
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 30000
+        gt: null
+        n_tanks: 2
+        tank_type: "IMO Type C bi-lobe (TGE)"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: dual-fuel
+        service_speed_kn: null
+        crew: null
+        source: "https://lngprime.com/?p=63604 ; https://lngprime.com/?p=38146 (tank split conflict). Ice 1A, DNV."
+      - name: "Hai Yang Shi You 301"
+        imo_or_eni: null
+        built: 2015
+        yard: "Jiangnan Shipyard"
+        loa_m: 184.7
+        beam_m: 28.1
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 30422
+        gt: null
+        n_tanks: 4
+        tank_type: "IMO Type C (TGE Marine)"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: dual-fuel        # Wartsila DF
+        service_speed_kn: null
+        crew: null
+        source: "https://offshore-energy.biz/?p=374846 ; https://inspenet.com/en/news/the-largest-lng-transport-bunker-ship-in-the-world-begins-operations/"
+
+  # ---------------------------------------------------------------- LPG, inland Rhine (ADN Type G)
+  - id: EU-INLAND-GAS-TANKER-ADN-G
+    family: inland-gas-tanker
+    region: europe-inland
+    waters: inland
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [propane, butane, LPG]
+    containment: type_c_cylindrical  # ADN Type G pressure tanks
+    cargo_capacity_m3: [2320, 5538]
+    loa_m: [95.04, 110]
+    beam_m: [11.45, 17.5]
+    draught_m: [1.2, 2.8]
+    air_draft_m: null
+    dwt_t: [1452, 2291]
+    source: "https://scheepvaartwest.be/CMS/index.php/gas-tankers/1402-lrg-gas-89-eni-02334363 ; https://www.bairdmaritime.com/shipping/tankers/gas/vessel-review-gas-96-shallow-draught-diesel-electric-gas-tanker-built-for-low-water-rhine-service ; https://www.ineos.com/no/nyheter/delt-nyheter/ineos-builds-new-efficient-class-of-barges-to-supply-raw-materials-on-the-rhine/"
+    confidence: high
+    notes: >
+      ADN Type G = tank vessel for gases under pressure or refrigeration (CCNR MINT). Classic Rhine
+      gas tanker 95-110 x 11.45 m, ~2,300 m3; new wide-beam 15-17.5 m units carry 3,250-5,500 m3.
+      Gas 96 1.2 m is a low-water operating draught, not max. Chemgas 'Sirocco' (110 m, 2014) is a
+      LNG-fuelled conventional gas tanker - capacity not found.
+    reference_vessels:
+      - name: "LRG Gas 89"
+        imo_or_eni: "ENI 02334363"
+        built: 2011
+        yard: "Santierul Naval Orsova (hull) / TeamCo Heusden (completion)"
+        loa_m: 95.04
+        beam_m: 11.45
+        draught_m: 2.80
+        depth_m: 5.70
+        dwt_t: 1452
+        cargo_capacity_m3: 2320
+        gt: null
+        n_tanks: 4
+        tank_type: "pressure tanks (ADN Type G)"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 1268     # 2 x Mitsubishi S12A2 @ 634 kW
+        propulsion: diesel
+        service_speed_kn: null
+        crew: null
+        source: "https://scheepvaartwest.be/CMS/index.php/gas-tankers/1402-lrg-gas-89-eni-02334363"
+      - name: "Gas 96"
+        imo_or_eni: null
+        built: 2025
+        yard: "Severnav (hull) / De Gerlien van Tiem"
+        loa_m: 109.97
+        beam_m: 15
+        draught_m: 1.2
+        depth_m: null
+        dwt_t: 2291
+        cargo_capacity_m3: 3256
+        gt: null
+        n_tanks: 4
+        tank_type: "pressure tanks"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel-electric
+        service_speed_kn: null
+        crew: null
+        source: "https://www.bairdmaritime.com/shipping/tankers/gas/vessel-review-gas-96-shallow-draught-diesel-electric-gas-tanker-built-for-low-water-rhine-service"
+      - name: "Onion (INEOS; sisters Aloo/Brinjal 110 x 15 m, 4,446 m3)"
+        imo_or_eni: null
+        built: 2020
+        yard: "Veka Shipbuilding, Werkendam (tanks Barlage)"
+        loa_m: 110
+        beam_m: 17.5
+        draught_m: null
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 5538
+        gt: null
+        n_tanks: 6
+        tank_type: "pressure tanks, ADN gas barge 2019 standard"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null             # Veth pod drives
+        service_speed_kn: null
+        crew: null
+        source: "https://www.ineos.com/no/nyheter/delt-nyheter/ineos-builds-new-efficient-class-of-barges-to-supply-raw-materials-on-the-rhine/"
+
+  # ---------------------------------------------------------------- LPG, coastal fully pressurised
+  - id: LPG-FP-3500-11000
+    family: LPG-fully-pressurised
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [LPG, propane, butane]
+    containment: type_c_cylindrical
+    cargo_capacity_m3: [3500, 11026]
+    loa_m: [99.98, 119.92]
+    beam_m: [17.7, 20.6]
+    draught_m: [6.1, 6.8]
+    air_draft_m: null
+    dwt_t: [5311, 8065]
+    source: "JSEA 'Latest Ships Built in Japan' Tankers/LPG: https://www.jsea.or.jp/wp_2022/wp-content/themes/nihon_senpaku/img/publications/sameij_2026/by-ship-type/Tankers%20LPG.pdf"
+    confidence: high
+    notes: >
+      Generic band 3,500-6,000 m3, ~17.5 kg/cm2, -45 C min, carbon-steel Type C (Marine Insight,
+      secondary). JSEA shows fully pressurised now built to 11,000 m3. Design pressure not given.
+    reference_vessels:
+      - name: "Gas Frontier"
+        imo_or_eni: null
+        built: null
+        yard: "Sasaki Shipbuilding"
+        loa_m: 99.98
+        beam_m: 17.70
+        draught_m: 6.10
+        depth_m: 7.80
+        dwt_t: 5311
+        cargo_capacity_m3: 5018
+        gt: 4552
+        n_tanks: 2
+        tank_type: "cylindrical, fully pressurised (Type C)"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 2750     # Hitachi-MAN B&W 5L35MC6.1 MCR
+        propulsion: diesel
+        service_speed_kn: 13.4
+        crew: 20
+        source: "https://www.jsea.or.jp/wp_2022/wp-content/themes/nihon_senpaku/img/publications/sameij_2026/by-ship-type/Tankers%20LPG.pdf"
+      - name: "Eco Texiana"
+        imo_or_eni: null
+        built: null
+        yard: "Sasaki Shipbuilding"
+        loa_m: 119.92
+        beam_m: 20.60
+        draught_m: 6.80
+        depth_m: 9.60
+        dwt_t: 8065
+        cargo_capacity_m3: 11026
+        gt: 8043
+        n_tanks: 2
+        tank_type: "cylindrical, fully pressurised (Type C)"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 3250     # Hitachi-MAN B&W 6S35MC7.1 MCR
+        propulsion: diesel
+        service_speed_kn: 13.6
+        crew: 22
+        source: "https://www.jsea.or.jp/wp_2022/wp-content/themes/nihon_senpaku/img/publications/sameij_2026/by-ship-type/Tankers%20LPG.pdf"
+
+  # ---------------------------------------------------------------- LPG/ethylene semi-ref
+  - id: LPG-ETH-SEMIREF-5000-12000
+    family: LPG-ethylene-semi-refrigerated
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [LPG, ethylene, propane, butane]
+    containment: type_c_cylindrical  # cylindrical/bilobe/spherical all used
+    cargo_capacity_m3: [5000, 12000]
+    loa_m: [124.9, 140]
+    beam_m: [19.8, 22]
+    draught_m: 8.3
+    air_draft_m: null
+    dwt_t: null
+    source: "https://www.motorship.com/?p=129573 ; https://en.portnews.ru/news/124058 (12,000 m3: 140 x 22 x 12 m)"
+    confidence: medium
+    notes: "Semi-ref LPG generic ~8.5 kg/cm2, -10 C (Marine Insight, secondary); ethylene-capable units -104 C."
+    reference_vessels:
+      - name: "Norgas Orinda"
+        imo_or_eni: null
+        built: 2002
+        yard: "Hudong-Zhonghua, Shanghai"
+        loa_m: 124.9
+        beam_m: 19.8
+        draught_m: 8.3
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 8556     # cargo tanks 8,461 + 95 deck tank
+        gt: 8860                    # source wording ambiguous ("8,860 g")
+        n_tanks: 2
+        tank_type: "IMO Type C (semi-ref)"
+        tank_material: null
+        design_pressure_barg: 7
+        cargo_temp_c: -104
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 6300     # MAN B&W 6L48/60; aux 4 x 600 kW
+        propulsion: diesel
+        service_speed_kn: 16.5
+        crew: null
+        source: "https://www.motorship.com/?p=129573"
+
+  # ---------------------------------------------------------------- ethane
+  - id: ETHANE-27500
+    family: ethane-ethylene-carrier
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [ethane, ethylene, LPG, LNG]
+    containment: null              # not stated in sources read
+    cargo_capacity_m3: 27500
+    loa_m: 180
+    beam_m: 26.6
+    draught_m: 9
+    air_draft_m: null
+    dwt_t: null
+    source: "https://www.wartsila.com/marine/customer-segments/references/merchant/js-ineos-insight"
+    confidence: medium
+    notes: "Evergas Dragon class. Above the small-scale band; included as upper anchor. No smaller ethane carrier found."
+    reference_vessels:
+      - name: "JS INEOS Insight"
+        imo_or_eni: null
+        built: 2015
+        yard: "Sinopacific Offshore & Engineering"
+        loa_m: 180
+        beam_m: 26.6
+        draught_m: 9                 # "approximately"
+        depth_m: null
+        dwt_t: null
+        cargo_capacity_m3: 27500
+        gt: null
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null     # 2 x Wartsila 50DF + 2 x 20DF; kW not stated
+        propulsion: dual-fuel
+        service_speed_kn: null
+        crew: null
+        source: "https://www.wartsila.com/marine/customer-segments/references/merchant/js-ineos-insight (2 x 1,000 m3 deck LNG fuel tanks per search snippet)"
+
+  # ---------------------------------------------------------------- CNG
+  - id: CNG-COASTAL-2200
+    family: CNG-carrier
+    region: coastal
+    waters: coastal
+    formation: motor_vessel
+    cargo_modes: [gas]
+    cargoes: [CNG]
+    containment: pressure_bottle
+    cargo_capacity_m3: 2200          # nominal water volume
+    loa_m: 110
+    beam_m: 18
+    draught_m: null
+    air_draft_m: null
+    dwt_t: 757
+    source: "https://ww2.eagle.org/en/news/abs-news/launching-worlds-first-cng-ship.html ; https://www.marinelink.com/news/worlds-class-first373791"
+    confidence: medium
+    notes: >
+      Only built CNG ship found. CNG generally >250 bar (Wikipedia, secondary). Coselle (coiled pipe on
+      carousels) and GASVESSEL (composite) are concepts only - no built particulars. Cylinder pressure for
+      Jayanti Baruna not found.
+    reference_vessels:
+      - name: "Jayanti Baruna"
+        imo_or_eni: null
+        built: 2016
+        yard: "Jiangsu Hantong Ship Heavy Industry (for CIMC ENRIC)"
+        loa_m: 110
+        beam_m: 18
+        draught_m: null
+        depth_m: null
+        dwt_t: 757
+        cargo_capacity_m3: 2200
+        gt: null
+        n_tanks: null
+        tank_type: "vertical pressure cylinders"
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null     # Wartsila 9L34DF; rating not stated
+        propulsion: dual-fuel
+        service_speed_kn: 14
+        crew: null
+        source: "https://www.marinelink.com/news/worlds-class-first373791 ; beam/dwt via search snippet of https://www.cimc-enric.com/marine-cng-product/"
+
+  # ---------------------------------------------------------------- dry bulk: bauxite transhipment
+  - id: AF-BAUXITE-TRANSHIP-SHUTTLE
+    family: transhipment-shuttle-barge
+    region: africa-inland
+    waters: river-sea               # Rio Nunez / Kamsar to offshore anchorage
+    formation: motor_vessel         # self-propelled deck-cargo barge
+    cargo_modes: [dry_bulk]
+    cargoes: [bauxite]
+    containment: null               # open deck cargo, grab-unloaded by floating crane
+    cargo_capacity_m3: null
+    loa_m: [100, 127.7]
+    beam_m: [24.6, 26.0]
+    draught_m: [4, 5.7]
+    air_draft_m: null
+    dwt_t: [6000, 13000]
+    source: "Louis Dreyfus Armateurs LDPL brochure: https://www.lda.fr/wp-content/uploads/2021/02/LDPL-BROCHURE-rev.pdf ; Wuchang order: https://splash247.com/?p=92442 (snippet)"
+    confidence: medium
+    notes: >
+      Guinea (EGA/GAC Kamsar): LDA ordered 4 x 13,000 dwt self-propelled barges from Wuchang for late-2019
+      delivery; brochure 'deck cargo ship' 13,000 t particulars match - link is inferred (names not given).
+      CSL operates a gravity self-unloading TSV at Kamsar (no particulars published). SMB-Winning uses
+      barges on Rio Nunez to floating cranes (no particulars). Trombetas (MRN, Brazil) ships bauxite on
+      ocean bulkers (max 245-260 m LOA, 11.58 m draft) - no barge leg. No vessel data for Gabon Moanda
+      or Ghana Nsuta manganese (rail-to-port logistics).
+    reference_vessels:
+      - name: "LDA 'Deck cargo ship' 13,000 t (Wuchang series, inferred)"
+        imo_or_eni: null
+        built: 2019
+        yard: "Wuchang Shipbuilding (inferred)"
+        loa_m: 127.7
+        beam_m: 26.0
+        draught_m: 5.7
+        depth_m: null
+        dwt_t: 13000
+        cargo_capacity_m3: null
+        gt: null
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: 3200     # 2 x 1,600 kW
+        propulsion: diesel
+        service_speed_kn: 12         # ">12 kts" max
+        crew: null
+        source: "https://www.lda.fr/wp-content/uploads/2021/02/LDPL-BROCHURE-rev.pdf (p.13)"
+      - name: "LDA double-ended self-propelled barge 6,000 t"
+        imo_or_eni: null
+        built: null
+        yard: null
+        loa_m: 100
+        beam_m: 24.6
+        draught_m: 4
+        depth_m: null
+        dwt_t: 6000
+        cargo_capacity_m3: null
+        gt: null
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: diesel-electric  # 4 azimuth thrusters
+        service_speed_kn: null
+        crew: null
+        source: "https://www.lda.fr/wp-content/uploads/2021/02/LDPL-BROCHURE-rev.pdf (p.11). Same brochure: TSV with buffer 193.9 x 32.26 x 12.8 m, up to 59,000 t, 4 x 50 t cranes; floating crane unit 64.2 x 24.0 x 2.95 m, GT 2,148."
+
+  # ---------------------------------------------------------------- dry bulk: split hopper
+  - id: SPLIT-HOPPER-1000
+    family: split-hopper-barge
+    region: coastal
+    waters: coastal
+    formation: towed_barge          # most non-self-propelled; self-propelled variants exist
+    cargo_modes: [dry_bulk]
+    cargoes: []                     # dredged spoil / rock; not ore trade
+    containment: split_hopper
+    cargo_capacity_m3: 1000
+    loa_m: [49.91, 62.4]
+    beam_m: [11.3, 12.4]
+    draught_m: [3.85, 4.04]
+    air_draft_m: null
+    dwt_t: null                     # 940 m3 self-propelled unit ~1,500 dwt (dsboffshore, snippet)
+    source: "https://dredgepoint.org/dredging-database/equipment/hb-1005s ; https://dredgepoint.org/dredging-database/equipment/donau ; https://dredgepoint.org/equipment/marianna-ix"
+    confidence: medium
+    notes: "Dredging-trade split barges; included as hull-form calibration for bottom-dump bulk. Not used for ore."
+    reference_vessels:
+      - name: "HB 1005S"
+        imo_or_eni: null
+        built: null
+        yard: null
+        loa_m: 49.91
+        beam_m: 12.4
+        draught_m: 4.04
+        depth_m: 4.69
+        dwt_t: null
+        cargo_capacity_m3: 1000
+        gt: null
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null
+        service_speed_kn: null
+        crew: null
+        source: "https://dredgepoint.org/dredging-database/equipment/hb-1005s"
+      - name: "Donau"
+        imo_or_eni: null
+        built: 2013
+        yard: null
+        loa_m: 62.4                  # Lbp
+        beam_m: 11.4
+        draught_m: 3.85
+        depth_m: 4.4
+        dwt_t: null
+        cargo_capacity_m3: 1000
+        gt: null
+        n_tanks: null
+        tank_type: null
+        tank_material: null
+        design_pressure_barg: null
+        cargo_temp_c: null
+        insulation: null
+        lightship_t: null
+        steel_weight_t: null
+        installed_power_kw: null
+        propulsion: null             # non-self-propelled, remote-opening
+        service_speed_kn: null
+        crew: null
+        source: "https://dredgepoint.org/dredging-database/equipment/donau"

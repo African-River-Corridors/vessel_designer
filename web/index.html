@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barge Design Simulator — African River Corridors</title>
+<meta name="description" content="Concept-stage simulator for inland cargo barges: capacity, draught, lightship, air draft and speed–power, with matching standard vessel classes.">
+<link rel="icon" href="assets/arc-logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="band">
+  <div class="wrap band-inner">
+    <img src="assets/arc-logo.png" alt="African River Corridors" class="logo">
+    <div class="band-title">
+      <span class="label">Vessel design tools</span>
+      <h1>Barge Design Simulator</h1>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="lede">Choose a barge type and cargo, set its size and the waterway, and see what it carries, how deep it floats and how much power it needs. Concept-stage results for feasibility studies — not for construction or class approval.</p>
+
+  <div id="status" class="status">Loading the calculation engine…</div>
+
+  <div class="grid">
+    <form id="inputs" class="card inputs" autocomplete="off">
+      <h2 class="label">Vessel</h2>
+      <label>Barge type
+        <select name="vessel">
+          <option value="box_barge">Box-hold dry bulk barge</option>
+          <option value="hopper_barge">Sloped-hopper dry bulk barge</option>
+          <option value="gas_barge">Gas barge — IMO Type C tanks</option>
+        </select>
+      </label>
+      <label>Arrangement
+        <select name="self_propelled">
+          <option value="0">Pushed barge (pusher is a separate vessel)</option>
+          <option value="1">Self-propelled (machinery and accommodation aft)</option>
+        </select>
+      </label>
+      <label>Cargo <select name="cargo"></select></label>
+      <label>Start from a standard class
+        <select name="std"><option value="">— custom —</option></select>
+      </label>
+      <div class="row3">
+        <label>Length overall (m)<input name="loa_m" type="number" step="0.1" min="20" max="200" value="76.5"></label>
+        <label>Beam (m)<input name="beam_m" type="number" step="0.1" min="4" max="40" value="11.4"></label>
+        <label>Depth (m)<input name="depth_m" type="number" step="0.05" min="1.5" max="12" value="3.5"></label>
+      </div>
+      <div class="row2">
+        <label>Block coefficient<input name="cb" type="number" step="0.005" min="0.6" max="1" value="0.928"></label>
+        <label>Min. freeboard (m)<input name="freeboard_min_m" type="number" step="0.05" min="0" value="0.3"></label>
+      </div>
+
+      <div id="gasopts" hidden>
+        <h2 class="label">Gas tanks</h2>
+        <label>Tank rules
+          <select name="ruleset">
+            <option value="IGC_2G_EXACT">IGC type 2G — exact clearance (seagoing code)</option>
+            <option value="ADN_G">ADN type G (European inland code)</option>
+            <option value="IGC_2G">IGC type 2G — stepped clearance (older, conservative)</option>
+          </select>
+        </label>
+        <div class="row2">
+          <label>Tank fill limit<input name="fill_ratio" type="number" step="0.01" min="0.8" max="0.99" value="0.98"></label>
+          <label>ADN per-tank cap
+            <select name="adn_tank_cap_m3">
+              <option value="1000">1,000 m³ (ADN 9.3.4 route)</option>
+              <option value="380">380 m³ (ADN 9.3.1.11.1 strict)</option>
+            </select>
+          </label>
+        </div>
+        <label class="check"><input name="optimise_depth" type="checkbox" checked> Find the best moulded depth (3.5–7.0 m)</label>
+      </div>
+
+      <h2 class="label">Waterway</h2>
+      <div class="row2">
+        <label>Channel depth (m)<input name="ch_depth" type="number" step="0.1" min="0" value="4.0"></label>
+        <label>Under-keel clearance (m)<input name="ch_ukc" type="number" step="0.05" min="0" value="0.5"></label>
+      </div>
+      <div class="row3">
+        <label>Bottom width (m)<input name="ch_width" type="number" step="1" min="0" value="60"></label>
+        <label>Bank slope (H:V)<input name="ch_slope" type="number" step="0.5" min="0" value="3"></label>
+        <label>Current (kn)<input name="ch_current" type="number" step="0.1" min="0" value="0"></label>
+      </div>
+      <div class="row2">
+        <label>Air draft limit (m)<input name="air_draft_limit_m" type="number" step="0.1" min="0" placeholder="none"></label>
+        <label>Draught limit (m)<input name="draught_limit_m" type="number" step="0.1" min="0" placeholder="none"></label>
+      </div>
+
+      <details>
+        <summary>Advanced</summary>
+        <div class="row2">
+          <label>Lightship factor k (t/m³)<input name="k" type="number" step="0.001" min="0.05" max="0.3"></label>
+          <label>Propulsive efficiency<input name="eta_d" type="number" step="0.01" min="0.2" max="0.8" value="0.45"></label>
+        </div>
+        <p class="hint">k × L × B × D gives box-barge lightship. The default is fitted to published barges — see “Calibration”.</p>
+      </details>
+    </form>
+
+    <section class="outputs">
+      <div class="card">
+        <div class="kpis" id="kpis"></div>
+        <p class="governs" id="governs"></p>
+        <div id="calib" class="calib"></div>
+      </div>
+
+      <div class="card">
+        <h2 class="label">Arrangement (concept)</h2>
+        <div id="drawing" class="drawing"></div>
+        <p class="caption" id="drawcap"></p>
+      </div>
+
+      <div class="card">
+        <h2 class="label">Speed and power</h2>
+        <div id="chart" class="chart"></div>
+        <p class="caption" id="chartcap">Delivered power for this hull alone. The pusher's own hull resistance and propulsor efficiency are not included.</p>
+      </div>
+
+      <div class="card" id="stabcard" hidden>
+        <h2 class="label">Intact stability</h2>
+        <p class="governs" id="stabverdict"></p>
+        <div id="gzchart" class="chart"></div>
+        <div class="tablewrap"><table id="stabtable"></table></div>
+        <h3 class="sub">Criteria — governing condition</h3>
+        <div class="tablewrap"><table id="crittable"></table></div>
+        <ul id="stablims" class="warnings"></ul>
+      </div>
+
+      <div class="card">
+        <h2 class="label">Checks</h2>
+        <ul id="checks" class="checks"></ul>
+        <ul id="warnings" class="warnings"></ul>
+      </div>
+
+      <div class="card">
+        <h2 class="label">Matching standard classes</h2>
+        <div class="tablewrap"><table id="matches"></table></div>
+        <p class="caption">Standard hull classes (CEMT, China GB 38030, US inland, Paraná) closest to this length and beam.</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="wrap foot">
+  <p>Concept-stage estimates for feasibility studies only. Results carry the uncertainty shown under “Calibration” and must be confirmed by a naval architect and the classification society before any design decision.</p>
+  <p>Built by African River Corridors with AI assistance. The calculations are open Python, run in your browser — nothing you enter leaves this page.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

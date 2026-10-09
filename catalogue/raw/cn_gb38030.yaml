@@ -1,0 +1,568 @@
+# GB 38030 — 内河过闸运输船舶标准船型主尺度系列
+# Dimensions series of standard transport ship types passing the locks of inland rivers (China).
+# Transcribed 2026-10-06 from the PDFs in ~/Downloads (GB+38030.1..5-2019, GB+38030.1-2026).
+# Parts 1, 2, 5 (2019) and 1 (2026): text layer, checked against page images.
+# Parts 3, 4 (2019): page images only (broken font encoding in text layer).
+# Merged cells are repeated on every row they cover. Type codes are as printed (2019 codes carry a
+# hyphen, e.g. "CG-H1"; the text layer drops it). Thousand separators (thin space, "1 000") removed.
+# Only printed values; nothing inferred.
+#
+# 2019 tables give 总宽 BOA (m), 总长 LOA (m) and a reference column.
+# 2026 tables give only 最大船宽 (extreme breadth, m) and 最大船长 (extreme length, m) — no reference
+# DWT/TEU/cars — and use new type codes (region-breadth×10-type+serial+N/M/R suffix).
+#
+# Mandatory vs recommended (all 2019 parts, preface): the BOA and LOA values in the tables are
+# mandatory (强制性); all other parameters are recommended (推荐性).
+
+standard: GB 38030
+title_cn: "内河过闸运输船舶标准船型主尺度系列"
+title_en: "Dimensions series of standard transport ship types passing the locks of inland rivers"
+category_key:
+  dry_bulk_chemical_oil: "干散货船、化学品船、油船 — dry bulk carrier, chemical tanker, oil tanker (Part 3: 干散货船、液货船 dry bulk & liquid cargo ship; 2026: 干(散)货船、化学品液货船、油船 dry (bulk) cargo ship, chemical liquid-cargo tanker, oil tanker)"
+  barge: "驳船 — barge"
+  container: "集装箱船 — container ship"
+  ro_ro: "滚装货船 — ro-ro cargo ship (car carrier); 2026: 滚装船(商品汽车运输船) ro-ro ship (commercial vehicle carrier)"
+  sand_self_unloader: "自卸砂船 — self-unloading sand carrier"
+
+parts:
+  # ------------------------------------------------------------------------------------------
+  - id: GB38030.1-2019
+    title_cn: "内河过闸运输船舶标准船型主尺度系列 第1部分：长江水系"
+    title_en: "Dimensions series of standard transport ship types passing the locks of inland rivers — Part 1: Changjiang River system"
+    status: "superseded by GB 38030.1-2026 from 2026-12-01"
+    issued: 2019-07-29
+    effective: 2020-02-01
+    scope_en: "New and reconstructed ships passing locks, ship lifts etc. of the Changjiang (Yangtze) system, excluding the Three Gorges ship lift."
+    definitions:
+      - {term_cn: "长江水系", term_en: "Changjiang River system", def_en: "Changjiang trunk line plus Changjiang branch lines."}
+      - {term_cn: "长江支线", term_en: "Changjiang branch lines", def_en: "Min, Jialing, Wu, Xiang, Yuan, Han rivers, Jianghan Canal, Gan, Xin rivers and the Hefei–Yuxi (合裕线) waterway."}
+    general_rules:
+      - {clause: "2.1", cn: "总长LOA：船体(包括首、尾升高甲板)及上层建筑的船首最前端到船尾最后端之间的水平距离，不包括船首尾两端的突出物", en: "LOA: horizontal distance from foremost to aftmost point of hull (incl. raised fore/aft decks) and superstructure; metal hulls to inner surface of plating, FRP/non-metal hulls to outer surface; excludes end protrusions (sponson decks, fenders, bulwarks, pushing gear, outboard motors and brackets, false bow/stern, movable protrusions)."}
+      - {clause: "2.2", cn: "总宽BOA：从一舷到另一舷垂直于中线面方向量至船壳外板外侧的最大距离，舷伸甲板和护舷材等突出物不计入", en: "BOA: maximum breadth to the outside of shell plating, perpendicular to the centreline plane; sponson decks, fenders and similar protrusions not counted."}
+      - {clause: "4.1", cn: "本尺度系列中船舶总宽可下浮不超过2%，船舶总长可下浮不超过10%", en: "A ship's BOA may be up to 2% below the series value; LOA may be up to 10% below."}
+      - {clause: "4.2", cn: "固定突出物其长度和宽度应分别计入总长和总宽；活动突出物过闸前未能提起的，应计入总长和总宽", en: "Fixed protrusions at ends or sides (sponson decks, fenders, bulwarks, pushing gear, outboard motors and brackets, false bow/stern) count toward LOA and BOA. Movable protrusions (tyres, fenders) count if not lifted before passing the lock."}
+      - {clause: "4.3", cn: "过闸船舶应满足适用通航水域的限制条件", en: "Ships passing locks must meet the limits of the applicable navigable waters."}
+      - {clause: "4.4", cn: "多用途船主尺度应同时满足适装货类对应船型的尺度限制", en: "Multipurpose ships must meet the dimension limits of every ship type matching the cargoes they carry."}
+      - {clause: "5.1.2/5.2.2", cn: "与驳船组成船队的总长、总宽应控制在航道、船闸允许的范围内", en: "Overall length and breadth of a barge train must stay within waterway and lock limits."}
+    code_scheme: >-
+      图1 □-□□ : 航行区域 navigation region (CG 长江干线 Changjiang trunk line; CZ 长江支线 Changjiang branch lines)
+      - 船舶类型 ship type (H 干散货船、化学品船、油船 dry bulk/chemical/oil; B 驳船 barge; J 集装箱船 container;
+      G 滚装货船 ro-ro cargo; Z 自卸砂船 self-unloading sand carrier) + 尺度系列序号 serial number in the series.
+      Example (示例): CG-H1 = first Changjiang-trunk-line dry bulk/chemical/oil standard type.
+    tables:
+      - table: 1
+        title_cn: "长江干线过闸干散货船、化学品船、油船标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing dry bulk carriers, chemical tankers, oil tankers — standard dimensions series"
+        category: dry_bulk_chemical_oil
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [CG-H1, 11.0, 66.0, 1000]
+          - [CG-H2, 11.0, 88.0, 1000]
+          - [CG-H3, 13.8, 88.0, 2000]
+          - [CG-H4, 15.0, 88.0, 2500]
+          - [CG-H5, 16.3, 88.0, 3000]
+          - [CG-H6, 16.3, 110.0, 4000]
+          - [CG-H7, 16.3, 130.0, 5000]
+        footnotes:
+          - "注1：CG-H7不适用于液货船。 / Note 1: CG-H7 does not apply to liquid-cargo ships (tankers)."
+          - "注2：参数为黑体表示强制性的。 / Note 2: parameters in bold are mandatory."
+      - table: 2
+        title_cn: "长江干线过闸驳船标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing barges — standard dimensions series"
+        category: barge
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [CG-B1, 11.0, 56.0, 800]
+          - [CG-B2, 11.0, 75.0, 1500]
+          - [CG-B3, 13.8, 75.0, 2500]
+          - [CG-B4, 16.3, 75.0, 3000]
+          - [CG-B5, 16.3, 110.0, 4500]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 3
+        title_cn: "长江干线过闸集装箱船标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing container ships — standard dimensions series"
+        category: container
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, boa_m, loa_m, ref_teu]
+        rows:
+          - [CG-J1, 11.0, 66.0, 60]
+          - [CG-J2, 13.8, 88.0, 180]
+          - [CG-J3, 16.3, 88.0, 250]
+          - [CG-J4, 16.3, 110.0, 300]
+          - [CG-J5, 16.3, 130.0, 350]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 4
+        title_cn: "长江干线过闸滚装货船标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing ro-ro cargo ships (car carriers) — standard dimensions series"
+        category: ro_ro
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, boa_m, loa_m, ref_cars]
+        rows:
+          - [CG-G1, 16.3, 88.0, 300]
+          - [CG-G2, 16.3, 110.0, 500]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 5
+        title_cn: "长江支线过闸干散货船、化学品船、油船标准船型主尺度系列"
+        title_en: "Changjiang branch lines lock-passing dry bulk carriers, chemical tankers, oil tankers — standard dimensions series"
+        category: dry_bulk_chemical_oil
+        waters: "Changjiang branch lines (locks incl. ship lifts)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [CZ-H1, 6.6, 42.0, 200]
+          - [CZ-H2, 7.4, 42.0, 300]
+          - [CZ-H3, 8.2, 42.0, 350]
+          - [CZ-H4, 8.2, 53.0, 450]
+          - [CZ-H5, 10.0, 53.0, 500]
+          - [CZ-H6, 10.0, 63.0, 900]
+          - [CZ-H7, 11.0, 63.0, 1000]
+          - [CZ-H8, 11.0, 73.0, 1000]
+          - [CZ-H9, 11.0, 85.0, 1000]
+          - [CZ-H10, 12.0, 53.0, 1000]
+          - [CZ-H11, 13.0, 63.0, 1500]
+          - [CZ-H12, 13.0, 73.0, 1500]
+          - [CZ-H13, 13.8, 63.0, 2000]
+          - [CZ-H14, 13.8, 73.0, 2000]
+          - [CZ-H15, 13.8, 85.0, 2000]
+          - [CZ-H16, 15.0, 88.0, 2500]
+          - [CZ-H17, 16.3, 88.0, 3000]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 6
+        title_cn: "长江支线过闸驳船标准船型主尺度系列"
+        title_en: "Changjiang branch lines lock-passing barges — standard dimensions series"
+        category: barge
+        waters: "Changjiang branch lines (locks incl. ship lifts)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [CZ-B1, 8.2, 40.0, 300]
+          - [CZ-B2, 11.0, 53.0, 1000]
+          - [CZ-B3, 13.8, 70.0, 1500]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 7
+        title_cn: "长江支线过闸集装箱船标准船型主尺度系列"
+        title_en: "Changjiang branch lines lock-passing container ships — standard dimensions series"
+        category: container
+        waters: "Changjiang branch lines (locks incl. ship lifts)"
+        columns: [code, boa_m, loa_m, ref_teu]
+        rows:
+          - [CZ-J1, 10.0, 42.0, 30]
+          - [CZ-J2, 11.0, 53.0, 40]
+          - [CZ-J3, 11.0, 63.0, 60]
+          - [CZ-J4, 13.8, 73.0, 100]
+          - [CZ-J5, 13.8, 88.0, 180]
+          - [CZ-J6, 15.0, 88.0, 200]
+          - [CZ-J7, 16.3, 88.0, 250]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 8
+        title_cn: "长江支线自卸砂船标准船型主尺度系列"   # caption as printed (clause heading 5.2.4 says 长江支线过闸自卸砂船)
+        title_en: "Changjiang branch lines self-unloading sand carriers — standard dimensions series"
+        category: sand_self_unloader
+        waters: "Changjiang branch lines (locks incl. ship lifts)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [CZ-Z1, 10.0, 42.0, 500]
+          - [CZ-Z2, 10.0, 53.0, 500]
+          - [CZ-Z3, 11.0, 53.0, 800]
+          - [CZ-Z4, 11.0, 66.0, 800]
+          - [CZ-Z5, 12.0, 66.0, 1000]
+          - [CZ-Z6, 13.8, 66.0, 1500]
+          - [CZ-Z7, 13.8, 73.0, 1500]
+          - [CZ-Z8, 13.8, 85.0, 1500]
+          - [CZ-Z9, 15.0, 73.0, 2000]
+          - [CZ-Z10, 15.0, 88.0, 2000]
+          - [CZ-Z11, 16.3, 73.0, 2500]
+          - [CZ-Z12, 16.3, 88.0, 2500]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+
+  # ------------------------------------------------------------------------------------------
+  - id: GB38030.1-2026
+    title_cn: "内河过闸运输船舶标准船型主尺度系列 第1部分：长江水系"
+    title_en: "Dimensions series of standard transport ship types passing the locks of inland rivers — Part 1: Changjiang River system"
+    status: "current from 2026-12-01 (replaces GB 38030.1-2019)"
+    issued: 2026-08-27
+    effective: 2026-12-01
+    scope_en: "New and reconstructed ships passing locks, ship lifts etc. of the Changjiang trunk line and main tributaries (excl. Three Gorges ship lift): dry (bulk) cargo, chemical liquid-cargo, oil, barge, container, ro-ro (commercial vehicle carrier). Self-unloading sand carriers deleted."
+    data_note: "Tables give only 最大船宽 (extreme breadth) and 最大船长 (extreme length), unit m. No reference DWT/TEU/car spaces. New type codes."
+    definitions:
+      - {term_cn: "长江主要支流", term_en: "Changjiang main tributaries", def_en: "High-grade waterways of the Min, Jialing, Jinsha, Wu, Xiang, Yuan, Han rivers, Jianghan Canal, Gan, Xin rivers and the Jianghuai Canal; Jianghuai Canal covers only the Hefei–Yuxi line, the Yinjiang-Jichao Caizi Lake line, and Dongfei River mouth to Chaohu Lake (scope note 1)."}
+    general_rules:
+      - {clause: "3.1", cn: "总长：船体及上层建筑的船首最前端到船尾最后端之间的水平距离（不包括首尾突出物）", en: "Length overall: horizontal distance from foremost to aftmost point of hull and superstructure; metal hulls to inner surface, non-metal to outer surface; excludes end protrusions (sponson decks, fenders, bulwarks, pushing gear, outboard motors and brackets, false bow/stern, movable protrusions)."}
+      - {clause: "3.2", cn: "总宽：船体从一舷到另一舷垂直于纵中线面方向量至船壳外板的最大距离（不包括两舷突出物）", en: "Breadth overall: maximum breadth of hull to shell plating, perpendicular to the longitudinal centreline plane; metal hulls to inner surface, non-metal to outer; excludes side protrusions (sponson decks, fenders, bulwarks, movable protrusions)."}
+      - {clause: "3.3", cn: "最大船长：包括船舶外板和首尾两端结构性突出物、活动突出物在内的水平距离", en: "Extreme length: horizontal distance including shell plating and structural protrusions (sponson decks, fenders, bulwarks, false bow/stern, pushing gear) and movable protrusions (gangways/ramps, crane jibs, conveyors — measured as in navigation condition)."}
+      - {clause: "3.4", cn: "最大船宽：包括船舶外板和舷侧结构性突出物在内的最大横向水平距离", en: "Extreme breadth: maximum transverse distance including shell plating and side structural protrusions (sponson decks, fenders); tyres/fenders that cannot be retracted before the lock count too."}
+      - {clause: "4.1", cn: "船舶总宽在对应船型最大船宽基础上下浮不应超过2%；船舶总长在对应船型最大船长基础上下浮不应超过10%", en: "A ship's breadth overall may be no more than 2% below the type's extreme breadth; length overall no more than 10% below the type's extreme length."}
+      - {clause: "4.2", cn: "过闸船舶应满足适用通航水域的限制条件", en: "Ships passing locks must meet the limits of the applicable navigable waters."}
+      - {clause: "4.3", cn: "多用途船、集散两用船主尺度应同时满足适装货类对应船型的尺度限制", en: "Multipurpose and container/bulk dual-use ships must meet the dimension limits of every ship type matching their cargoes."}
+    code_scheme: >-
+      图1 ××-×××-××× : 航行区域 navigation region (CG 长江干线 Changjiang trunk line; CZ 长江主要支流 Changjiang main tributaries)
+      - 最大船宽 extreme breadth per clause 6 (×10, e.g. 163 = 16.3 m, 078 = 7.8 m)
+      - 船舶类型 ship type (H 干(散)货船、化学品液货船、油船 dry (bulk) cargo/chemical liquid-cargo/oil; B 驳船 barge;
+      J 集装箱船 container; G 滚装船(商品汽车运输船) ro-ro (commercial vehicle carrier))
+      + 船型序号 serial within the same breadth and type
+      + 后缀 suffix (N 与前一版标准相比为新增 new vs previous edition; M 部分修改 partly modified; R 保持不变 retained unchanged).
+      Example (示例): CG-163-H1R = Changjiang trunk line dry (bulk)/chemical/oil type, extreme breadth 16.3 m, serial 1, unchanged from previous edition.
+    tables:
+      - table: 1
+        title_cn: "长江干线过闸干(散)货船、化学品液货船、油船标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing dry (bulk) cargo ships, chemical liquid-cargo tankers, oil tankers — standard dimensions series"
+        category: dry_bulk_chemical_oil
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, max_breadth_m, max_length_m]
+        rows:
+          - [CG-110-H1R, 11.0, 88.0]
+          - [CG-138-H1R, 13.8, 88.0]
+          - [CG-150-H1R, 15.0, 88.0]
+          - [CG-163-H1R, 16.3, 88.0]
+          - [CG-163-H2N, 16.3, 98.0]
+          - [CG-163-H3R, 16.3, 110.0]
+          - [CG-163-H4R, 16.3, 130.0]   # footnote a
+        footnotes:
+          - "单位为米 / unit: metres"
+          - "a CG-163-H4R不适用于化学品液货船和油船(石油沥青船除外)。 / CG-163-H4R does not apply to chemical liquid-cargo tankers and oil tankers (except petroleum-asphalt carriers)."
+      - table: 2
+        title_cn: "长江干线过闸驳船标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing barges — standard dimensions series"
+        category: barge
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, max_breadth_m, max_length_m]
+        rows:
+          - [CG-110-B1R, 11.0, 75.0]
+          - [CG-138-B1R, 13.8, 75.0]
+          - [CG-163-B1R, 16.3, 75.0]
+          - [CG-163-B2R, 16.3, 110.0]
+        footnotes:
+          - "单位为米 / unit: metres"
+      - table: 3
+        title_cn: "长江干线过闸集装箱船标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing container ships — standard dimensions series"
+        category: container
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, max_breadth_m, max_length_m]
+        rows:
+          - [CG-110-J1R, 11.0, 66.0]
+          - [CG-138-J1R, 13.8, 88.0]
+          - [CG-163-J1R, 16.3, 88.0]
+          - [CG-163-J2N, 16.3, 98.0]
+          - [CG-163-J3R, 16.3, 110.0]
+          - [CG-163-J4R, 16.3, 130.0]
+        footnotes:
+          - "单位为米 / unit: metres"
+      - table: 4
+        title_cn: "长江干线过闸滚装船(商品汽车运输船)标准船型主尺度系列"
+        title_en: "Changjiang trunk line lock-passing ro-ro ships (commercial vehicle carriers) — standard dimensions series"
+        category: ro_ro
+        waters: "Changjiang trunk line (excl. Three Gorges ship lift)"
+        columns: [code, max_breadth_m, max_length_m]
+        rows:
+          - [CG-163-G1R, 16.3, 88.0]
+          - [CG-163-G2R, 16.3, 110.0]
+        footnotes:
+          - "单位为米 / unit: metres"
+      - table: 5
+        title_cn: "长江主要支流过闸干(散)货船、化学品液货船、油船标准船型主尺度系列"
+        title_en: "Changjiang main tributaries lock-passing dry (bulk) cargo ships, chemical liquid-cargo tankers, oil tankers — standard dimensions series"
+        category: dry_bulk_chemical_oil
+        waters: "Changjiang main tributaries (locks incl. ship lifts)"
+        columns: [code, max_breadth_m, max_length_m, applicable_waters_cn, applicable_waters_en]
+        rows:
+          - [CZ-100-H1R, 10.0, 53.0, "岷江、嘉陵江、金沙江、乌江、江淮运河", "Min, Jialing, Jinsha, Wu, Jianghuai Canal"]
+          - [CZ-100-H2R, 10.0, 63.0, "岷江、嘉陵江、金沙江、乌江、江淮运河", "Min, Jialing, Jinsha, Wu, Jianghuai Canal"]
+          - [CZ-110-H1R, 11.0, 63.0, "岷江、嘉陵江、金沙江、汉江及江汉运河、湘江、沅水、赣江、信江、乌江、江淮运河", "Min, Jialing, Jinsha, Han & Jianghan Canal, Xiang, Yuan, Gan, Xin, Wu, Jianghuai Canal"]
+          - [CZ-110-H2M, 11.0, 75.0, "岷江、嘉陵江、金沙江、湘江、沅水", "Min, Jialing, Jinsha, Xiang, Yuan"]
+          - [CZ-110-H3R, 11.0, 85.0, "岷江、嘉陵江、金沙江、湘江、汉江、赣江", "Min, Jialing, Jinsha, Xiang, Han, Gan"]
+          - [CZ-130-H1R, 13.0, 63.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、信江、乌江(白马枢纽以下)、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Xin, Wu (below Baima hub), Jianghuai Canal"]
+          - [CZ-130-H2M, 13.0, 75.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、乌江(白马枢纽以下)、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Wu (below Baima hub), Jianghuai Canal"]
+          - [CZ-138-H1R, 13.8, 63.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan"]
+          - [CZ-138-H2M, 13.8, 75.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Jianghuai Canal"]
+          - [CZ-138-H3R, 13.8, 85.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Jianghuai Canal"]
+          - [CZ-150-H1R, 15.0, 88.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、信江、江淮运河(不含引江济巢菜子湖线)", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Xin, Jianghuai Canal (excl. Yinjiang-Jichao Caizi Lake line)"]
+          - [CZ-150-H2N, 15.0, 110.0, "岷江、嘉陵江、江淮运河(不含引江济巢菜子湖线)、湘江、沅水", "Min, Jialing, Jianghuai Canal (excl. Yinjiang-Jichao Caizi Lake line), Xiang, Yuan"]
+        footnotes:
+          - "单位为米 / unit: metres"
+          - "a 最大船宽大于15.0 m的船舶，在满足适用通航水域的限制条件下采用长江干线过闸相应船型主尺度系列。 / Ships with extreme breadth over 15.0 m use the matching Changjiang trunk line series, subject to the limits of the applicable waters."
+      - table: 6
+        title_cn: "长江主要支流过闸驳船标准船型主尺度系列"
+        title_en: "Changjiang main tributaries lock-passing barges — standard dimensions series"
+        category: barge
+        waters: "Changjiang main tributaries (locks incl. ship lifts)"
+        columns: [code, max_breadth_m, max_length_m, applicable_waters_cn, applicable_waters_en]
+        rows:
+          - [CZ-078-B1N, 7.8, 40.0, "嘉陵江、金沙江、乌江", "Jialing, Jinsha, Wu"]
+          - [CZ-110-B1R, 11.0, 53.0, "金沙江、汉江及江汉运河、乌江", "Jinsha, Han & Jianghan Canal, Wu"]
+          - [CZ-138-B1R, 13.8, 70.0, "汉江及江汉运河", "Han & Jianghan Canal"]
+          - [CZ-150-B1N, 15.0, 70.0, "嘉陵江", "Jialing"]
+        footnotes:
+          - "单位为米 / unit: metres"
+      - table: 7
+        title_cn: "长江主要支流过闸集装箱船标准船型主尺度系列"
+        title_en: "Changjiang main tributaries lock-passing container ships — standard dimensions series"
+        category: container
+        waters: "Changjiang main tributaries (locks incl. ship lifts)"
+        columns: [code, max_breadth_m, max_length_m, applicable_waters_cn, applicable_waters_en]
+        rows:
+          - [CZ-110-J1R, 11.0, 53.0, "汉江及江汉运河、乌江、江淮运河", "Han & Jianghan Canal, Wu, Jianghuai Canal"]
+          - [CZ-110-J2M, 11.0, 66.0, "岷江、嘉陵江、金沙江、汉江及江汉运河、湘江、沅水、赣江、信江、乌江、江淮运河", "Min, Jialing, Jinsha, Han & Jianghan Canal, Xiang, Yuan, Gan, Xin, Wu, Jianghuai Canal"]
+          - [CZ-110-J3N, 11.0, 75.0, "岷江、嘉陵江、金沙江、湘江、沅水", "Min, Jialing, Jinsha, Xiang, Yuan"]
+          - [CZ-130-J1N, 13.0, 66.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、信江、乌江(白马枢纽以下)、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Xin, Wu (below Baima hub), Jianghuai Canal"]
+          - [CZ-130-J2N, 13.0, 75.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、乌江(白马枢纽以下)、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Wu (below Baima hub), Jianghuai Canal"]
+          - [CZ-138-J1M, 13.8, 75.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Jianghuai Canal"]
+          - [CZ-138-J2R, 13.8, 88.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、江淮运河", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Jianghuai Canal"]
+          - [CZ-150-J1R, 15.0, 88.0, "岷江、嘉陵江、汉江及江汉运河、湘江、沅水、赣江、信江、江淮运河(不含引江济巢菜子湖线)", "Min, Jialing, Han & Jianghan Canal, Xiang, Yuan, Gan, Xin, Jianghuai Canal (excl. Yinjiang-Jichao Caizi Lake line)"]
+          - [CZ-150-J2N, 15.0, 110.0, "岷江、嘉陵江、江淮运河(不含引江济巢菜子湖线)", "Min, Jialing, Jianghuai Canal (excl. Yinjiang-Jichao Caizi Lake line)"]
+        footnotes:
+          - "单位为米 / unit: metres"
+          - "a 最大船宽大于15.0 m的船舶，在满足适用通航水域的限制条件下采用长江干线过闸相应船型主尺度系列。 / Ships with extreme breadth over 15.0 m use the matching Changjiang trunk line series, subject to the limits of the applicable waters."
+
+  # ------------------------------------------------------------------------------------------
+  - id: GB38030.2-2019
+    title_cn: "内河过闸运输船舶标准船型主尺度系列 第2部分：京杭运河、淮河水系"
+    title_en: "Dimensions series of standard transport ship types passing the locks of inland rivers — Part 2: Crand Canal and Huai River system"   # sic: cover prints "Crand" (Grand)
+    status: current
+    issued: 2019-07-29
+    effective: 2020-02-01
+    scope_en: "New and reconstructed ships passing locks of the Beijing–Hangzhou Grand Canal and Huai River system: dry bulk, chemical, oil, barge, container, ro-ro."
+    definitions:
+      - {term_cn: "淮河水系", term_en: "Huai River system", def_en: "Waterways including the Shaying River–Huai River trunk line."}
+    general_rules:
+      - {clause: "3.1/3.2", cn: "总长、总宽定义同GB 38030.1—2019 2.1、2.2", en: "LOA and BOA as defined in GB 38030.1-2019 clauses 2.1 and 2.2."}
+      - {clause: "5.1", cn: "本尺度系列中船舶总宽可下浮不超过2%，船舶总长可下浮不超过10%", en: "BOA may be up to 2% below the series value; LOA up to 10% below."}
+      - {clause: "5.2", cn: "固定突出物计入总长和总宽；未能提起的活动突出物计入总长和总宽", en: "Fixed protrusions (sponson decks, fenders, bulwarks, pushing gear, outboard motors and brackets, false bow/stern) count toward LOA and BOA; movable protrusions (tyres, fenders) count if not lifted before the lock."}
+      - {clause: "5.3", cn: "过闸船舶应满足适用通航水域的限制条件", en: "Ships must meet the limits of the applicable navigable waters."}
+      - {clause: "5.4", cn: "多用途船主尺度应同时满足适装货类对应船型的尺度限制", en: "Multipurpose ships must meet the limits of every ship type matching their cargoes."}
+      - {clause: "6.2", cn: "与驳船组成船队的总长、总宽应控制在航道、船闸允许的范围内", en: "Overall length and breadth of a barge train must stay within waterway and lock limits."}
+    code_scheme: >-
+      图1 □-□□ : 航行区域 navigation region (JH 京杭运河、沙颍河-淮河 Beijing–Hangzhou Grand Canal, Shaying–Huai River)
+      - 船舶类型 ship type (H 干散货船、化学品船、油船 dry bulk/chemical/oil; B 驳船 barge; J 集装箱船 container;
+      G 滚装货船 ro-ro cargo) + 尺度系列序号 serial number. Example (示例): JH-H1.
+    tables:
+      - table: 1
+        title_cn: "京杭运河、沙颍河-淮河干线过闸干散货船、化学品船、油船标准船型主尺度系列"
+        title_en: "Beijing–Hangzhou Grand Canal and Shaying–Huai River trunk line lock-passing dry bulk carriers, chemical tankers, oil tankers — standard dimensions series"
+        category: dry_bulk_chemical_oil
+        waters: "Beijing–Hangzhou Grand Canal; Shaying River–Huai River trunk line"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [JH-H1, 7.4, 44.0, 300]
+          - [JH-H2, 8.8, 44.0, 500]
+          - [JH-H3, 10.8, 55.0, 800]
+          - [JH-H4, 10.8, 60.0, 1000]
+          - [JH-H5, 11.5, 67.6, 1500]
+          - [JH-H6, 12.7, 55.0, 1500]
+          - [JH-H7, 12.7, 67.6, 1800]
+          - [JH-H8, 13.8, 67.6, 2000]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 2
+        title_cn: "京杭运河、沙颍河-淮河干线过闸驳船标准船型主尺度系列"
+        title_en: "Beijing–Hangzhou Grand Canal and Shaying–Huai River trunk line lock-passing barges — standard dimensions series"
+        category: barge
+        waters: "Beijing–Hangzhou Grand Canal; Shaying River–Huai River trunk line"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [JH-B1, 7.4, 34.0, 300]
+          - [JH-B2, 8.8, 42.0, 400]
+          - [JH-B3, 10.8, 42.0, 600]
+          - [JH-B4, 10.8, 55.0, 1000]
+          - [JH-B5, 13.8, 67.6, 2000]
+          - [JH-B6, 15.4, 67.6, 2500]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 3
+        title_cn: "京杭运河、沙颍河-淮河干线过闸集装箱船标准船型主尺度系列"
+        title_en: "Beijing–Hangzhou Grand Canal and Shaying–Huai River trunk line lock-passing container ships — standard dimensions series"
+        category: container
+        waters: "Beijing–Hangzhou Grand Canal; Shaying River–Huai River trunk line"
+        columns: [code, boa_m, loa_m, ref_teu]
+        rows:
+          - [JH-J1, 10.8, 44.0, 30]
+          - [JH-J2, 10.8, 55.0, 50]
+          - [JH-J3, 12.7, 55.0, 60]
+          - [JH-J4, 12.7, 73.0, 70]
+          - [JH-J5, 12.7, 80.0, 80]
+          - [JH-J6, 13.8, 55.0, 80]
+          - [JH-J7, 13.8, 73.0, 110]
+          - [JH-J8, 15.8, 80.0, 130]
+          - [JH-J9, 15.8, 88.0, 150]
+          - [JH-J10, 16.6, 90.0, 180]
+          - [JH-J11, 17.8, 90.0, 200]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 4
+        title_cn: "京杭运河干线过闸滚装货船标准船型主尺度系列"
+        title_en: "Beijing–Hangzhou Grand Canal trunk line lock-passing ro-ro cargo ships (car carriers) — standard dimensions series"
+        category: ro_ro
+        waters: "Beijing–Hangzhou Grand Canal trunk line"
+        columns: [code, boa_m, loa_m, ref_cars]
+        rows:
+          - [JH-G1, 15.8, 73.0, 100]
+          - [JH-G2, 15.8, 90.0, 120]
+          - [JH-G3, 16.6, 90.0, 130]
+          - [JH-G4, 17.8, 90.0, 145]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+
+  # ------------------------------------------------------------------------------------------
+  - id: GB38030.3-2019
+    title_cn: "内河过闸运输船舶标准船型主尺度系列 第3部分：西江航运干线"
+    title_en: "Dimensions series of standard transport ship types passing the locks of inland rivers — Part 3: Xijiang main river"
+    status: current
+    issued: 2019-07-29
+    effective: 2020-02-01
+    scope_en: "New and reconstructed ships passing the Yongning, Xijin, Guigang, Guiping, Changzhou and other hub locks of the Xijiang main shipping line: dry bulk, liquid cargo, container, self-unloading sand."
+    definitions:
+      - {term_cn: "西江航运干线", term_en: "Xijiang main river", def_en: "High-grade waterway from Nanning to Guangzhou."}
+    general_rules:
+      - {clause: "3.2/3.3", cn: "总长、总宽定义同GB 38030.1—2019 2.1、2.2", en: "LOA and BOA as defined in GB 38030.1-2019 clauses 2.1 and 2.2."}
+      - {clause: "5.1", cn: "本尺度系列中船舶总宽可下浮不超过2%，船舶总长可下浮不超过10%", en: "BOA may be up to 2% below the series value; LOA up to 10% below."}
+      - {clause: "5.2", cn: "固定突出物计入总长和总宽；未能提起的活动突出物计入总长和总宽", en: "Fixed protrusions (sponson decks, fenders, bulwarks, pushing gear, outboard motors and brackets, false bow/stern) count toward LOA and BOA; movable protrusions (tyres, fenders) count if not lifted before the lock."}
+      - {clause: "5.3", cn: "过闸船舶应满足适用通航水域的限制条件", en: "Ships must meet the limits of the applicable navigable waters."}
+      - {clause: "5.4", cn: "多用途船主尺度应同时满足适装货类对应船型的尺度限制", en: "Multipurpose ships must meet the limits of every ship type matching their cargoes."}
+    code_scheme: >-
+      图1 □-□□ : 航行区域 navigation region (XJ 西江干线 Xijiang trunk line)
+      - 船舶类型 ship type (H 货船 cargo ship; J 集装箱船 container; Z 自卸砂船 self-unloading sand carrier)
+      + 尺度系列序号 serial number. Example (示例): XJ-H1 = first Xijiang dry bulk / liquid-cargo standard type.
+    tables:
+      - table: 1
+        title_cn: "西江航运干线过闸干散货船、液货船标准船型主尺度系列"
+        title_en: "Xijiang main shipping line lock-passing dry bulk carriers and liquid-cargo ships (tankers) — standard dimensions series"
+        category: dry_bulk_chemical_oil
+        waters: "Xijiang main shipping line (Nanning–Guangzhou)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [XJ-H1, 10.0, 46.0, 500]
+          - [XJ-H2, 11.0, 50.0, 1000]
+          - [XJ-H3, 11.0, 68.0, 1500]
+          - [XJ-H4, 13.0, 63.0, 1500]
+          - [XJ-H5, 14.0, 74.0, 2000]
+          - [XJ-H6, 15.8, 80.0, 3000]
+          - [XJ-H7, 15.8, 90.0, 3000]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 2
+        title_cn: "西江航运干线过闸集装箱标准船型主尺度系列"   # caption as printed (omits 船); clause 6.2 heading says 集装箱船
+        title_en: "Xijiang main shipping line lock-passing container ships — standard dimensions series"
+        category: container
+        waters: "Xijiang main shipping line (Nanning–Guangzhou)"
+        columns: [code, boa_m, loa_m, ref_teu]
+        rows:
+          - [XJ-J1, 10.0, 50.0, 50]
+          - [XJ-J2, 11.0, 60.0, 70]
+          - [XJ-J3, 13.0, 74.0, 150]
+          - [XJ-J4, 14.0, 74.0, 160]
+          - [XJ-J5, 15.8, 63.0, 170]
+          - [XJ-J6, 15.8, 74.0, 200]
+          - [XJ-J7, 15.8, 90.0, 250]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+      - table: 3
+        title_cn: "西江航运干线过闸自卸砂船标准船型主尺度系列"
+        title_en: "Xijiang main shipping line lock-passing self-unloading sand carriers — standard dimensions series"
+        category: sand_self_unloader
+        waters: "Xijiang main shipping line (Nanning–Guangzhou)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [XJ-Z1, 11.0, 50.0, 500]
+          - [XJ-Z2, 11.0, 60.0, 1000]
+          - [XJ-Z3, 15.8, 66.0, 2000]
+          - [XJ-Z4, 15.8, 88.0, 3000]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+
+  # ------------------------------------------------------------------------------------------
+  - id: GB38030.4-2019
+    title_cn: "内河过闸运输船舶标准船型主尺度系列 第4部分：珠江水系“三线”"
+    title_en: "Dimensions series of standard transport ship types passing the locks of inland rivers — Part 4: The \"three lanes\" of the Pearl River system"
+    status: current
+    issued: 2019-07-29
+    effective: 2020-02-01
+    scope_en: "New and reconstructed ships passing locks (incl. ship lifts) of the Pearl River 'three lanes': dry bulk, chemical, oil, container."
+    definitions:
+      - {term_cn: "珠江水系“三线”", term_en: "\"three lanes\" of the Pearl River system", def_en: "Youjiang (Bo'ai 剥隘 to Nanning, 435 km); Beipanjiang–Hongshui River (Baiceng 百层 to Shilong Sanjiangkou 石龙三江口, 741 km); Liujiang–Qianjiang (Liuzhou to Guiping, 284 km) — all high-grade waterways."}
+    general_rules:
+      - {clause: "3.2/3.3", cn: "总长、总宽定义同GB 38030.1—2019 2.1、2.2", en: "LOA and BOA as defined in GB 38030.1-2019 clauses 2.1 and 2.2."}
+      - {clause: "5.1", cn: "本尺度系列中船舶总宽可下浮不超过2%，船舶总长可下浮不超过10%", en: "BOA may be up to 2% below the series value; LOA up to 10% below."}
+      - {clause: "5.2", cn: "固定突出物计入总长和总宽；未能提起的活动突出物计入总长和总宽", en: "Fixed protrusions (sponson decks, fenders, bulwarks, pushing gear, outboard motors and brackets, false bow/stern) count toward LOA and BOA; movable protrusions (tyres, fenders) count if not lifted before the lock."}
+      - {clause: "5.3", cn: "过闸船舶应满足适用通航水域的限制条件", en: "Ships must meet the limits of the applicable navigable waters."}
+      - {clause: "5.4", cn: "多用途船主尺度应同时满足适装货类对应船型的尺度限制", en: "Multipurpose ships must meet the limits of every ship type matching their cargoes."}
+      - {clause: "5.5", cn: "仅通过大藤峡纽船闸和红花船闸的船舶的总体技术要求应满足GB 38030.3—2019第5章的要求", en: "Ships passing only the Datengxia hub lock and Honghua lock follow GB 38030.3-2019 clause 5 general requirements."}
+      - {clause: "6.3", cn: "仅通过大藤峡纽船闸和红花船闸的船舶的标准船型主尺度应满足GB 38030.3—2019第6章的要求", en: "Ships passing only the Datengxia and Honghua locks use the GB 38030.3-2019 clause 6 (Xijiang) dimension series."}
+    code_scheme: >-
+      图1 □-□□ : 航行区域 navigation region (ZJ 珠江“三线” Pearl River 'three lanes')
+      - 船舶类型 ship type (H 干散货船、化学品船、油船 dry bulk/chemical/oil; J 集装箱船 container)
+      + 尺度系列序号 serial number. Example (示例): ZJ-H1.
+    tables:
+      - table: 1
+        title_cn: "珠江水系“三线”过闸干散货船、化学品船、油船标准船型主尺度系列"
+        title_en: "Pearl River 'three lanes' lock-passing dry bulk carriers, chemical tankers, oil tankers — standard dimensions series"
+        category: dry_bulk_chemical_oil
+        waters: "Pearl River system 'three lanes' (Youjiang; Beipanjiang–Hongshui; Liujiang–Qianjiang)"
+        columns: [code, boa_m, loa_m, ref_dwt_t]
+        rows:
+          - [ZJ-H1, 7.4, 36.0, 250]
+          - [ZJ-H2, 7.4, 42.0, 400]
+          - [ZJ-H3, 8.2, 42.0, 500]
+          - [ZJ-H4, 10.0, 50.0, 750]
+          - [ZJ-H5, 11.0, 50.0, 850]
+          - [ZJ-H6, 11.0, 60.0, 1350]
+          - [ZJ-H7, 11.0, 68.0, 1500]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+          - "Table spans two pages (表1(续) continued)."
+      - table: 2
+        title_cn: "珠江水系“三线”过闸集装箱船标准船型主尺度系列"
+        title_en: "Pearl River 'three lanes' lock-passing container ships — standard dimensions series"
+        category: container
+        waters: "Pearl River system 'three lanes' (Youjiang; Beipanjiang–Hongshui; Liujiang–Qianjiang)"
+        columns: [code, boa_m, loa_m, ref_teu]
+        rows:
+          - [ZJ-J1, 10.0, 42.0, 40]
+          - [ZJ-J2, 10.0, 50.0, 50]
+          - [ZJ-J3, 10.0, 60.0, 55]
+          - [ZJ-J4, 11.0, 50.0, 60]
+          - [ZJ-J5, 11.0, 60.0, 70]
+          - [ZJ-J6, 11.0, 68.0, 80]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+
+  # ------------------------------------------------------------------------------------------
+  - id: GB38030.5-2019
+    title_cn: "内河过闸运输船舶标准船型主尺度系列 第5部分：黑龙江-松花江"
+    title_en: "Dimensions series of standard transport ship types passing the locks of inland rivers — Part 5: Heilongjiang Songhuajiang River"
+    status: current
+    issued: 2019-07-29
+    effective: 2020-02-01
+    scope_en: "New and reconstructed barges passing locks on the Heilongjiang and Songhua River high-grade waterways."
+    general_rules:
+      - {clause: "3.1/3.2", cn: "总长、总宽定义同GB 38030.1—2019 2.1、2.2", en: "LOA and BOA as defined in GB 38030.1-2019 clauses 2.1 and 2.2."}
+      - {clause: "5.1", cn: "本尺度系列中船舶总宽可下浮不超过2%，船舶总长可下浮不超过10%", en: "BOA may be up to 2% below the series value; LOA up to 10% below."}
+      - {clause: "5.2", cn: "固定突出物(如护舷材、舷墙、顶推装置等)长度计入总长，宽度计入总宽；未能提起的活动突出物计入总长和总宽", en: "Fixed protrusions (fenders, bulwarks, pushing gear) count toward LOA and BOA; movable protrusions (tyres, fenders) count if not lifted before the lock."}
+      - {clause: "5.3", cn: "过闸船舶应满足适用通航水域的限制条件", en: "Ships must meet the limits of the applicable navigable waters."}
+    code_scheme: >-
+      图1 □-□□ : 航行区域 navigation region (HS 黑龙江-松花江干线 Heilongjiang–Songhua River trunk line)
+      - 船舶类型 ship type (B 驳船 barge) + 尺度系列序号 serial number. Example (示例): HS-B1.
+    tables:
+      - table: 1
+        title_cn: "黑龙江-松花江过闸驳船标准船型主尺度系列"
+        title_en: "Heilongjiang–Songhua River lock-passing barges — standard dimensions series"
+        category: barge
+        waters: "Heilongjiang–Songhua River trunk line"
+        columns: [code, boa_m, loa_m, ref_dwt_t, remark_cn, remark_en]
+        rows:
+          - [HS-B1, 9.0, 38.0, 300, 分节驳船, integrated (sectional) barge]
+          - [HS-B2, 10.0, 46.0, 400, 普通驳船, ordinary barge]
+          - [HS-B3, 11.0, 58.0, 600, 分节驳船, integrated (sectional) barge]
+          - [HS-B4, 10.0, 67.0, 600, 普通驳船, ordinary barge]
+          - [HS-B5, 13.0, 67.0, 1000, 分节驳船, integrated (sectional) barge]
+          - [HS-B6, 13.0, 75.0, 1000, 普通驳船, ordinary barge]
+        footnotes:
+          - "注：参数为黑体表示强制性的。 / Note: parameters in bold are mandatory."
+
+unclear_values: []   # every table value read cleanly from image and/or text layer; none flagged

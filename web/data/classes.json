@@ -1,0 +1,3196 @@
+[
+ {
+  "id": "CN-GB38030-CG-110-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.1-2026 Table 1; reference capacity from GB38030.1-2019 type CG-H2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-138-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2000,
+   2000
+  ],
+  "source": "GB38030.1-2026 Table 1; reference capacity from GB38030.1-2019 type CG-H3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-150-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   15.0,
+   15.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2500,
+   2500
+  ],
+  "source": "GB38030.1-2026 Table 1; reference capacity from GB38030.1-2019 type CZ-H16",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   3000,
+   3000
+  ],
+  "source": "GB38030.1-2026 Table 1; reference capacity from GB38030.1-2019 type CZ-H17",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-H2N",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   98.0,
+   98.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-H3R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   110.0,
+   110.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   4000,
+   4000
+  ],
+  "source": "GB38030.1-2026 Table 1; reference capacity from GB38030.1-2019 type CG-H6",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-H4R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   130.0,
+   130.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   5000,
+   5000
+  ],
+  "source": "GB38030.1-2026 Table 1; reference capacity from GB38030.1-2019 type CG-H7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-110-B1R",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.1-2026 Table 2; reference capacity from GB38030.1-2019 type CG-B2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-138-B1R",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2500,
+   2500
+  ],
+  "source": "GB38030.1-2026 Table 2; reference capacity from GB38030.1-2019 type CG-B3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-B1R",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   3000,
+   3000
+  ],
+  "source": "GB38030.1-2026 Table 2; reference capacity from GB38030.1-2019 type CG-B4",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-B2R",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   110.0,
+   110.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   4500,
+   4500
+  ],
+  "source": "GB38030.1-2026 Table 2; reference capacity from GB38030.1-2019 type CG-B5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-110-J1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   66.0,
+   66.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 3; reference capacity from GB38030.1-2019 type CG-J1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-138-J1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 3; reference capacity from GB38030.1-2019 type CZ-J5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-J1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 3; reference capacity from GB38030.1-2019 type CZ-J7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-J2N",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   98.0,
+   98.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-J3R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   110.0,
+   110.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 3; reference capacity from GB38030.1-2019 type CG-J4",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CG-163-J4R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   130.0,
+   130.0
+  ],
+  "beam_m": [
+   16.3,
+   16.3
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 3; reference capacity from GB38030.1-2019 type CG-J5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-100-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   53.0,
+   53.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   500,
+   500
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-100-H2R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   63.0,
+   63.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   900,
+   900
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H6",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-110-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   63.0,
+   63.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-110-H2M",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-110-H3R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   85.0,
+   85.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H9",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-130-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   63.0,
+   63.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H11",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-130-H2M",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-138-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   63.0,
+   63.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2000,
+   2000
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H13",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-138-H2M",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-138-H3R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   85.0,
+   85.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2000,
+   2000
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H15",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-150-H1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   15.0,
+   15.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2500,
+   2500
+  ],
+  "source": "GB38030.1-2026 Table 5; reference capacity from GB38030.1-2019 type CZ-H16",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-150-H2N",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   110.0,
+   110.0
+  ],
+  "beam_m": [
+   15.0,
+   15.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-078-B1N",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   40.0,
+   40.0
+  ],
+  "beam_m": [
+   7.8,
+   7.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 6",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-110-B1R",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   53.0,
+   53.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.1-2026 Table 6; reference capacity from GB38030.1-2019 type CZ-B2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-138-B1R",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   70.0,
+   70.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.1-2026 Table 6; reference capacity from GB38030.1-2019 type CZ-B3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-150-B1N",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   70.0,
+   70.0
+  ],
+  "beam_m": [
+   15.0,
+   15.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 6",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-110-J1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   53.0,
+   53.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7; reference capacity from GB38030.1-2019 type CZ-J2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-110-J2M",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   66.0,
+   66.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7; reference capacity from GB38030.1-2019 type CG-J1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-110-J3N",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-130-J1N",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   66.0,
+   66.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-130-J2N",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-138-J1M",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-138-J2R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7; reference capacity from GB38030.1-2019 type CZ-J5",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-150-J1R",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   15.0,
+   15.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7; reference capacity from GB38030.1-2019 type CZ-J6",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-CZ-150-J2N",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   110.0,
+   110.0
+  ],
+  "beam_m": [
+   15.0,
+   15.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.1-2026 Table 7",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H1",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   44.0,
+   44.0
+  ],
+  "beam_m": [
+   7.4,
+   7.4
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   300,
+   300
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H2",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   44.0,
+   44.0
+  ],
+  "beam_m": [
+   8.8,
+   8.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   500,
+   500
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H3",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   55.0,
+   55.0
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   800,
+   800
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H4",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   60.0,
+   60.0
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H5",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   67.6,
+   67.6
+  ],
+  "beam_m": [
+   11.5,
+   11.5
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H6",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   55.0,
+   55.0
+  ],
+  "beam_m": [
+   12.7,
+   12.7
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H7",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   67.6,
+   67.6
+  ],
+  "beam_m": [
+   12.7,
+   12.7
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1800,
+   1800
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-H8",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   67.6,
+   67.6
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2000,
+   2000
+  ],
+  "source": "GB38030.2-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-B1",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   34.0,
+   34.0
+  ],
+  "beam_m": [
+   7.4,
+   7.4
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   300,
+   300
+  ],
+  "source": "GB38030.2-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-B2",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   42.0,
+   42.0
+  ],
+  "beam_m": [
+   8.8,
+   8.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   400,
+   400
+  ],
+  "source": "GB38030.2-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-B3",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   42.0,
+   42.0
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   600,
+   600
+  ],
+  "source": "GB38030.2-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-B4",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   55.0,
+   55.0
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.2-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-B5",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   67.6,
+   67.6
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2000,
+   2000
+  ],
+  "source": "GB38030.2-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-B6",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   67.6,
+   67.6
+  ],
+  "beam_m": [
+   15.4,
+   15.4
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2500,
+   2500
+  ],
+  "source": "GB38030.2-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J1",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   44.0,
+   44.0
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J2",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   55.0,
+   55.0
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J3",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   55.0,
+   55.0
+  ],
+  "beam_m": [
+   12.7,
+   12.7
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J4",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   73.0,
+   73.0
+  ],
+  "beam_m": [
+   12.7,
+   12.7
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J5",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   80.0,
+   80.0
+  ],
+  "beam_m": [
+   12.7,
+   12.7
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J6",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   55.0,
+   55.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J7",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   73.0,
+   73.0
+  ],
+  "beam_m": [
+   13.8,
+   13.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J8",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   80.0,
+   80.0
+  ],
+  "beam_m": [
+   15.8,
+   15.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J9",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   88.0,
+   88.0
+  ],
+  "beam_m": [
+   15.8,
+   15.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J10",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   90.0,
+   90.0
+  ],
+  "beam_m": [
+   16.6,
+   16.6
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-JH-J11",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   90.0,
+   90.0
+  ],
+  "beam_m": [
+   17.8,
+   17.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.2-2019 Table 3",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-H1",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   46.0,
+   46.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   500,
+   500
+  ],
+  "source": "GB38030.3-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-H2",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   50.0,
+   50.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.3-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-H3",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   68.0,
+   68.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.3-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-H4",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   63.0,
+   63.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.3-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-H5",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   74.0,
+   74.0
+  ],
+  "beam_m": [
+   14.0,
+   14.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   2000,
+   2000
+  ],
+  "source": "GB38030.3-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-H6",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   80.0,
+   80.0
+  ],
+  "beam_m": [
+   15.8,
+   15.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   3000,
+   3000
+  ],
+  "source": "GB38030.3-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-H7",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   90.0,
+   90.0
+  ],
+  "beam_m": [
+   15.8,
+   15.8
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   3000,
+   3000
+  ],
+  "source": "GB38030.3-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-J1",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   50.0,
+   50.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.3-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-J2",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   60.0,
+   60.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.3-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-J3",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   74.0,
+   74.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.3-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-J4",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   74.0,
+   74.0
+  ],
+  "beam_m": [
+   14.0,
+   14.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.3-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-J5",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   63.0,
+   63.0
+  ],
+  "beam_m": [
+   15.8,
+   15.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.3-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-J6",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   74.0,
+   74.0
+  ],
+  "beam_m": [
+   15.8,
+   15.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.3-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-XJ-J7",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   90.0,
+   90.0
+  ],
+  "beam_m": [
+   15.8,
+   15.8
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.3-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-H1",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   36.0,
+   36.0
+  ],
+  "beam_m": [
+   7.4,
+   7.4
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   250,
+   250
+  ],
+  "source": "GB38030.4-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-H2",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   42.0,
+   42.0
+  ],
+  "beam_m": [
+   7.4,
+   7.4
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   400,
+   400
+  ],
+  "source": "GB38030.4-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-H3",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   42.0,
+   42.0
+  ],
+  "beam_m": [
+   8.2,
+   8.2
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   500,
+   500
+  ],
+  "source": "GB38030.4-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-H4",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   50.0,
+   50.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   750,
+   750
+  ],
+  "source": "GB38030.4-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-H5",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   50.0,
+   50.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   850,
+   850
+  ],
+  "source": "GB38030.4-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-H6",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   60.0,
+   60.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1350,
+   1350
+  ],
+  "source": "GB38030.4-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-H7",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid"
+  ],
+  "loa_m": [
+   68.0,
+   68.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "GB38030.4-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-J1",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   42.0,
+   42.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.4-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-J2",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   50.0,
+   50.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.4-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-J3",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   60.0,
+   60.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.4-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-J4",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   50.0,
+   50.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.4-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-J5",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   60.0,
+   60.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.4-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-ZJ-J6",
+  "family": "CN-GB38030",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container"
+  ],
+  "loa_m": [
+   68.0,
+   68.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "GB38030.4-2019 Table 2",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-HS-B1",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   38.0,
+   38.0
+  ],
+  "beam_m": [
+   9.0,
+   9.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   300,
+   300
+  ],
+  "source": "GB38030.5-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-HS-B2",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   46.0,
+   46.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   400,
+   400
+  ],
+  "source": "GB38030.5-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-HS-B3",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   58.0,
+   58.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   600,
+   600
+  ],
+  "source": "GB38030.5-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-HS-B4",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   67.0,
+   67.0
+  ],
+  "beam_m": [
+   10.0,
+   10.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   600,
+   600
+  ],
+  "source": "GB38030.5-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-HS-B5",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   67.0,
+   67.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.5-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-GB38030-HS-B6",
+  "family": "CN-GB38030",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   75.0,
+   75.0
+  ],
+  "beam_m": [
+   13.0,
+   13.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "GB38030.5-2019 Table 1",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CEMT-I-W",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general"
+  ],
+  "loa_m": [
+   38.5,
+   38.5
+  ],
+  "beam_m": [
+   5.05,
+   5.05
+  ],
+  "draught_m": [
+   1.8,
+   2.2
+  ],
+  "dwt_t": [
+   250,
+   400
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": [
+   {
+    "name": "Spits Peniche 39.28 (broker listing, name withheld)",
+    "loa_m": 39.28,
+    "beam_m": 5.1,
+    "dwt_t": 360.3
+   }
+  ]
+ },
+ {
+  "id": "CEMT-II-W",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general"
+  ],
+  "loa_m": [
+   50,
+   55
+  ],
+  "beam_m": [
+   6.6,
+   6.6
+  ],
+  "draught_m": [
+   2.5,
+   2.5
+  ],
+  "dwt_t": [
+   400,
+   650
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": [
+   {
+    "name": "Kempenaar 59.96 (broker listing, name withheld)",
+    "loa_m": 59.96,
+    "beam_m": 6.6,
+    "dwt_t": 429.2
+   }
+  ]
+ },
+ {
+  "id": "CEMT-III-W",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general"
+  ],
+  "loa_m": [
+   67,
+   80
+  ],
+  "beam_m": [
+   8.2,
+   8.2
+  ],
+  "draught_m": [
+   2.5,
+   2.5
+  ],
+  "dwt_t": [
+   650,
+   1000
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CEMT-I-E",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general"
+  ],
+  "loa_m": [
+   41,
+   41
+  ],
+  "beam_m": [
+   4.7,
+   4.7
+  ],
+  "draught_m": [
+   1.4,
+   1.4
+  ],
+  "dwt_t": [
+   180,
+   180
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CEMT-II-E",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general"
+  ],
+  "loa_m": [
+   57,
+   57
+  ],
+  "beam_m": [
+   7.5,
+   9.0
+  ],
+  "draught_m": [
+   1.6,
+   1.6
+  ],
+  "dwt_t": [
+   500,
+   630
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CEMT-III-E",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general"
+  ],
+  "loa_m": [
+   67,
+   70
+  ],
+  "beam_m": [
+   8.2,
+   9.0
+  ],
+  "draught_m": [
+   1.6,
+   2.0
+  ],
+  "dwt_t": [
+   470,
+   700
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CEMT-IV",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general",
+   "container"
+  ],
+  "loa_m": [
+   80,
+   85
+  ],
+  "beam_m": [
+   9.5,
+   9.5
+  ],
+  "draught_m": [
+   2.5,
+   2.5
+  ],
+  "dwt_t": [
+   1000,
+   1500
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CEMT-Va",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk",
+   "general",
+   "container",
+   "liquid"
+  ],
+  "loa_m": [
+   95,
+   110
+  ],
+  "beam_m": [
+   11.4,
+   11.4
+  ],
+  "draught_m": [
+   2.5,
+   2.8
+  ],
+  "dwt_t": [
+   1500,
+   3000
+  ],
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "high",
+  "reference_vessels": [
+   {
+    "name": "LNG Greenstream",
+    "loa_m": 110.0,
+    "beam_m": 11.4,
+    "dwt_t": 2877
+   },
+   {
+    "name": "PortLiner EC110 type (class of 5 ordered)",
+    "loa_m": 110.0,
+    "beam_m": 11.4,
+    "dwt_t": null
+   }
+  ]
+ },
+ {
+  "id": "CEMT-VIb-motor",
+  "family": "CEMT-1992",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "container",
+   "general"
+  ],
+  "loa_m": [
+   140,
+   140
+  ],
+  "beam_m": [
+   15.0,
+   15.0
+  ],
+  "draught_m": [
+   3.9,
+   3.9
+  ],
+  "dwt_t": null,
+  "source": "ECMT Resolution 92/2 (CEMT/CM(92)6/FINAL) Table 1, read from scan p3: https://www.itf-oecd.org/sites/default/files/docs/wat19922e.pdf (via web.archive.org)",
+  "confidence": "medium",
+  "reference_vessels": []
+ },
+ {
+  "id": "BARGE-Europa-I",
+  "family": "Europa-barge",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk",
+   "general",
+   "container"
+  ],
+  "loa_m": [
+   70.0,
+   70.0
+  ],
+  "beam_m": [
+   9.5,
+   9.5
+  ],
+  "draught_m": [
+   3.0,
+   3.0
+  ],
+  "dwt_t": [
+   1450,
+   1450
+  ],
+  "source": "Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "BARGE-Europa-II",
+  "family": "Europa-barge",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk",
+   "general",
+   "container"
+  ],
+  "loa_m": [
+   76.5,
+   76.5
+  ],
+  "beam_m": [
+   11.4,
+   11.4
+  ],
+  "draught_m": [
+   3.5,
+   3.5
+  ],
+  "dwt_t": [
+   2450,
+   2450
+  ],
+  "source": "Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf",
+  "confidence": "high",
+  "reference_vessels": [
+   {
+    "name": "DS1863 / DS1864 (Project RDB06, 'Europe 2B' barge)",
+    "loa_m": 76.02,
+    "beam_m": 11.44,
+    "dwt_t": 2000
+   }
+  ]
+ },
+ {
+  "id": "BARGE-Europa-IIa",
+  "family": "Europa-barge",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk",
+   "general",
+   "container"
+  ],
+  "loa_m": [
+   76.5,
+   76.5
+  ],
+  "beam_m": [
+   11.4,
+   11.4
+  ],
+  "draught_m": [
+   4.0,
+   4.0
+  ],
+  "dwt_t": [
+   2780,
+   2780
+  ],
+  "source": "Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "BARGE-Europa-IIa-ext",
+  "family": "Europa-barge",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk",
+   "general",
+   "container"
+  ],
+  "loa_m": [
+   90.0,
+   90.0
+  ],
+  "beam_m": [
+   11.4,
+   11.4
+  ],
+  "draught_m": [
+   4.0,
+   4.0
+  ],
+  "dwt_t": [
+   3220,
+   3220
+  ],
+  "source": "Rijkswaterstaat, Richtlijnen Vaarwegen 2017 Table 5 (p22), https://open.rws.nl/publish/pages/33348/richtlijnen_vaarwegen_2017_def.pdf",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "BARGE-Europa-IIb",
+  "family": "Europa-barge",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk",
+   "general"
+  ],
+  "loa_m": [
+   76.5,
+   76.5
+  ],
+  "beam_m": [
+   11.0,
+   11.44
+  ],
+  "draught_m": [
+   2.7,
+   3.1
+  ],
+  "dwt_t": [
+   1717,
+   2033
+  ],
+  "source": "Danube variant; built examples on mebspb.com (Projects RDB06, 1635OU) + search summary (Linz-built 76.5 x 11 x 2.7, 1,717 t, Ukrainian Danube Shipping)",
+  "confidence": "medium",
+  "reference_vessels": [
+   {
+    "name": "DS1863 / DS1864 (Project RDB06, 'Europe 2B' barge)",
+    "loa_m": 76.02,
+    "beam_m": 11.44,
+    "dwt_t": 2000
+   },
+   {
+    "name": "UDP-SL-016 / UDP-SL-017 (Project 1635OU, 'Europa 2B' barge)",
+    "loa_m": 76.5,
+    "beam_m": 11.0,
+    "dwt_t": 2033
+   }
+  ]
+ },
+ {
+  "id": "PUSHER-Rhine-heavy",
+  "family": "RVW-2017",
+  "formation": "pusher",
+  "cargo_modes": [],
+  "loa_m": [
+   40,
+   40
+  ],
+  "beam_m": [
+   15,
+   15
+  ],
+  "draught_m": [
+   1.8,
+   1.8
+  ],
+  "dwt_t": null,
+  "source": "Rijkswaterstaat, Richtlijnen Vaarwegen 2017 §2.4.1-2.4.2",
+  "confidence": "medium",
+  "reference_vessels": [
+   {
+    "name": "Thyssenkrupp Steel diesel-electric Rhine pusher (Barkmeijer pair; names not captured)",
+    "loa_m": null,
+    "beam_m": null,
+    "dwt_t": null
+   }
+  ]
+ },
+ {
+  "id": "US-STD-HOPPER-175",
+  "family": "US-inland",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   53.3,
+   53.3
+  ],
+  "beam_m": [
+   10.7,
+   10.7
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   907,
+   907
+  ],
+  "source": "https://myshare-cms.siemens.com/size-of-barge (secondary aggregator page, read via search summary only)",
+  "confidence": "low",
+  "reference_vessels": []
+ },
+ {
+  "id": "US-JUMBO-HOPPER",
+  "family": "US-inland",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   59.4,
+   59.4
+  ],
+  "beam_m": [
+   10.7,
+   10.7
+  ],
+  "draught_m": [
+   2.7,
+   2.7
+  ],
+  "dwt_t": [
+   1361,
+   1361
+  ],
+  "source": "https://myshare-cms.siemens.com/size-of-barge (secondary aggregator page, read via search summary only); https://magazines.marinelink.com/Magazines/MaritimeReporter/199406/page/14 (Maritime Reporter, June 1994, p12); https://mundomaritimo.cl/noticias/convoyes-de-barcazas-de-290-por-60-metros-en-hidrovia-paraguay-parana-adicionarian-volumen-de-carga-de-12000-toneladas",
+  "confidence": "medium",
+  "reference_vessels": [
+   {
+    "name": "RCT 12 (covered hopper)",
+    "loa_m": 59.4,
+    "beam_m": 10.7,
+    "dwt_t": 1051
+   }
+  ]
+ },
+ {
+  "id": "US-STRETCH-HOPPER-200",
+  "family": "US-inland",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   61.0,
+   61.0
+  ],
+  "beam_m": [
+   10.7,
+   10.7
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "https://www.oceanmarine.com/vessels/16478/pdf/view (Ocean Marine Brokerage listing #16478, PDF read)",
+  "confidence": "medium",
+  "reference_vessels": [
+   {
+    "name": "Open hopper barge (12 sisters, broker #16478)",
+    "loa_m": 61.0,
+    "beam_m": 10.7,
+    "dwt_t": null
+   }
+  ]
+ },
+ {
+  "id": "US-SUPER-JUMBO-HOPPER",
+  "family": "US-inland",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   79.2,
+   79.2
+  ],
+  "beam_m": [
+   16.0,
+   16.0
+  ],
+  "draught_m": [
+   2.9,
+   2.9
+  ],
+  "dwt_t": [
+   3039,
+   3039
+  ],
+  "source": "https://magazines.marinelink.com/Magazines/MaritimeReporter/199406/page/14 (Maritime Reporter, June 1994, p12)",
+  "confidence": "high",
+  "reference_vessels": [
+   {
+    "name": "Trinity Super Jumbo hopper (first series)",
+    "loa_m": 79.2,
+    "beam_m": 16.0,
+    "dwt_t": 3039
+   }
+  ]
+ },
+ {
+  "id": "US-TANK-BARGE-297",
+  "family": "US-inland",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "liquid_bulk"
+  ],
+  "loa_m": [
+   90.7,
+   90.7
+  ],
+  "beam_m": [
+   16.5,
+   16.5
+  ],
+  "draught_m": [
+   2.1,
+   3.0
+  ],
+  "dwt_t": [
+   2141,
+   3447
+  ],
+  "source": "https://vesselinfo.kirbycorp.com/BargeInfo/Details/220651 and /73639 (Kirby vessel-info pages; read via search summary, site refused direct fetch); https://myshare-cms.siemens.com/size-of-barge (secondary aggregator page, read via search summary only)",
+  "confidence": "medium",
+  "reference_vessels": []
+ },
+ {
+  "id": "US-TOWBOAT-2000HP",
+  "family": "US-inland",
+  "formation": "towboat",
+  "cargo_modes": [
+   "dry_bulk",
+   "liquid_bulk"
+  ],
+  "loa_m": [
+   23.8,
+   25.6
+  ],
+  "beam_m": [
+   10.4,
+   10.4
+  ],
+  "draught_m": null,
+  "dwt_t": null,
+  "source": "https://www.workboat.com/news/shipbuilding/master-marine-delivers-z-drive-towboat/ (search summary); https://www.marinelog.com/inland-coastal/inland/maritime-partners-welcomes-m-v-troy-bernier-to-its-fleet/ (search summary)",
+  "confidence": "medium",
+  "reference_vessels": [
+   {
+    "name": "Kieffer E. Bailey",
+    "loa_m": 23.8,
+    "beam_m": 10.4,
+    "dwt_t": null
+   },
+   {
+    "name": "Troy Bernier",
+    "loa_m": 25.6,
+    "beam_m": 10.4,
+    "dwt_t": null
+   }
+  ]
+ },
+ {
+  "id": "CN-I-MOTOR",
+  "family": "CN-GB50139",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   95.0,
+   95.0
+  ],
+  "beam_m": [
+   16.2,
+   16.2
+  ],
+  "draught_m": [
+   3.2,
+   3.2
+  ],
+  "dwt_t": [
+   3000,
+   3000
+  ],
+  "source": "PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-II-MOTOR",
+  "family": "CN-GB50139",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   90.0,
+   90.0
+  ],
+  "beam_m": [
+   14.8,
+   14.8
+  ],
+  "draught_m": [
+   2.6,
+   2.6
+  ],
+  "dwt_t": [
+   2000,
+   2000
+  ],
+  "source": "PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-III-MOTOR",
+  "family": "CN-GB50139",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   85.0,
+   85.0
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": [
+   2.0,
+   2.0
+  ],
+  "dwt_t": [
+   1000,
+   1000
+  ],
+  "source": "PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-IV-MOTOR",
+  "family": "CN-GB50139",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   67.5,
+   67.5
+  ],
+  "beam_m": [
+   10.8,
+   10.8
+  ],
+  "draught_m": [
+   1.6,
+   1.6
+  ],
+  "dwt_t": [
+   500,
+   500
+  ],
+  "source": "PIANC WG 141 (2019) Table 2.3 p16 + Table A.2 p163",
+  "confidence": "high",
+  "reference_vessels": []
+ },
+ {
+  "id": "CN-YANGTZE-130-THREE-GORGES",
+  "family": "CN-Yangtze-standard",
+  "formation": "motor_vessel",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   128.0,
+   130.0
+  ],
+  "beam_m": [
+   16.2,
+   16.2
+  ],
+  "draught_m": [
+   5.2,
+   5.2
+  ],
+  "dwt_t": [
+   7500,
+   10000
+  ],
+  "source": "https://www.bairdmaritime.com/shipping/dry-cargo/bulkers/chinese-builder-delivers-electric-inland-bulk-carrier; https://www.hellenicshippingnews.com/chinas-largest-all-electric-bulk-carrier-launched-in-central-china/; https://www.researching.cn/articles/OJ3c6081a53ee288df/figureandtable (Chinese Journal of Ship Research; read via search summary only, site TLS failed)",
+  "confidence": "medium",
+  "reference_vessels": [
+   {
+    "name": "Gezhouba (all-electric bulk carrier)",
+    "loa_m": 129.9,
+    "beam_m": null,
+    "dwt_t": 10000
+   },
+   {
+    "name": "7,500 t Yangtze bulk carrier design (CJSR table)",
+    "loa_m": 130.0,
+    "beam_m": 16.2,
+    "dwt_t": 7500
+   }
+  ]
+ },
+ {
+  "id": "SA-HIDROVIA-MISSISSIPPI-BARGE",
+  "family": "SA-Hidrovia",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   60.0,
+   60.0
+  ],
+  "beam_m": [
+   11.0,
+   11.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1600,
+   1600
+  ],
+  "source": "https://mundomaritimo.cl/noticias/convoyes-de-barcazas-de-290-por-60-metros-en-hidrovia-paraguay-parana-adicionarian-volumen-de-carga-de-12000-toneladas",
+  "confidence": "medium",
+  "reference_vessels": []
+ },
+ {
+  "id": "SA-HIDROVIA-JUMBO-BARGE",
+  "family": "SA-Hidrovia",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   60.0,
+   61.0
+  ],
+  "beam_m": [
+   15.0,
+   16.0
+  ],
+  "draught_m": null,
+  "dwt_t": [
+   1500,
+   2600
+  ],
+  "source": "https://mundomaritimo.cl/noticias/convoyes-de-barcazas-de-290-por-60-metros-en-hidrovia-paraguay-parana-adicionarian-volumen-de-carga-de-12000-toneladas; https://www.bairdmaritime.com/tugs/new-push-boats-and-barges-for-paraguay",
+  "confidence": "medium",
+  "reference_vessels": [
+   {
+    "name": "HBSA Mississippi-style hopper (144 built)",
+    "loa_m": 61.0,
+    "beam_m": 15.0,
+    "dwt_t": 2500
+   }
+  ]
+ },
+ {
+  "id": "SA-TIETE-BARGE",
+  "family": "SA-Tiete-Parana",
+  "formation": "pushed_barge",
+  "cargo_modes": [
+   "dry_bulk"
+  ],
+  "loa_m": [
+   59.44,
+   59.44
+  ],
+  "beam_m": [
+   10.67,
+   10.67
+  ],
+  "draught_m": [
+   2.5,
+   3.0
+  ],
+  "dwt_t": [
+   1500,
+   1500
+  ],
+  "source": "https://semil.sp.gov.br/htp/wp-content/uploads/sites/13/2024/02/Anexo-Plano-Diretor-Hidrovia-Tiete-Comboios-jun2021.pdf (Plano Diretor da Hidrovia Tietê-Paraná Vol I, Depto Hidroviário SP, pp13-15)",
+  "confidence": "high",
+  "reference_vessels": [
+   {
+    "name": "Tietê standard chata",
+    "loa_m": 59.44,
+    "beam_m": 10.67,
+    "dwt_t": 1500
+   }
+  ]
+ }
+]
